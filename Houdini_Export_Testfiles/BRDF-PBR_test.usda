@@ -1,0 +1,110 @@
+#usda 1.0
+
+def "shaderTree"
+{
+    def Material "BRDF_Paint_Material"
+    {
+        token outputs:out.connect = </shaderTree/BRDF_Paint_Material/mtlxstandard_surface.outputs:out>
+        token outputs:surface.connect = </shaderTree/BRDF_Paint_Material/mtlxstandard_preview.outputs:surface>
+
+        def Shader "mtlxstandard_surface"
+        {
+            uniform token info:id = "ND_standard_surface_surfaceshader"
+            float inputs:base = 0.8
+            color3f inputs:base_color = (1.0000001, 0, 0)
+            float inputs:coat = 0
+            float inputs:coat_roughness = 0
+            float inputs:emission = 0
+            color3f inputs:emission_color = (1, 1, 1)
+            float inputs:metalness = 0
+            float inputs:opacity = 1
+            float inputs:sheen = 0
+            float inputs:sheen_color = 0
+            float inputs:specular = 0
+            float inputs:specular_anisotropy = 0
+            color3f inputs:specular_color = (1, 1, 1)
+            float inputs:specular_IOR = 1
+            float inputs:specular_roughness = 0.275
+            float inputs:subsurface = 0
+            color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+            float inputs:subsurface_radius = 1
+            float inputs:subsurface_scale = 0.005
+            float inputs:transmission = 0
+            color3f inputs:transmission_color = (1, 1, 1)
+            float inputs:transmission_depth = 0
+            float inputs:transmission_dispersion = 0
+            float inputs:transmission_roughness = 0
+            float inputs:transmission_scatter = 1
+            token outputs:out
+        }
+
+        def Shader "mtlxstandard_preview"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            float inputs:clearcoat = 0
+            float inputs:clearcoatRoughness = 0
+            color3f inputs:diffuseColor = (1.0000001, 0, 0)
+            float inputs:emissiveColor = 0
+            float inputs:ior = 2.67
+            float inputs:metallic = 0
+            float inputs:opacity = 1
+            float inputs:roughness = 0.275
+            float inputs:specular = 0.69
+            color3f inputs:specularColor = (1.0000001, 1.0000001, 1.0000001)
+            token outputs:surface
+        }
+    }
+
+    def Material "BPR_Paint_Material"
+    {
+        token outputs:out.connect = </shaderTree/BPR_Paint_Material/mtlxstandard_surface.outputs:out>
+        token outputs:surface.connect = </shaderTree/BPR_Paint_Material/mtlxstandard_preview.outputs:surface>
+
+        def Shader "mtlxstandard_surface"
+        {
+            uniform token info:id = "ND_standard_surface_surfaceshader"
+            float inputs:base = 0.8
+            color3f inputs:base_color = (0, 0, 1.0000001)
+            float inputs:coat = 0
+            float inputs:coat_roughness = 0
+            float inputs:emission = 0
+            color3f inputs:emission_color = (1, 1, 1)
+            float inputs:opacity = 1
+            float inputs:sheen = 0
+            float inputs:sheen_color = 0
+            float inputs:specular = 1
+            float inputs:specular_anisotropy = 0
+            color3f inputs:specular_color = (1.0000001, 1.0000001, 1.0000001)
+            float inputs:specular_IOR = 2
+            float inputs:specular_roughness = 0
+            float inputs:subsurface = 0
+            color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+            float inputs:subsurface_radius = 1
+            float inputs:subsurface_scale = 0.005
+            float inputs:transmission = 0
+            color3f inputs:transmission_color = (1, 1, 1)
+            float inputs:transmission_depth = 0
+            float inputs:transmission_dispersion = 0
+            float inputs:transmission_extra_roughness = 0
+            float inputs:transmission_scatter = 1
+            token outputs:out
+        }
+
+        def Shader "mtlxstandard_preview"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            float inputs:clearcoat = 0
+            float inputs:clearcoatRoughness = 0
+            color3f inputs:diffuseColor = (0, 0, 1.0000001)
+            float inputs:emissiveColor = 0
+            float inputs:ior = 2
+            float inputs:metallic = 0
+            float inputs:opacity = 1
+            float inputs:roughness = 0
+            float inputs:specular = 0
+            color3f inputs:specularColor = (1.0000001, 1.0000001, 1.0000001)
+            token outputs:surface
+        }
+    }
+}
+

@@ -1,0 +1,191 @@
+#usda 1.0
+
+def Scope "shadertree"
+{
+    def Material "BRDF_Paint_Material"
+    {
+        token outputs:mtlx:surface.connect = </shadertree/BRDF_Paint_Material/BRDF_Material.outputs:surface>
+
+        def Shader "BRDF_Material"
+        {
+            uniform token info:id = "ND_standard_surface_surfaceshader"
+            float inputs:base = 0.8
+            color3f inputs:base_color = (1.0000001, 0, 0)
+            float inputs:coat = 0
+            float inputs:coat_roughness = 0
+            float inputs:emission = 0
+            color3f inputs:emission_color = (1, 1, 1)
+            float inputs:metalness = 0
+            float inputs:opacity = 1
+            float inputs:opacity.connect = </shadertree/BRDF_Paint_Material/icon_Image_2_set_0_or_1.outputs:out>
+            float inputs:sheen = 0
+            float inputs:specular = 1
+            float inputs:specular_anisotropy = 0
+            color3f inputs:specular_color = (1, 1, 1)
+            float inputs:specular_IOR = 1.605
+            float inputs:specular_roughness = 0
+            float inputs:subsurface = 0
+            color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+            float inputs:subsurface_radius = 1
+            float inputs:subsurface_scale = 0.005
+            float inputs:transmission = 0
+            color3f inputs:transmission_color = (1, 1, 1)
+            float inputs:transmission_depth = 0
+            float inputs:transmission_dispersion = 0
+            float inputs:transmission_roughness = 0
+            float inputs:transmission_scatter = 1
+            token outputs:surface
+        }
+
+        def Shader "icon_texture_reader"
+        {
+            uniform token info:id = "ND_texcoord_vector2"
+            int inputs:index = 0
+            float2 outputs:out
+            texCoord2f outputs:result
+        }
+
+        def Shader "icon"
+        {
+            uniform token info:id = "ND_UsdUVTexture_23"
+            asset inputs:file = @/Volumes/SSD-4TO-PROJETS/HOUDINI_PROJECTS/IMPORT MODO SHADERTREE/textures/icon.png@
+            float2 inputs:st.connect = </shadertree/BRDF_Paint_Material/icon_texture_reader.outputs:out>
+            string inputs:wrapS = "periodic"
+            string inputs:wrapT = "black"
+            color3f outputs:rgb
+        }
+
+        def Shader "icon_Image_2_invert_color"
+        {
+            uniform token info:id = "ND_subtract_float"
+            color3f inputs:in1 = (1, 1, 1)
+            color3f inputs:in2.connect = </shadertree/BRDF_Paint_Material/icon.outputs:rgb>
+            color3f outputs:out
+        }
+
+        def Shader "icon_Image_2_set_0_or_1"
+        {
+            uniform token info:id = "ND_round_float"
+            color3f inputs:in.connect = </shadertree/BRDF_Paint_Material/icon_Image_2_invert_color.outputs:out>
+            color3f outputs:out
+        }
+    }
+
+    def Material "PBR_Paint_Material"
+    {
+        token outputs:mtlx:displacement.connect = </shadertree/PBR_Paint_Material/grass_path_2_disp_4k_2_Image_displacement.outputs:out>
+        token outputs:mtlx:surface.connect = </shadertree/PBR_Paint_Material/PBR_Material.outputs:surface>
+
+        def Shader "PBR_Material"
+        {
+            uniform token info:id = "ND_standard_surface_surfaceshader"
+            float inputs:base = 0.8
+            color3f inputs:base_color = (0, 0, 1.0000001)
+            color3f inputs:base_color.connect = </shadertree/PBR_Paint_Material/grass_path_2_diff_4k.outputs:rgb>
+            float inputs:coat = 0
+            float inputs:coat_roughness = 0
+            float inputs:emission = 0
+            color3f inputs:emission_color = (1, 1, 1)
+            float inputs:opacity = 1
+            float inputs:sheen = 0.745
+            float inputs:specular = 1
+            float inputs:specular_anisotropy = 0
+            color3f inputs:specular_color = (1.0000001, 1.0000001, 1.0000001)
+            float inputs:specular_IOR = 1.89
+            float inputs:specular_roughness = 0.02
+            float inputs:specular_roughness.connect = </shadertree/PBR_Paint_Material/grass_path_2_rough_4k_4.outputs:rgb>
+            float inputs:subsurface = 0
+            color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+            float inputs:subsurface_radius = 1
+            float inputs:subsurface_scale = 0.005
+            float inputs:transmission = 0
+            color3f inputs:transmission_color = (1, 1, 1)
+            float inputs:transmission_depth = 0
+            float inputs:transmission_dispersion = 0
+            float inputs:transmission_extra_roughness = 0
+            float inputs:transmission_scatter = 1
+            token outputs:surface
+        }
+
+        def Shader "grass_path_2_rough_4k_4_texture_reader"
+        {
+            uniform token info:id = "ND_texcoord_vector2"
+            int inputs:index = 0
+            float2 outputs:out
+            texCoord2f outputs:result
+        }
+
+        def Shader "grass_path_2_rough_4k_4"
+        {
+            uniform token info:id = "ND_UsdUVTexture_23"
+            asset inputs:file = @/Volumes/SSD-4TO-PROJETS/HOUDINI_PROJECTS/IMPORT MODO SHADERTREE/textures/Grass Path Ground/grass_path_2_rough_4k.jpg@
+            float2 inputs:st.connect = </shadertree/PBR_Paint_Material/grass_path_2_rough_4k_4_texture_reader.outputs:out>
+            string inputs:wrapS = "periodic"
+            string inputs:wrapT = "periodic"
+            color3f outputs:rgb
+        }
+
+        def Shader "grass_path_2_diff_4k_texture_reader"
+        {
+            uniform token info:id = "ND_texcoord_vector2"
+            int inputs:index = 0
+            float2 outputs:out
+            texCoord2f outputs:result
+        }
+
+        def Shader "grass_path_2_diff_4k"
+        {
+            uniform token info:id = "ND_UsdUVTexture_23"
+            asset inputs:file = @/Volumes/SSD-4TO-PROJETS/HOUDINI_PROJECTS/IMPORT MODO SHADERTREE/textures/Grass Path Ground/grass_path_2_diff_4k.jpg@
+            float2 inputs:st.connect = </shadertree/PBR_Paint_Material/grass_path_2_diff_4k_texture_reader.outputs:out>
+            string inputs:wrapS = "periodic"
+            string inputs:wrapT = "periodic"
+            color3f outputs:rgb
+        }
+
+        def Shader "grass_path_2_nor_gl_4k_3_texture_reader"
+        {
+            uniform token info:id = "ND_texcoord_vector2"
+            int inputs:index = 0
+            float2 outputs:out
+            texCoord2f outputs:result
+        }
+
+        def Shader "grass_path_2_nor_gl_4k_3"
+        {
+            uniform token info:id = "ND_UsdUVTexture_23"
+            asset inputs:file = @/Volumes/SSD-4TO-PROJETS/HOUDINI_PROJECTS/IMPORT MODO SHADERTREE/textures/Grass Path Ground/grass_path_2_nor_gl_4k.exr@
+            float2 inputs:st.connect = </shadertree/PBR_Paint_Material/grass_path_2_nor_gl_4k_3_texture_reader.outputs:out>
+            string inputs:wrapS = "periodic"
+            string inputs:wrapT = "periodic"
+            color3f outputs:rgb
+        }
+
+        def Shader "grass_path_2_disp_4k_2_texture_reader"
+        {
+            uniform token info:id = "ND_texcoord_vector2"
+            int inputs:index = 0
+            float2 outputs:out
+            texCoord2f outputs:result
+        }
+
+        def Shader "grass_path_2_disp_4k_2"
+        {
+            uniform token info:id = "ND_UsdUVTexture_23"
+            asset inputs:file = @/Volumes/SSD-4TO-PROJETS/HOUDINI_PROJECTS/IMPORT MODO SHADERTREE/textures/Grass Path Ground/grass_path_2_disp_4k.png@
+            float2 inputs:st.connect = </shadertree/PBR_Paint_Material/grass_path_2_disp_4k_2_texture_reader.outputs:out>
+            string inputs:wrapS = "periodic"
+            string inputs:wrapT = "periodic"
+            color3f outputs:rgb
+        }
+
+        def Shader "grass_path_2_disp_4k_2_Image_displacement"
+        {
+            uniform token info:id = "ND_displacement_float"
+            float inputs:displacement.connect = </shadertree/PBR_Paint_Material/grass_path_2_disp_4k_2.outputs:rgb>
+            float inputs:scale = 0.0764
+            float outputs:out
+        }
+    }
+}
+
