@@ -52,7 +52,7 @@
       <fineThresh value="0.1" type="float" evaltype="percent" storageType="percent" />
       <first value="1" type="integer" evaltype="integer" storageType="integer" />
       <frmPasses value="1" type="integer" evaltype="integer" storageType="integer" />
-      <frmRange value="&lt;lx.object.Unknown object at 0x45c042b90&gt;" type="string" evaltype="+intrange" storageType="+intrange" />
+      <frmRange value="&lt;lx.object.Unknown object at 0x5d0555cf0&gt;" type="string" evaltype="+intrange" storageType="+intrange" />
       <globBump value="0" type="integer" evaltype="boolean" storageType="boolean" />
       <globCaus value="refraction" type="integer" evaltype="integer" storageType="integer" />
       <globEnable value="1" type="integer" evaltype="boolean" storageType="boolean" />
@@ -657,10 +657,10 @@
                <lock value="default" type="integer" evaltype="integer" storageType="integer" />
                <m00 value="1.0" type="float" evaltype="float" storageType="float" />
                <m01 value="0.0" type="float" evaltype="float" storageType="float" />
-               <m02 value="0.0" type="float" evaltype="float" storageType="float" />
+               <m02 value="0.224" type="float" evaltype="float" storageType="float" />
                <m10 value="0.0" type="float" evaltype="float" storageType="float" />
                <m11 value="1.0" type="float" evaltype="float" storageType="float" />
-               <m12 value="0.0" type="float" evaltype="float" storageType="float" />
+               <m12 value="0.38800000000000007" type="float" evaltype="float" storageType="float" />
                <m20 value="0.0" type="float" evaltype="float" storageType="float" />
                <m21 value="0.0" type="float" evaltype="float" storageType="float" />
                <m22 value="1.0" type="float" evaltype="float" storageType="float" />
@@ -691,7 +691,7 @@
                <triplanarBlending value="0.0" type="float" evaltype="percent" storageType="percent" />
                <useOcclusion value="through" type="integer" evaltype="integer" storageType="integer" />
                <useRealSize value="0" type="integer" evaltype="boolean" storageType="boolean" />
-               <useUDIM value="1" type="integer" evaltype="boolean" storageType="boolean" />
+               <useUDIM value="0" type="integer" evaltype="boolean" storageType="boolean" />
                <uvMap value="Texture" type="string" evaltype="string" storageType="string" />
                <uvRotation value="0.0" type="float" evaltype="angle" storageType="angle" />
                <vectorMap value="" type="string" evaltype="string" storageType="string" />
@@ -727,13 +727,13 @@
             <channels>
                <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-               <colorRange value="(&lt;lx.object.Unknown object at 0x481d0ec30&gt;, &lt;lx.object.Unknown object at 0x481d0e2f0&gt;, &lt;lx.object.Unknown object at 0x481d0fd70&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+               <colorRange value="(&lt;lx.object.Unknown object at 0x58c81a810&gt;, &lt;lx.object.Unknown object at 0x58c81b170&gt;, &lt;lx.object.Unknown object at 0x58c81a690&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                <colorspace value="(default)" type="string" evaltype="string" storageType="string" />
                <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                <filename value="/Library/Application Support/Luxology/Content/Assets/Pixel_Fondue_Shaderball_Scene/graph paper.png" type="string" evaltype="filepath" storageType="filepath" />
                <format value="PNG" type="string" evaltype="string" storageType="string" />
                <fps value="1.0" type="float" evaltype="float" storageType="float" />
-               <imageStack value="&lt;lx.object.Unknown object at 0x481d0f3f0&gt;" type="string" evaltype="evalstack" storageType="image" />
+               <imageStack value="&lt;lx.object.Unknown object at 0x58c819cf0&gt;" type="string" evaltype="evalstack" storageType="image" />
                <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -1619,13 +1619,13 @@
             <channels>
                <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-               <colorRange value="(&lt;lx.object.Unknown object at 0x591902c30&gt;, &lt;lx.object.Unknown object at 0x591900af0&gt;, &lt;lx.object.Unknown object at 0x591902730&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+               <colorRange value="(&lt;lx.object.Unknown object at 0x59c8830d0&gt;, &lt;lx.object.Unknown object at 0x59c880cb0&gt;, &lt;lx.object.Unknown object at 0x5ba095c30&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                <colorspace value="(default)" type="string" evaltype="string" storageType="string" />
                <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                <filename value="/Library/Application Support/Luxology/Content/Assets/Pixel_Fondue_Shaderball_Scene/Pixel Panda for Avator with transparent background.png" type="string" evaltype="filepath" storageType="filepath" />
                <format value="PNG" type="string" evaltype="string" storageType="string" />
                <fps value="1.0" type="float" evaltype="float" storageType="float" />
-               <imageStack value="&lt;lx.object.Unknown object at 0x591903750&gt;" type="string" evaltype="evalstack" storageType="image" />
+               <imageStack value="&lt;lx.object.Unknown object at 0x59c881d10&gt;" type="string" evaltype="evalstack" storageType="image" />
                <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -1891,13 +1891,13 @@
             <channels>
                <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-               <colorRange value="(&lt;lx.object.Unknown object at 0x5a5707190&gt;, &lt;lx.object.Unknown object at 0x5a5707170&gt;, &lt;lx.object.Unknown object at 0x5a57071b0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+               <colorRange value="(&lt;lx.object.Unknown object at 0x4eddca7d0&gt;, &lt;lx.object.Unknown object at 0x4eddca7b0&gt;, &lt;lx.object.Unknown object at 0x4eddca7f0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                <colorspace value="(default)" type="string" evaltype="string" storageType="string" />
                <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                <filename value="/Library/Application Support/Luxology/Content/Assets/Pixel_Fondue_Shaderball_Scene/Candle Flame.png" type="string" evaltype="filepath" storageType="filepath" />
                <format value="PNG" type="string" evaltype="string" storageType="string" />
                <fps value="1.0" type="float" evaltype="float" storageType="float" />
-               <imageStack value="&lt;lx.object.Unknown object at 0x5a5707310&gt;" type="string" evaltype="evalstack" storageType="image" />
+               <imageStack value="&lt;lx.object.Unknown object at 0x4eddca950&gt;" type="string" evaltype="evalstack" storageType="image" />
                <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -1945,13 +1945,13 @@
             <channels>
                <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-               <colorRange value="(&lt;lx.object.Unknown object at 0x5a5706c50&gt;, &lt;lx.object.Unknown object at 0x5a5706c70&gt;, &lt;lx.object.Unknown object at 0x5a5706c30&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+               <colorRange value="(&lt;lx.object.Unknown object at 0x4eddca290&gt;, &lt;lx.object.Unknown object at 0x4eddca2b0&gt;, &lt;lx.object.Unknown object at 0x4eddca270&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                <colorspace value="(default)" type="string" evaltype="string" storageType="string" />
                <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                <filename value="/Library/Application Support/Luxology/Content/Assets/Pixel_Fondue_Shaderball_Scene/Candle Flame.png" type="string" evaltype="filepath" storageType="filepath" />
                <format value="PNG" type="string" evaltype="string" storageType="string" />
                <fps value="1.0" type="float" evaltype="float" storageType="float" />
-               <imageStack value="&lt;lx.object.Unknown object at 0x5a5706ad0&gt;" type="string" evaltype="evalstack" storageType="image" />
+               <imageStack value="&lt;lx.object.Unknown object at 0x4eddca110&gt;" type="string" evaltype="evalstack" storageType="image" />
                <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -2311,13 +2311,13 @@
             <channels>
                <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-               <colorRange value="(&lt;lx.object.Unknown object at 0x5a792f450&gt;, &lt;lx.object.Unknown object at 0x5a792f430&gt;, &lt;lx.object.Unknown object at 0x5a792f470&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+               <colorRange value="(&lt;lx.object.Unknown object at 0x40cf66a90&gt;, &lt;lx.object.Unknown object at 0x40cf66a70&gt;, &lt;lx.object.Unknown object at 0x40cf66ab0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                <colorspace value="(default)" type="string" evaltype="string" storageType="string" />
                <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                <filename value="/Library/Application Support/Luxology/Content/Assets/Pixel_Fondue_Shaderball_Scene/rainbowh.png" type="string" evaltype="filepath" storageType="filepath" />
                <format value="PNG" type="string" evaltype="string" storageType="string" />
                <fps value="1.0" type="float" evaltype="float" storageType="float" />
-               <imageStack value="&lt;lx.object.Unknown object at 0x5a792f5d0&gt;" type="string" evaltype="evalstack" storageType="image" />
+               <imageStack value="&lt;lx.object.Unknown object at 0x40cf66c10&gt;" type="string" evaltype="evalstack" storageType="image" />
                <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                <playback value="0.0" type="float" evaltype="time" storageType="time" />

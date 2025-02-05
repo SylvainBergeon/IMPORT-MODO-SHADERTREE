@@ -47,7 +47,9 @@ def Scope "shadertree"
         {
             uniform token info:id = "UsdTransform2d"
             texCoord2f inputs:in.connect = </shadertree/Floor_Material/graph_paper_Image_texture_reader.outputs:out>
+            float inputs:rotation = 0
             float2 inputs:scale = (4, 4)
+            float2 inputs:translation = (0.224, 0.388)
             texCoord2f outputs:result
         }
 
@@ -290,7 +292,9 @@ def Scope "shadertree"
         {
             uniform token info:id = "UsdTransform2d"
             texCoord2f inputs:in.connect = </shadertree/Pixel_Fondue_Material/Pixel_Panda_for_Avator_with_transparent_background_Image_texture_reader.outputs:out>
+            float inputs:rotation = 0
             float2 inputs:scale = (1, 1)
+            float2 inputs:translation = (0, 0)
             texCoord2f outputs:result
         }
 
@@ -364,7 +368,9 @@ def Scope "shadertree"
         {
             uniform token info:id = "UsdTransform2d"
             texCoord2f inputs:in.connect = </shadertree/Flame_Material/Candle_Flame_Image_texture_reader.outputs:out>
+            float inputs:rotation = 0
             float2 inputs:scale = (1, 1)
+            float2 inputs:translation = (0, 0)
             texCoord2f outputs:result
         }
 
@@ -402,7 +408,9 @@ def Scope "shadertree"
         {
             uniform token info:id = "UsdTransform2d"
             texCoord2f inputs:in.connect = </shadertree/Flame_Material/Candle_Flame_Image_2_texture_reader.outputs:out>
+            float inputs:rotation = 0
             float2 inputs:scale = (1, 1)
+            float2 inputs:translation = (0, 0)
             texCoord2f outputs:result
         }
 
@@ -475,7 +483,9 @@ def Scope "shadertree"
         {
             uniform token info:id = "UsdTransform2d"
             texCoord2f inputs:in.connect = </shadertree/Shaderball_Material/rainbowh_Image_texture_reader.outputs:out>
+            float inputs:rotation = 0
             float2 inputs:scale = (1, 1)
+            float2 inputs:translation = (0, 0)
             texCoord2f outputs:result
         }
 
