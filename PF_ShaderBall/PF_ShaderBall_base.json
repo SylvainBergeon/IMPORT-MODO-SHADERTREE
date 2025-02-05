@@ -310,7 +310,7 @@
    "storageType": "integer"
   },
   "frmRange": {
-   "value": "<lx.object.Unknown object at 0x4edd6d2d0>",
+   "value": "<lx.object.Unknown object at 0x583459670>",
    "type": "string",
    "evaltype": "+intrange",
    "storageType": "+intrange"
@@ -3822,7 +3822,7 @@
      "storageType": "percent"
     },
     "min": {
-     "value": "-0.785",
+     "value": "-0.7850000262260437",
      "type": "float",
      "evaltype": "percent",
      "storageType": "percent"
@@ -9775,13 +9775,13 @@
      "storageType": "percent"
     },
     "diffAmt": {
-     "value": "0.3",
+     "value": "0.8",
      "type": "float",
      "evaltype": "percent",
      "storageType": "percent"
     },
     "diffCol": {
-     "value": "(0.0, 0.0, 0.0)",
+     "value": "(0.8069620132446289, 0.8069620132446289, 0.8069620132446289)",
      "type": "float",
      "evaltype": "color3",
      "storageType": "color3"
@@ -10087,7 +10087,7 @@
      "storageType": "integer"
     },
     "specAmt": {
-     "value": "0.2",
+     "value": "0.05",
      "type": "float",
      "evaltype": "percent",
      "storageType": "percent"
@@ -10141,7 +10141,7 @@
      "storageType": "distance"
     },
     "subsDist": {
-     "value": "0.005",
+     "value": "0.0023",
      "type": "float",
      "evaltype": "distance",
      "storageType": "distance"

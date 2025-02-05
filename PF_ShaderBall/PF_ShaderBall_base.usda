@@ -445,8 +445,8 @@ def Scope "shadertree"
         def Shader "Material_5"
         {
             uniform token info:id = "ND_standard_surface_surfaceshader"
-            float inputs:base = 0.3
-            color3f inputs:base_color = (0, 0, 0)
+            float inputs:base = 0.8
+            color3f inputs:base_color = (0.806962, 0.806962, 0.806962)
             color3f inputs:base_color.connect = </shadertree/Shaderball_Material/rainbowh_Image_valueRange.outputs:out>
             float inputs:coat = 0
             float inputs:coat_roughness = 0
@@ -457,12 +457,12 @@ def Scope "shadertree"
             float inputs:specular = 1
             float inputs:specular_anisotropy = 0
             color3f inputs:specular_color = (1.0000001, 1.0000001, 1.0000001)
-            float inputs:specular_IOR = 2.618034
+            float inputs:specular_IOR = 1.5760143
             float inputs:specular_roughness = 0
             float inputs:subsurface = 0
             color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
             float inputs:subsurface_radius = 1
-            float inputs:subsurface_scale = 0.005
+            float inputs:subsurface_scale = 0.0023
             float inputs:transmission = 0
             color3f inputs:transmission_color = (1, 1, 1)
             float inputs:transmission_depth = 0
