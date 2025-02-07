@@ -17,7 +17,6 @@ def Scope "shadertree"
             float inputs:emission = 0
             color3f inputs:emission_color = (1, 1, 1)
             float inputs:opacity = 1
-            float inputs:sheen = 1
             float inputs:specular = 1
             float inputs:specular_anisotropy = 0
             color3f inputs:specular_color = (1, 1, 1)
@@ -91,7 +90,6 @@ def Scope "shadertree"
             float inputs:emission = 0
             color3f inputs:emission_color = (1, 1, 1)
             float inputs:opacity = 1
-            float inputs:sheen = 1
             float inputs:specular = 1
             float inputs:specular_anisotropy = 0
             color3f inputs:specular_color = (1, 1, 1)
@@ -125,7 +123,6 @@ def Scope "shadertree"
             float inputs:emission = 0
             color3f inputs:emission_color = (1, 1, 1)
             float inputs:opacity = 1
-            float inputs:sheen = 1
             float inputs:specular = 1
             float inputs:specular_anisotropy = 0
             color3f inputs:specular_color = (1, 1, 1)
@@ -159,7 +156,6 @@ def Scope "shadertree"
             float inputs:emission = 0
             color3f inputs:emission_color = (1, 1, 1)
             float inputs:opacity = 1
-            float inputs:sheen = 1
             float inputs:specular = 1
             float inputs:specular_anisotropy = 0
             color3f inputs:specular_color = (1, 1, 1)
@@ -193,7 +189,6 @@ def Scope "shadertree"
             float inputs:emission = 0
             color3f inputs:emission_color = (1, 1, 1)
             float inputs:opacity = 1
-            float inputs:sheen = 1
             float inputs:specular = 1
             float inputs:specular_anisotropy = 0
             color3f inputs:specular_color = (1, 1, 1)
@@ -227,7 +222,6 @@ def Scope "shadertree"
             float inputs:emission = 0
             color3f inputs:emission_color = (1, 1, 1)
             float inputs:opacity = 1
-            float inputs:sheen = 0
             float inputs:specular = 1
             float inputs:specular_anisotropy = 0
             color3f inputs:specular_color = (1, 1, 1)
@@ -262,7 +256,6 @@ def Scope "shadertree"
             float inputs:emission = 0
             color3f inputs:emission_color = (1, 1, 1)
             float inputs:opacity = 1
-            float inputs:sheen = 1
             float inputs:specular = 1
             float inputs:specular_anisotropy = 0
             color3f inputs:specular_color = (1, 1, 1)
@@ -337,7 +330,6 @@ def Scope "shadertree"
             color3f inputs:emission_color = (1, 1, 1)
             color3f inputs:emission_color.connect = </shadertree/Flame_Material/Candle_Flame_Image_valueRange.outputs:out>
             float inputs:opacity = 1
-            float inputs:sheen = 0
             float inputs:specular = 1
             float inputs:specular_anisotropy = 0
             color3f inputs:specular_color = (0, 0, 0)
@@ -452,11 +444,10 @@ def Scope "shadertree"
             float inputs:emission = 0
             color3f inputs:emission_color = (1, 1, 1)
             float inputs:opacity = 1
-            float inputs:sheen = 1
             float inputs:specular = 1
             float inputs:specular_anisotropy = 0
             color3f inputs:specular_color = (1.0000001, 1.0000001, 1.0000001)
-            float inputs:specular_IOR = 1.45
+            float inputs:specular_IOR = 1.5760143
             float inputs:specular_roughness = 0
             float inputs:subsurface = 0
             color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
@@ -466,7 +457,7 @@ def Scope "shadertree"
             color3f inputs:transmission_color = (1, 1, 1)
             float inputs:transmission_depth = 0.13
             float inputs:transmission_dispersion = 0
-            float inputs:transmission_extra_roughness = 0.14
+            float inputs:transmission_extra_roughness = 0.09
             float inputs:transmission_scatter = 1
             token outputs:surface
         }

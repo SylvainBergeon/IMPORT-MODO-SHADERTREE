@@ -310,7 +310,7 @@
    "storageType": "integer"
   },
   "frmRange": {
-   "value": "<lx.object.Unknown object at 0x583459670>",
+   "value": "<lx.object.Unknown object at 0x56699de30>",
    "type": "string",
    "evaltype": "+intrange",
    "storageType": "+intrange"
@@ -3822,7 +3822,7 @@
      "storageType": "percent"
     },
     "min": {
-     "value": "-0.7850000262260437",
+     "value": "0.0",
      "type": "float",
      "evaltype": "percent",
      "storageType": "percent"
@@ -9751,13 +9751,13 @@
      "storageType": "percent"
     },
     "coatBump": {
-     "value": "1.0",
+     "value": "0.0",
      "type": "float",
      "evaltype": "percent",
      "storageType": "percent"
     },
     "coatRough": {
-     "value": "0.0",
+     "value": "0.405",
      "type": "float",
      "evaltype": "percent",
      "storageType": "percent"
@@ -9775,13 +9775,13 @@
      "storageType": "percent"
     },
     "diffAmt": {
-     "value": "0.8",
+     "value": "1.0",
      "type": "float",
      "evaltype": "percent",
      "storageType": "percent"
     },
     "diffCol": {
-     "value": "(0.8069620132446289, 0.8069620132446289, 0.8069620132446289)",
+     "value": "(1.0, 1.0, 1.0)",
      "type": "float",
      "evaltype": "color3",
      "storageType": "color3"
@@ -9955,7 +9955,7 @@
      "storageType": "percent"
     },
     "refIndex": {
-     "value": "2.0",
+     "value": "2.59",
      "type": "float",
      "evaltype": "float",
      "storageType": "float"
@@ -10027,7 +10027,7 @@
      "storageType": "distance"
     },
     "rough": {
-     "value": "0.0",
+     "value": "0.155",
      "type": "float",
      "evaltype": "percent",
      "storageType": "percent"
@@ -10087,13 +10087,13 @@
      "storageType": "integer"
     },
     "specAmt": {
-     "value": "0.05",
+     "value": "0.21",
      "type": "float",
      "evaltype": "percent",
      "storageType": "percent"
     },
     "specCol": {
-     "value": "(1.0000001192092896, 1.0000001192092896, 1.0000001192092896)",
+     "value": "(0.21404114365577698, 0.21404114365577698, 0.21404114365577698)",
      "type": "float",
      "evaltype": "color3",
      "storageType": "color3"
@@ -10105,7 +10105,7 @@
      "storageType": "percent"
     },
     "specRefIdx": {
-     "value": "0",
+     "value": "1",
      "type": "integer",
      "evaltype": "boolean",
      "storageType": "boolean"
@@ -10141,7 +10141,7 @@
      "storageType": "distance"
     },
     "subsDist": {
-     "value": "0.0023",
+     "value": "0.002300000051036477",
      "type": "float",
      "evaltype": "distance",
      "storageType": "distance"
@@ -10207,7 +10207,7 @@
      "storageType": "boolean"
     },
     "uvMap": {
-     "value": "",
+     "value": "Texture",
      "type": "string",
      "evaltype": "string",
      "storageType": "string"
@@ -10238,7 +10238,7 @@
      "storageType": "integer"
     },
     "blend": {
-     "value": "normal",
+     "value": "add",
      "type": "integer",
      "evaltype": "integer",
      "storageType": "integer"

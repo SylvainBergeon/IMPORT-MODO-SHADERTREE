@@ -310,7 +310,7 @@
    "storageType": "integer"
   },
   "frmRange": {
-   "value": "<lx.object.Unknown object at 0x58850d170>",
+   "value": "<lx.object.Unknown object at 0x5b25f2390>",
    "type": "string",
    "evaltype": "+intrange",
    "storageType": "+intrange"
@@ -9955,7 +9955,7 @@
      "storageType": "percent"
     },
     "refIndex": {
-     "value": "1.45",
+     "value": "1.4500000476837158",
      "type": "float",
      "evaltype": "float",
      "storageType": "float"
@@ -10177,7 +10177,7 @@
      "storageType": "color3"
     },
     "tranDist": {
-     "value": "0.13",
+     "value": "0.12999999523162842",
      "type": "float",
      "evaltype": "distance",
      "storageType": "distance"
@@ -10189,7 +10189,7 @@
      "storageType": "integer"
     },
     "tranRough": {
-     "value": "0.07",
+     "value": "0.045",
      "type": "float",
      "evaltype": "percent",
      "storageType": "percent"
@@ -10201,7 +10201,7 @@
      "storageType": "boolean"
     },
     "useRefIdx": {
-     "value": "1",
+     "value": "0",
      "type": "integer",
      "evaltype": "boolean",
      "storageType": "boolean"
