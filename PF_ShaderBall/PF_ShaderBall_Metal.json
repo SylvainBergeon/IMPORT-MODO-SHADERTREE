@@ -310,7 +310,7 @@
    "storageType": "integer"
   },
   "frmRange": {
-   "value": "<lx.object.Unknown object at 0x69ead9770>",
+   "value": "<lx.object.Unknown object at 0x635595710>",
    "type": "string",
    "evaltype": "+intrange",
    "storageType": "+intrange"
@@ -11262,7 +11262,7 @@
       "storageType": "percent"
      },
      "diffCol": {
-      "value": "(0.6, 0.6, 0.6)",
+      "value": "(0.24000000953674316, 0.5199999809265137, 0.0)",
       "type": "float",
       "evaltype": "color3",
       "storageType": "color3"
@@ -11394,7 +11394,7 @@
       "storageType": "color3"
      },
      "metallic": {
-      "value": "0.0",
+      "value": "1.0",
       "type": "float",
       "evaltype": "percent",
       "storageType": "percent"
@@ -11436,7 +11436,7 @@
       "storageType": "percent"
      },
      "refIndex": {
-      "value": "1.0",
+      "value": "5.44",
       "type": "float",
       "evaltype": "float",
       "storageType": "float"
@@ -11508,7 +11508,7 @@
       "storageType": "distance"
      },
      "rough": {
-      "value": "0.4",
+      "value": "0.18",
       "type": "float",
       "evaltype": "percent",
       "storageType": "percent"
@@ -11568,7 +11568,7 @@
       "storageType": "integer"
      },
      "specAmt": {
-      "value": "0.5",
+      "value": "3.37",
       "type": "float",
       "evaltype": "percent",
       "storageType": "percent"
@@ -11586,7 +11586,7 @@
       "storageType": "percent"
      },
      "specRefIdx": {
-      "value": "0",
+      "value": "1",
       "type": "integer",
       "evaltype": "boolean",
       "storageType": "boolean"
@@ -11682,7 +11682,7 @@
       "storageType": "boolean"
      },
      "useRefIdx": {
-      "value": "0",
+      "value": "1",
       "type": "integer",
       "evaltype": "boolean",
       "storageType": "boolean"
@@ -11955,6 +11955,826 @@
      },
      "effect": {
       "value": "metallic",
+      "type": "string",
+      "evaltype": "string",
+      "storageType": "string"
+     },
+     "enable": {
+      "value": "1",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "filter": {
+      "value": "eval",
+      "type": "eval",
+      "evaltype": "texFilter",
+      "storageType": "NONE"
+     },
+     "gamma": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "float",
+      "storageType": "float"
+     },
+     "gldisp": {
+      "value": "1",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "greenInv": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "ignSclGrp": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "invert": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "max": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "min": {
+      "value": "0.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "minSpot": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "float",
+      "storageType": "float"
+     },
+     "opacity": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "pixBlend": {
+      "value": "bilinear",
+      "type": "integer",
+      "evaltype": "integer",
+      "storageType": "integer"
+     },
+     "rawTextureAlpha": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "rawTextureColor": {
+      "value": "(0.0, 0.0, 0.0)",
+      "type": "float",
+      "evaltype": "color3",
+      "storageType": "color3"
+     },
+     "rawTextureValue": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "redInv": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "render": {
+      "value": "1",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "rgba": {
+      "value": "use",
+      "type": "integer",
+      "evaltype": "integer",
+      "storageType": "integer"
+     },
+     "sourceHigh": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "float",
+      "storageType": "float"
+     },
+     "sourceLow": {
+      "value": "0.0",
+      "type": "float",
+      "evaltype": "float",
+      "storageType": "float"
+     },
+     "swizzling": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "textureAlpha": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "textureColor": {
+      "value": "(0.0, 0.0, 0.0)",
+      "type": "float",
+      "evaltype": "color3",
+      "storageType": "color3"
+     },
+     "textureValue": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     }
+    }
+   },
+   "se1xef0c_4K_Metalness (Image) (2)": {
+    "name": "se1xef0c_4K_Metalness (Image) (2)",
+    "id": "imageMap002",
+    "type": "imageMap",
+    "channels": {
+     "aa": {
+      "value": "1",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "aaVal": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "alpha": {
+      "value": "use",
+      "type": "integer",
+      "evaltype": "integer",
+      "storageType": "integer"
+     },
+     "blend": {
+      "value": "normal",
+      "type": "integer",
+      "evaltype": "integer",
+      "storageType": "integer"
+     },
+     "blueInv": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "brightness": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "clamp": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "contrast": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "effect": {
+      "value": "flatness",
+      "type": "string",
+      "evaltype": "string",
+      "storageType": "string"
+     },
+     "enable": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "filter": {
+      "value": "eval",
+      "type": "eval",
+      "evaltype": "texFilter",
+      "storageType": "NONE"
+     },
+     "gamma": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "float",
+      "storageType": "float"
+     },
+     "gldisp": {
+      "value": "1",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "greenInv": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "ignSclGrp": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "invert": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "max": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "min": {
+      "value": "0.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "minSpot": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "float",
+      "storageType": "float"
+     },
+     "opacity": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "pixBlend": {
+      "value": "bilinear",
+      "type": "integer",
+      "evaltype": "integer",
+      "storageType": "integer"
+     },
+     "rawTextureAlpha": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "rawTextureColor": {
+      "value": "(0.0, 0.0, 0.0)",
+      "type": "float",
+      "evaltype": "color3",
+      "storageType": "color3"
+     },
+     "rawTextureValue": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "redInv": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "render": {
+      "value": "1",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "rgba": {
+      "value": "use",
+      "type": "integer",
+      "evaltype": "integer",
+      "storageType": "integer"
+     },
+     "sourceHigh": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "float",
+      "storageType": "float"
+     },
+     "sourceLow": {
+      "value": "0.0",
+      "type": "float",
+      "evaltype": "float",
+      "storageType": "float"
+     },
+     "swizzling": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "textureAlpha": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "textureColor": {
+      "value": "(0.0, 0.0, 0.0)",
+      "type": "float",
+      "evaltype": "color3",
+      "storageType": "color3"
+     },
+     "textureValue": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     }
+    }
+   },
+   "se1xef0c_4K_Metalness (Image) (3)": {
+    "name": "se1xef0c_4K_Metalness (Image) (3)",
+    "id": "imageMap003",
+    "type": "imageMap",
+    "channels": {
+     "aa": {
+      "value": "1",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "aaVal": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "alpha": {
+      "value": "use",
+      "type": "integer",
+      "evaltype": "integer",
+      "storageType": "integer"
+     },
+     "blend": {
+      "value": "normal",
+      "type": "integer",
+      "evaltype": "integer",
+      "storageType": "integer"
+     },
+     "blueInv": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "brightness": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "clamp": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "contrast": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "effect": {
+      "value": "sheen",
+      "type": "string",
+      "evaltype": "string",
+      "storageType": "string"
+     },
+     "enable": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "filter": {
+      "value": "eval",
+      "type": "eval",
+      "evaltype": "texFilter",
+      "storageType": "NONE"
+     },
+     "gamma": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "float",
+      "storageType": "float"
+     },
+     "gldisp": {
+      "value": "1",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "greenInv": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "ignSclGrp": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "invert": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "max": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "min": {
+      "value": "0.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "minSpot": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "float",
+      "storageType": "float"
+     },
+     "opacity": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "pixBlend": {
+      "value": "bilinear",
+      "type": "integer",
+      "evaltype": "integer",
+      "storageType": "integer"
+     },
+     "rawTextureAlpha": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "rawTextureColor": {
+      "value": "(0.0, 0.0, 0.0)",
+      "type": "float",
+      "evaltype": "color3",
+      "storageType": "color3"
+     },
+     "rawTextureValue": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "redInv": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "render": {
+      "value": "1",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "rgba": {
+      "value": "use",
+      "type": "integer",
+      "evaltype": "integer",
+      "storageType": "integer"
+     },
+     "sourceHigh": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "float",
+      "storageType": "float"
+     },
+     "sourceLow": {
+      "value": "0.0",
+      "type": "float",
+      "evaltype": "float",
+      "storageType": "float"
+     },
+     "swizzling": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "textureAlpha": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "textureColor": {
+      "value": "(0.0, 0.0, 0.0)",
+      "type": "float",
+      "evaltype": "color3",
+      "storageType": "color3"
+     },
+     "textureValue": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     }
+    }
+   },
+   "se1xef0c_4K_Metalness (Image) (4)": {
+    "name": "se1xef0c_4K_Metalness (Image) (4)",
+    "id": "imageMap008",
+    "type": "imageMap",
+    "channels": {
+     "aa": {
+      "value": "1",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "aaVal": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "alpha": {
+      "value": "use",
+      "type": "integer",
+      "evaltype": "integer",
+      "storageType": "integer"
+     },
+     "blend": {
+      "value": "normal",
+      "type": "integer",
+      "evaltype": "integer",
+      "storageType": "integer"
+     },
+     "blueInv": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "brightness": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "clamp": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "contrast": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "effect": {
+      "value": "sheenTint",
+      "type": "string",
+      "evaltype": "string",
+      "storageType": "string"
+     },
+     "enable": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "filter": {
+      "value": "eval",
+      "type": "eval",
+      "evaltype": "texFilter",
+      "storageType": "NONE"
+     },
+     "gamma": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "float",
+      "storageType": "float"
+     },
+     "gldisp": {
+      "value": "1",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "greenInv": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "ignSclGrp": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "invert": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "max": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "min": {
+      "value": "0.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "minSpot": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "float",
+      "storageType": "float"
+     },
+     "opacity": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "pixBlend": {
+      "value": "bilinear",
+      "type": "integer",
+      "evaltype": "integer",
+      "storageType": "integer"
+     },
+     "rawTextureAlpha": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "rawTextureColor": {
+      "value": "(0.0, 0.0, 0.0)",
+      "type": "float",
+      "evaltype": "color3",
+      "storageType": "color3"
+     },
+     "rawTextureValue": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "redInv": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "render": {
+      "value": "1",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "rgba": {
+      "value": "use",
+      "type": "integer",
+      "evaltype": "integer",
+      "storageType": "integer"
+     },
+     "sourceHigh": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "float",
+      "storageType": "float"
+     },
+     "sourceLow": {
+      "value": "0.0",
+      "type": "float",
+      "evaltype": "float",
+      "storageType": "float"
+     },
+     "swizzling": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "textureAlpha": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "textureColor": {
+      "value": "(0.0, 0.0, 0.0)",
+      "type": "float",
+      "evaltype": "color3",
+      "storageType": "color3"
+     },
+     "textureValue": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     }
+    }
+   },
+   "se1xef0c_4K_Metalness (Image) (5)": {
+    "name": "se1xef0c_4K_Metalness (Image) (5)",
+    "id": "imageMap014",
+    "type": "imageMap",
+    "channels": {
+     "aa": {
+      "value": "1",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "aaVal": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "alpha": {
+      "value": "use",
+      "type": "integer",
+      "evaltype": "integer",
+      "storageType": "integer"
+     },
+     "blend": {
+      "value": "normal",
+      "type": "integer",
+      "evaltype": "integer",
+      "storageType": "integer"
+     },
+     "blueInv": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "brightness": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "clamp": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "contrast": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "effect": {
+      "value": "specularTint",
       "type": "string",
       "evaltype": "string",
       "storageType": "string"
