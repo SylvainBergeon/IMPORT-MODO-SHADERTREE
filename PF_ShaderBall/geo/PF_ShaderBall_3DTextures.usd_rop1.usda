@@ -1,0 +1,307 @@
+#usda 1.0
+(
+    endTimeCode = 1
+    framesPerSecond = 24
+    metersPerUnit = 1
+    startTimeCode = 1
+    subLayers = [
+        @../PF_ShaderBall_3Dtexture.usda@,
+        @./stage/sopcreate1/sopnet/OUT.usd@
+    ]
+    timeCodesPerSecond = 24
+    upAxis = "Y"
+)
+
+over "geo"
+{
+    matrix4d xformOp:transform:xform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+    uniform token[] xformOpOrder = ["xformOp:transform:xform"]
+}
+
+def Scope "materials"
+{
+    def Material "_3dnoise_mat"
+    {
+        token outputs:mtlx:displacement.connect = </materials/_3dnoise_mat/mtlxdisplacement.outputs:out>
+        token outputs:mtlx:surface.connect = </materials/_3dnoise_mat/mtlxstandard_surface.outputs:out>
+        token outputs:surface.connect = </materials/_3dnoise_mat/mtlxstandard_preview.outputs:surface>
+
+        def Shader "mtlxstandard_surface"
+        {
+            uniform token info:id = "ND_standard_surface_surfaceshader"
+            float inputs:base (
+                customData = {
+                    dictionary HoudiniPreviewTags = {
+                        double default_value = 1
+                        string ogl_diff_intensity = "1"
+                    }
+                }
+            )
+            color3f inputs:base_color = (0.801, 0.45039248, 0.17525) (
+                customData = {
+                    dictionary HoudiniPreviewTags = {
+                        double3 default_value = (0.8, 0.8, 0.8)
+                        string ogl_diff = "1"
+                    }
+                }
+            )
+            float inputs:coat (
+                customData = {
+                    dictionary HoudiniPreviewTags = {
+                        double default_value = 0
+                        string ogl_coat_intensity = "1"
+                    }
+                }
+            )
+            float inputs:coat_roughness (
+                customData = {
+                    dictionary HoudiniPreviewTags = {
+                        double default_value = 0.1
+                        string ogl_coat_rough = "1"
+                    }
+                }
+            )
+            float inputs:emission (
+                customData = {
+                    dictionary HoudiniPreviewTags = {
+                        double default_value = 0
+                        string ogl_emit_intensity = "1"
+                    }
+                }
+            )
+            color3f inputs:emission_color (
+                customData = {
+                    dictionary HoudiniPreviewTags = {
+                        double3 default_value = (1, 1, 1)
+                        string ogl_emit = "1"
+                    }
+                }
+            )
+            float inputs:metalness = 1 (
+                customData = {
+                    dictionary HoudiniPreviewTags = {
+                        double default_value = 0
+                        string ogl_metallic = "1"
+                    }
+                }
+            )
+            float inputs:metalness.connect = </materials/_3dnoise_mat/hmtlxcomplement1.outputs:complement>
+            vector3f inputs:normal.connect = </materials/_3dnoise_mat/mtlxmix1.outputs:out>
+            float inputs:specular (
+                customData = {
+                    dictionary HoudiniPreviewTags = {
+                        double default_value = 1
+                        string ogl_spec_intensity = "1"
+                    }
+                }
+            )
+            float inputs:specular.connect = </materials/_3dnoise_mat/hmtlxcomplement2.outputs:complement>
+            color3f inputs:specular_color (
+                customData = {
+                    dictionary HoudiniPreviewTags = {
+                        double3 default_value = (1, 1, 1)
+                        string ogl_spec = "1"
+                    }
+                }
+            )
+            float inputs:specular_IOR = 2.596 (
+                customData = {
+                    dictionary HoudiniPreviewTags = {
+                        double default_value = 1.5
+                        string ogl_ior = "1"
+                    }
+                }
+            )
+            float inputs:specular_roughness = 0.079 (
+                customData = {
+                    dictionary HoudiniPreviewTags = {
+                        double default_value = 0.2
+                        string ogl_rough = "1"
+                    }
+                }
+            )
+            float inputs:specular_roughness.connect = </materials/_3dnoise_mat/hmtlxcomplement1.outputs:complement>
+            float inputs:transmission (
+                customData = {
+                    dictionary HoudiniPreviewTags = {
+                        double default_value = 0
+                        string ogl_transparency = "1"
+                    }
+                }
+            )
+            token outputs:out
+        }
+
+        def NodeGraph "hmtlxcomplement1"
+        {
+            float inputs:value = 1 (
+                displayName = "Value"
+            )
+            float inputs:value.connect = </materials/_3dnoise_mat/mtlxremap2.outputs:out>
+            float outputs:complement.connect = </materials/_3dnoise_mat/hmtlxcomplement1/mtlxadd1.outputs:out>
+
+            def Shader "mtlxadd1"
+            {
+                uniform token info:id = "ND_add_float"
+                float inputs:in1.connect = </materials/_3dnoise_mat/hmtlxcomplement1/mtlxmultiply1.outputs:out>
+                float inputs:in2 = 1
+                float outputs:out
+            }
+
+            def Shader "mtlxmultiply1"
+            {
+                uniform token info:id = "ND_multiply_float"
+                float inputs:in1.connect = </materials/_3dnoise_mat/hmtlxcomplement1.inputs:value>
+                float inputs:in2 = -1
+                float outputs:out
+            }
+        }
+
+        def Shader "mtlxremap2"
+        {
+            uniform token info:id = "ND_remap_float"
+            float inputs:in.connect = </materials/_3dnoise_mat/mtlxnoise3d2.outputs:out>
+            float inputs:inhigh = 1.05
+            float inputs:inlow = 0.71
+            float outputs:out
+        }
+
+        def Shader "mtlxnoise3d2"
+        {
+            uniform token info:id = "ND_noise3d_float"
+            float inputs:pivot = 0.88
+            vector3f inputs:position.connect = </materials/_3dnoise_mat/mtlxmultiply2.outputs:out>
+            float outputs:out
+        }
+
+        def Shader "mtlxmultiply2"
+        {
+            uniform token info:id = "ND_multiply_vector3"
+            vector3f inputs:in1.connect = </materials/_3dnoise_mat/mtlxrotate3d1.outputs:out>
+            vector3f inputs:in2 = (3.642, 3.642, 3.642)
+            vector3f outputs:out
+        }
+
+        def Shader "mtlxrotate3d1"
+        {
+            uniform token info:id = "ND_rotate3d_vector3"
+            float inputs:amount = 3.66
+            vector3f inputs:in.connect = </materials/_3dnoise_mat/mtlxadd1.outputs:out>
+            vector3f outputs:out
+        }
+
+        def Shader "mtlxadd1"
+        {
+            uniform token info:id = "ND_add_vector3"
+            vector3f inputs:in1.connect = </materials/_3dnoise_mat/mtlxmultiply1.outputs:out>
+            vector3f inputs:in2 = (0.9, 0, 0)
+            vector3f outputs:out
+        }
+
+        def Shader "mtlxmultiply1"
+        {
+            uniform token info:id = "ND_multiply_vector3"
+            vector3f inputs:in1.connect = </materials/_3dnoise_mat/mtlxposition1.outputs:out>
+            vector3f inputs:in2 = (112.952, 112.952, 112.952)
+            vector3f outputs:out
+        }
+
+        def Shader "mtlxposition1"
+        {
+            uniform token info:id = "ND_position_vector3"
+            string inputs:space = "world"
+            vector3f outputs:out
+        }
+
+        def NodeGraph "hmtlxcomplement2"
+        {
+            float inputs:value = 1 (
+                displayName = "Value"
+            )
+            float inputs:value.connect = </materials/_3dnoise_mat/mtlxremap1.outputs:out>
+            float outputs:complement.connect = </materials/_3dnoise_mat/hmtlxcomplement2/mtlxadd1.outputs:out>
+
+            def Shader "mtlxadd1"
+            {
+                uniform token info:id = "ND_add_float"
+                float inputs:in1.connect = </materials/_3dnoise_mat/hmtlxcomplement2/mtlxmultiply1.outputs:out>
+                float inputs:in2 = 1
+                float outputs:out
+            }
+
+            def Shader "mtlxmultiply1"
+            {
+                uniform token info:id = "ND_multiply_float"
+                float inputs:in1.connect = </materials/_3dnoise_mat/hmtlxcomplement2.inputs:value>
+                float inputs:in2 = -1
+                float outputs:out
+            }
+        }
+
+        def Shader "mtlxremap1"
+        {
+            uniform token info:id = "ND_remap_float"
+            float inputs:in.connect = </materials/_3dnoise_mat/mtlxblur1.outputs:out>
+            float outputs:out
+        }
+
+        def Shader "mtlxblur1"
+        {
+            uniform token info:id = "ND_blur_float"
+            string inputs:filtertype = "gaussian"
+            float inputs:in.connect = </materials/_3dnoise_mat/mtlxworleynoise3d1.outputs:out>
+            float inputs:size = 1.59
+            float outputs:out
+        }
+
+        def Shader "mtlxworleynoise3d1"
+        {
+            uniform token info:id = "ND_worleynoise3d_float"
+            float inputs:jitter = 1.43
+            vector3f inputs:position.connect = </materials/_3dnoise_mat/mtlxrotate3d1.outputs:out>
+            float outputs:out
+        }
+
+        def Shader "mtlxmix1"
+        {
+            uniform token info:id = "ND_mix_vector3"
+            vector3f inputs:bg = (1, 1, 1)
+            vector3f inputs:fg.connect = </materials/_3dnoise_mat/mtlxbump1.outputs:out>
+            float inputs:mix.connect = </materials/_3dnoise_mat/mtlxremap1.outputs:out>
+            vector3f outputs:out
+        }
+
+        def Shader "mtlxbump1"
+        {
+            uniform token info:id = "ND_bump_vector3"
+            float inputs:height.connect = </materials/_3dnoise_mat/mtlxnoise3d2.outputs:out>
+            float inputs:scale = 0.62
+            vector3f outputs:out
+        }
+
+        def Shader "mtlxdisplacement"
+        {
+            uniform token info:id = "ND_displacement_float"
+            float inputs:displacement.connect = </materials/_3dnoise_mat/mtlxremap1.outputs:out>
+            float inputs:scale = 0.0091
+            token outputs:out
+        }
+
+        def Shader "mtlxstandard_preview" (
+            customData = {
+                bool HoudiniIsAutoCreatedShader = 1
+            }
+        )
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            float inputs:clearcoatRoughness = 0.1
+            color3f inputs:diffuseColor = (0.801, 0.45039248, 0.17525)
+            float inputs:ior = 2.596
+            float inputs:metallic = 1
+            float inputs:roughness = 0.079
+            color3f inputs:specularColor = (1, 1, 1)
+            token outputs:surface
+        }
+    }
+}
+
