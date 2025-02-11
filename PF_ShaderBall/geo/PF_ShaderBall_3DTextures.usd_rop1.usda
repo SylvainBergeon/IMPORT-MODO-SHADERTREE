@@ -1,22 +1,12 @@
 #usda 1.0
 (
-    endTimeCode = 1
+    endTimeCode = 240
     framesPerSecond = 24
     metersPerUnit = 1
-    startTimeCode = 1
-    subLayers = [
-        @../PF_ShaderBall_3Dtexture.usda@,
-        @./stage/sopcreate1/sopnet/OUT.usd@
-    ]
+    startTimeCode = 240
     timeCodesPerSecond = 24
     upAxis = "Y"
 )
-
-over "geo"
-{
-    matrix4d xformOp:transform:xform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
-    uniform token[] xformOpOrder = ["xformOp:transform:xform"]
-}
 
 def Scope "materials"
 {
@@ -77,7 +67,7 @@ def Scope "materials"
                     }
                 }
             )
-            float inputs:metalness = 1 (
+            float inputs:metalness (
                 customData = {
                     dictionary HoudiniPreviewTags = {
                         double default_value = 0
@@ -85,9 +75,7 @@ def Scope "materials"
                     }
                 }
             )
-            float inputs:metalness.connect = </materials/_3dnoise_mat/hmtlxcomplement1.outputs:complement>
-            vector3f inputs:normal.connect = </materials/_3dnoise_mat/mtlxmix1.outputs:out>
-            float inputs:specular (
+            float inputs:specular = 0 (
                 customData = {
                     dictionary HoudiniPreviewTags = {
                         double default_value = 1
@@ -95,7 +83,6 @@ def Scope "materials"
                     }
                 }
             )
-            float inputs:specular.connect = </materials/_3dnoise_mat/hmtlxcomplement2.outputs:complement>
             color3f inputs:specular_color (
                 customData = {
                     dictionary HoudiniPreviewTags = {
@@ -104,7 +91,7 @@ def Scope "materials"
                     }
                 }
             )
-            float inputs:specular_IOR = 2.596 (
+            float inputs:specular_IOR = 1.752 (
                 customData = {
                     dictionary HoudiniPreviewTags = {
                         double default_value = 1.5
@@ -112,7 +99,7 @@ def Scope "materials"
                     }
                 }
             )
-            float inputs:specular_roughness = 0.079 (
+            float inputs:specular_roughness = 0.029 (
                 customData = {
                     dictionary HoudiniPreviewTags = {
                         double default_value = 0.2
@@ -120,7 +107,6 @@ def Scope "materials"
                     }
                 }
             )
-            float inputs:specular_roughness.connect = </materials/_3dnoise_mat/hmtlxcomplement1.outputs:complement>
             float inputs:transmission (
                 customData = {
                     dictionary HoudiniPreviewTags = {
@@ -132,159 +118,85 @@ def Scope "materials"
             token outputs:out
         }
 
-        def NodeGraph "hmtlxcomplement1"
-        {
-            float inputs:value = 1 (
-                displayName = "Value"
-            )
-            float inputs:value.connect = </materials/_3dnoise_mat/mtlxremap2.outputs:out>
-            float outputs:complement.connect = </materials/_3dnoise_mat/hmtlxcomplement1/mtlxadd1.outputs:out>
-
-            def Shader "mtlxadd1"
-            {
-                uniform token info:id = "ND_add_float"
-                float inputs:in1.connect = </materials/_3dnoise_mat/hmtlxcomplement1/mtlxmultiply1.outputs:out>
-                float inputs:in2 = 1
-                float outputs:out
-            }
-
-            def Shader "mtlxmultiply1"
-            {
-                uniform token info:id = "ND_multiply_float"
-                float inputs:in1.connect = </materials/_3dnoise_mat/hmtlxcomplement1.inputs:value>
-                float inputs:in2 = -1
-                float outputs:out
-            }
-        }
-
-        def Shader "mtlxremap2"
-        {
-            uniform token info:id = "ND_remap_float"
-            float inputs:in.connect = </materials/_3dnoise_mat/mtlxnoise3d2.outputs:out>
-            float inputs:inhigh = 1.05
-            float inputs:inlow = 0.71
-            float outputs:out
-        }
-
-        def Shader "mtlxnoise3d2"
-        {
-            uniform token info:id = "ND_noise3d_float"
-            float inputs:pivot = 0.88
-            vector3f inputs:position.connect = </materials/_3dnoise_mat/mtlxmultiply2.outputs:out>
-            float outputs:out
-        }
-
-        def Shader "mtlxmultiply2"
-        {
-            uniform token info:id = "ND_multiply_vector3"
-            vector3f inputs:in1.connect = </materials/_3dnoise_mat/mtlxrotate3d1.outputs:out>
-            vector3f inputs:in2 = (3.642, 3.642, 3.642)
-            vector3f outputs:out
-        }
-
-        def Shader "mtlxrotate3d1"
-        {
-            uniform token info:id = "ND_rotate3d_vector3"
-            float inputs:amount = 3.66
-            vector3f inputs:in.connect = </materials/_3dnoise_mat/mtlxadd1.outputs:out>
-            vector3f outputs:out
-        }
-
-        def Shader "mtlxadd1"
-        {
-            uniform token info:id = "ND_add_vector3"
-            vector3f inputs:in1.connect = </materials/_3dnoise_mat/mtlxmultiply1.outputs:out>
-            vector3f inputs:in2 = (0.9, 0, 0)
-            vector3f outputs:out
-        }
-
-        def Shader "mtlxmultiply1"
-        {
-            uniform token info:id = "ND_multiply_vector3"
-            vector3f inputs:in1.connect = </materials/_3dnoise_mat/mtlxposition1.outputs:out>
-            vector3f inputs:in2 = (112.952, 112.952, 112.952)
-            vector3f outputs:out
-        }
-
-        def Shader "mtlxposition1"
-        {
-            uniform token info:id = "ND_position_vector3"
-            string inputs:space = "world"
-            vector3f outputs:out
-        }
-
-        def NodeGraph "hmtlxcomplement2"
-        {
-            float inputs:value = 1 (
-                displayName = "Value"
-            )
-            float inputs:value.connect = </materials/_3dnoise_mat/mtlxremap1.outputs:out>
-            float outputs:complement.connect = </materials/_3dnoise_mat/hmtlxcomplement2/mtlxadd1.outputs:out>
-
-            def Shader "mtlxadd1"
-            {
-                uniform token info:id = "ND_add_float"
-                float inputs:in1.connect = </materials/_3dnoise_mat/hmtlxcomplement2/mtlxmultiply1.outputs:out>
-                float inputs:in2 = 1
-                float outputs:out
-            }
-
-            def Shader "mtlxmultiply1"
-            {
-                uniform token info:id = "ND_multiply_float"
-                float inputs:in1.connect = </materials/_3dnoise_mat/hmtlxcomplement2.inputs:value>
-                float inputs:in2 = -1
-                float outputs:out
-            }
-        }
-
-        def Shader "mtlxremap1"
-        {
-            uniform token info:id = "ND_remap_float"
-            float inputs:in.connect = </materials/_3dnoise_mat/mtlxblur1.outputs:out>
-            float outputs:out
-        }
-
-        def Shader "mtlxblur1"
-        {
-            uniform token info:id = "ND_blur_float"
-            string inputs:filtertype = "gaussian"
-            float inputs:in.connect = </materials/_3dnoise_mat/mtlxworleynoise3d1.outputs:out>
-            float inputs:size = 1.59
-            float outputs:out
-        }
-
-        def Shader "mtlxworleynoise3d1"
-        {
-            uniform token info:id = "ND_worleynoise3d_float"
-            float inputs:jitter = 1.43
-            vector3f inputs:position.connect = </materials/_3dnoise_mat/mtlxrotate3d1.outputs:out>
-            float outputs:out
-        }
-
-        def Shader "mtlxmix1"
-        {
-            uniform token info:id = "ND_mix_vector3"
-            vector3f inputs:bg = (1, 1, 1)
-            vector3f inputs:fg.connect = </materials/_3dnoise_mat/mtlxbump1.outputs:out>
-            float inputs:mix.connect = </materials/_3dnoise_mat/mtlxremap1.outputs:out>
-            vector3f outputs:out
-        }
-
-        def Shader "mtlxbump1"
-        {
-            uniform token info:id = "ND_bump_vector3"
-            float inputs:height.connect = </materials/_3dnoise_mat/mtlxnoise3d2.outputs:out>
-            float inputs:scale = 0.62
-            vector3f outputs:out
-        }
-
         def Shader "mtlxdisplacement"
         {
             uniform token info:id = "ND_displacement_float"
-            float inputs:displacement.connect = </materials/_3dnoise_mat/mtlxremap1.outputs:out>
-            float inputs:scale = 0.0091
+            float inputs:displacement.connect = </materials/_3dnoise_mat/mtlxremap3.outputs:out>
+            float inputs:scale = 0.005
             token outputs:out
+        }
+
+        def Shader "mtlxremap3"
+        {
+            uniform token info:id = "ND_remap_float"
+            float inputs:in.connect = </materials/_3dnoise_mat/mtlxunifiednoise3d1.outputs:out>
+            float inputs:inlow = -1
+            float outputs:out
+        }
+
+        def Shader "mtlxunifiednoise3d1"
+        {
+            uniform token info:id = "ND_unifiednoise3d_float"
+            int inputs:clampoutput = 0
+            vector3f inputs:position.connect = </materials/_3dnoise_mat/subnet1.outputs:out>
+            int inputs:type = 3
+            float outputs:out
+        }
+
+        def NodeGraph "subnet1"
+        {
+            vector3f inputs:Frequency = (100, 100, 100) (
+                displayName = "Frequency"
+            )
+            float inputs:rotate = 0 (
+                displayName = "Rotate"
+            )
+            vector3f inputs:rotate_aaxis = (0, 1, 0) (
+                displayName = "Rotation Axis"
+            )
+            token inputs:space = "world" (
+                displayName = "Space"
+            )
+            vector3f inputs:Translate = (0, 0, 0) (
+                displayName = "Translate"
+            )
+            vector3f outputs:out.connect = </materials/_3dnoise_mat/subnet1/mtlxrotate3d1.outputs:out>
+
+            def Shader "mtlxrotate3d1"
+            {
+                uniform token info:id = "ND_rotate3d_vector3"
+                float inputs:amount = 3.66
+                float inputs:amount.connect = </materials/_3dnoise_mat/subnet1.inputs:rotate>
+                vector3f inputs:axis.connect = </materials/_3dnoise_mat/subnet1.inputs:rotate_aaxis>
+                vector3f inputs:in.connect = </materials/_3dnoise_mat/subnet1/mtlxadd1.outputs:out>
+                vector3f outputs:out
+            }
+
+            def Shader "mtlxadd1"
+            {
+                uniform token info:id = "ND_add_vector3"
+                vector3f inputs:in1.connect = </materials/_3dnoise_mat/subnet1/mtlxmultiply1.outputs:out>
+                vector3f inputs:in2 = (0.9, 0, 0)
+                vector3f inputs:in2.connect = </materials/_3dnoise_mat/subnet1.inputs:Translate>
+                vector3f outputs:out
+            }
+
+            def Shader "mtlxmultiply1"
+            {
+                uniform token info:id = "ND_multiply_vector3"
+                vector3f inputs:in1.connect = </materials/_3dnoise_mat/subnet1/mtlxposition1.outputs:out>
+                vector3f inputs:in2 = (112.952, 112.952, 112.952)
+                vector3f inputs:in2.connect = </materials/_3dnoise_mat/subnet1.inputs:Frequency>
+                vector3f outputs:out
+            }
+
+            def Shader "mtlxposition1"
+            {
+                uniform token info:id = "ND_position_vector3"
+                string inputs:space = "world"
+                string inputs:space.connect = </materials/_3dnoise_mat/subnet1.inputs:space>
+                vector3f outputs:out
+            }
         }
 
         def Shader "mtlxstandard_preview" (
@@ -296,10 +208,8 @@ def Scope "materials"
             uniform token info:id = "UsdPreviewSurface"
             float inputs:clearcoatRoughness = 0.1
             color3f inputs:diffuseColor = (0.801, 0.45039248, 0.17525)
-            float inputs:ior = 2.596
-            float inputs:metallic = 1
-            float inputs:roughness = 0.079
-            color3f inputs:specularColor = (1, 1, 1)
+            float inputs:ior = 1.752
+            float inputs:roughness = 0.029
             token outputs:surface
         }
     }

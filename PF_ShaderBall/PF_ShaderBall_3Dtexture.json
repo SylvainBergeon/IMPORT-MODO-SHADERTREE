@@ -310,7 +310,7 @@
    "storageType": "integer"
   },
   "frmRange": {
-   "value": "<lx.object.Unknown object at 0x63dc9f3f0>",
+   "value": "<lx.object.Unknown object at 0x450cd25f0>",
    "type": "string",
    "evaltype": "+intrange",
    "storageType": "+intrange"
@@ -9781,7 +9781,7 @@
      "storageType": "percent"
     },
     "diffCol": {
-     "value": "(1.0, 1.0, 1.0)",
+     "value": "(1.0, 0.4919145107269287, 0.0)",
      "type": "float",
      "evaltype": "color3",
      "storageType": "color3"
@@ -9805,7 +9805,7 @@
      "storageType": "float"
     },
     "displace": {
-     "value": "0.0010000000474974513",
+     "value": "0.009999999776482582",
      "type": "float",
      "evaltype": "distance",
      "storageType": "distance"
@@ -10129,19 +10129,19 @@
      "storageType": "percent"
     },
     "subsCol": {
-     "value": "(0.8, 0.8, 0.8)",
+     "value": "(0.9399999976158142, 0.9800000190734863, 1.0)",
      "type": "float",
      "evaltype": "color3",
      "storageType": "color3"
     },
     "subsDepth": {
-     "value": "1.0",
+     "value": "0.1",
      "type": "float",
      "evaltype": "distance",
      "storageType": "distance"
     },
     "subsDist": {
-     "value": "0.002300000051036477",
+     "value": "0.0015",
      "type": "float",
      "evaltype": "distance",
      "storageType": "distance"
@@ -10274,7 +10274,7 @@
      "storageType": "string"
     },
     "enable": {
-     "value": "1",
+     "value": "0",
      "type": "integer",
      "evaltype": "boolean",
      "storageType": "boolean"
@@ -10419,9 +10419,196 @@
     }
    }
   },
+  "Noise": {
+   "name": "Noise",
+   "id": "noise001",
+   "type": "noise",
+   "channels": {
+    "alpha1": {
+     "value": "1.0",
+     "type": "float",
+     "evaltype": "percent",
+     "storageType": "percent"
+    },
+    "alpha2": {
+     "value": "1.0",
+     "type": "float",
+     "evaltype": "percent",
+     "storageType": "percent"
+    },
+    "ampRatio": {
+     "value": "0.5",
+     "type": "float",
+     "evaltype": "float",
+     "storageType": "float"
+    },
+    "angle": {
+     "value": "0.0",
+     "type": "float",
+     "evaltype": "float",
+     "storageType": "float"
+    },
+    "bias": {
+     "value": "0.5",
+     "type": "float",
+     "evaltype": "percent",
+     "storageType": "percent"
+    },
+    "blend": {
+     "value": "normal",
+     "type": "integer",
+     "evaltype": "integer",
+     "storageType": "integer"
+    },
+    "color1": {
+     "value": "(0.0, 0.0, 0.0)",
+     "type": "float",
+     "evaltype": "color3",
+     "storageType": "color3"
+    },
+    "color2": {
+     "value": "(1.0, 1.0, 1.0)",
+     "type": "float",
+     "evaltype": "color3",
+     "storageType": "color3"
+    },
+    "effect": {
+     "value": "displace",
+     "type": "string",
+     "evaltype": "string",
+     "storageType": "string"
+    },
+    "enable": {
+     "value": "1",
+     "type": "integer",
+     "evaltype": "boolean",
+     "storageType": "boolean"
+    },
+    "filter": {
+     "value": "eval",
+     "type": "eval",
+     "evaltype": "texFilter",
+     "storageType": "NONE"
+    },
+    "flowNoise": {
+     "value": "0",
+     "type": "integer",
+     "evaltype": "boolean",
+     "storageType": "boolean"
+    },
+    "freqRatio": {
+     "value": "2.0",
+     "type": "float",
+     "evaltype": "float",
+     "storageType": "float"
+    },
+    "freqs": {
+     "value": "2",
+     "type": "integer",
+     "evaltype": "integer",
+     "storageType": "integer"
+    },
+    "gain": {
+     "value": "0.5",
+     "type": "float",
+     "evaltype": "percent",
+     "storageType": "percent"
+    },
+    "gldisp": {
+     "value": "1",
+     "type": "integer",
+     "evaltype": "boolean",
+     "storageType": "boolean"
+    },
+    "ignSclGrp": {
+     "value": "0",
+     "type": "integer",
+     "evaltype": "boolean",
+     "storageType": "boolean"
+    },
+    "invert": {
+     "value": "0",
+     "type": "integer",
+     "evaltype": "boolean",
+     "storageType": "boolean"
+    },
+    "opacity": {
+     "value": "1.0",
+     "type": "float",
+     "evaltype": "percent",
+     "storageType": "percent"
+    },
+    "rawTextureAlpha": {
+     "value": "1.0",
+     "type": "float",
+     "evaltype": "percent",
+     "storageType": "percent"
+    },
+    "rawTextureColor": {
+     "value": "(0.0, 0.0, 0.0)",
+     "type": "float",
+     "evaltype": "color3",
+     "storageType": "color3"
+    },
+    "rawTextureValue": {
+     "value": "1.0",
+     "type": "float",
+     "evaltype": "percent",
+     "storageType": "percent"
+    },
+    "render": {
+     "value": "1",
+     "type": "integer",
+     "evaltype": "boolean",
+     "storageType": "boolean"
+    },
+    "smoothTops": {
+     "value": "0.0",
+     "type": "float",
+     "evaltype": "float",
+     "storageType": "float"
+    },
+    "textureAlpha": {
+     "value": "1.0",
+     "type": "float",
+     "evaltype": "percent",
+     "storageType": "percent"
+    },
+    "textureColor": {
+     "value": "(0.0, 0.0, 0.0)",
+     "type": "float",
+     "evaltype": "color3",
+     "storageType": "color3"
+    },
+    "textureValue": {
+     "value": "1.0",
+     "type": "float",
+     "evaltype": "percent",
+     "storageType": "percent"
+    },
+    "type": {
+     "value": "fractal",
+     "type": "integer",
+     "evaltype": "integer",
+     "storageType": "integer"
+    },
+    "value1": {
+     "value": "-1.0",
+     "type": "float",
+     "evaltype": "percent",
+     "storageType": "percent"
+    },
+    "value2": {
+     "value": "1.0",
+     "type": "float",
+     "evaltype": "percent",
+     "storageType": "percent"
+    }
+   }
+  },
   "Cellular": {
    "name": "Cellular",
-   "id": "cellular001",
+   "id": "cellular018",
    "type": "cellular",
    "channels": {
     "alpha1": {
@@ -10473,13 +10660,13 @@
      "storageType": "color3"
     },
     "effect": {
-     "value": "diffColor",
+     "value": "displace",
      "type": "string",
      "evaltype": "string",
      "storageType": "string"
     },
     "enable": {
-     "value": "1",
+     "value": "0",
      "type": "integer",
      "evaltype": "boolean",
      "storageType": "boolean"
@@ -10497,7 +10684,7 @@
      "storageType": "float"
     },
     "freqs": {
-     "value": "1",
+     "value": "3",
      "type": "integer",
      "evaltype": "integer",
      "storageType": "integer"
