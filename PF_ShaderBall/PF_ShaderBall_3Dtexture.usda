@@ -441,7 +441,7 @@ def Scope "shadertree"
             float inputs:specular_anisotropy = 0
             color3f inputs:specular_color = (0.21404114, 0.21404114, 0.21404114)
             float inputs:specular_IOR = 1
-            float inputs:specular_roughness = 0.155
+            float inputs:specular_roughness = 0
             float inputs:subsurface = 0
             color3f inputs:subsurface_color = (0.94, 0.98, 1)
             float inputs:subsurface_radius = 0.1
@@ -458,9 +458,9 @@ def Scope "shadertree"
         def NodeGraph "Noise_Texture"
         {
             vector3f inputs:axis = (-0, 0, 0)
-            vector3f inputs:position = (-5.5879354e-9, 0.04885673, 0.00095784105)
+            vector3f inputs:position = (0, 0, 0)
             float inputs:rotation = 0
-            vector3f inputs:scale = (0.01, 0.01, 0.01)
+            vector3f inputs:scale = (200, 200, 200)
             string inputs:space = "world"
             vector3f outputs:out.connect = </shadertree/Shaderball_Material/Noise_Texture/translate.outputs:out>
 
@@ -479,20 +479,12 @@ def Scope "shadertree"
                 vector3f outputs:out
             }
 
-            def Shader "rescale"
-            {
-                uniform token info:id = "ND_multiply_vector3"
-                vector3f inputs:in1.connect = </shadertree/Shaderball_Material/Noise_Texture/scale.outputs:out>
-                vector3f inputs:in2 = (10000, 10000, 10000)
-                vector3f outputs:out
-            }
-
             def Shader "rotation"
             {
                 uniform token info:id = "ND_rotate3d_vector3"
                 float inputs:amount.connect = </shadertree/Shaderball_Material/Noise_Texture.inputs:rotation>
                 vector3f inputs:axis.connect = </shadertree/Shaderball_Material/Noise_Texture.inputs:axis>
-                vector3f inputs:in.connect = </shadertree/Shaderball_Material/Noise_Texture/rescale.outputs:out>
+                vector3f inputs:in.connect = </shadertree/Shaderball_Material/Noise_Texture/scale.outputs:out>
                 vector3f outputs:out
             }
 
@@ -514,10 +506,10 @@ def Scope "shadertree"
             int inputs:octaves = 2
             vector3f inputs:offset = (0, 0, 0)
             float inputs:outmax = 1
-            float inputs:outmin = -1
+            float inputs:outmin = 0.75
             vector3f inputs:position.connect = </shadertree/Shaderball_Material/Noise_Texture.outputs:out>
             int inputs:type = 3
-            float outputs:diminish = 0.5
+            float outputs:diminish = 1
             float outputs:lacunarity = 2
             float outputs:out
         }
@@ -526,7 +518,7 @@ def Scope "shadertree"
         {
             uniform token info:id = "ND_displacement_float"
             float inputs:displacement.connect = </shadertree/Shaderball_Material/Noise.outputs:out>
-            float inputs:scale = 0.01
+            float inputs:scale = 0
             float outputs:out
         }
     }

@@ -310,7 +310,7 @@
    "storageType": "integer"
   },
   "frmRange": {
-   "value": "<lx.object.Unknown object at 0x450cd25f0>",
+   "value": "<lx.object.Unknown object at 0x45db5c790>",
    "type": "string",
    "evaltype": "+intrange",
    "storageType": "+intrange"
@@ -9805,7 +9805,7 @@
      "storageType": "float"
     },
     "displace": {
-     "value": "0.009999999776482582",
+     "value": "0.0",
      "type": "float",
      "evaltype": "distance",
      "storageType": "distance"
@@ -9955,7 +9955,7 @@
      "storageType": "percent"
     },
     "refIndex": {
-     "value": "2.5899999141693115",
+     "value": "1.0",
      "type": "float",
      "evaltype": "float",
      "storageType": "float"
@@ -10027,7 +10027,7 @@
      "storageType": "distance"
     },
     "rough": {
-     "value": "0.1550000011920929",
+     "value": "0.0",
      "type": "float",
      "evaltype": "percent",
      "storageType": "percent"
@@ -10087,7 +10087,7 @@
      "storageType": "integer"
     },
     "specAmt": {
-     "value": "0.0",
+     "value": "1.0",
      "type": "float",
      "evaltype": "percent",
      "storageType": "percent"
@@ -10135,13 +10135,13 @@
      "storageType": "color3"
     },
     "subsDepth": {
-     "value": "0.1",
+     "value": "0.10000000149011612",
      "type": "float",
      "evaltype": "distance",
      "storageType": "distance"
     },
     "subsDist": {
-     "value": "0.0015",
+     "value": "0.001500000013038516",
      "type": "float",
      "evaltype": "distance",
      "storageType": "distance"
@@ -10201,7 +10201,7 @@
      "storageType": "boolean"
     },
     "useRefIdx": {
-     "value": "0",
+     "value": "1",
      "type": "integer",
      "evaltype": "boolean",
      "storageType": "boolean"
@@ -10437,7 +10437,7 @@
      "storageType": "percent"
     },
     "ampRatio": {
-     "value": "0.5",
+     "value": "1.0",
      "type": "float",
      "evaltype": "float",
      "storageType": "float"
@@ -10593,7 +10593,7 @@
      "storageType": "integer"
     },
     "value1": {
-     "value": "-1.0",
+     "value": "0.5",
      "type": "float",
      "evaltype": "percent",
      "storageType": "percent"
