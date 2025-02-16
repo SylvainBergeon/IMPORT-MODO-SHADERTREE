@@ -310,7 +310,7 @@
    "storageType": "integer"
   },
   "frmRange": {
-   "value": "<lx.object.Unknown object at 0x45db5c790>",
+   "value": "<lx.object.Unknown object at 0x42d4f8ed0>",
    "type": "string",
    "evaltype": "+intrange",
    "storageType": "+intrange"
@@ -10274,7 +10274,7 @@
      "storageType": "string"
     },
     "enable": {
-     "value": "0",
+     "value": "1",
      "type": "integer",
      "evaltype": "boolean",
      "storageType": "boolean"
@@ -10376,7 +10376,7 @@
      "storageType": "boolean"
     },
     "rgba": {
-     "value": "use",
+     "value": "red",
      "type": "integer",
      "evaltype": "integer",
      "storageType": "integer"
@@ -10479,7 +10479,7 @@
      "storageType": "string"
     },
     "enable": {
-     "value": "1",
+     "value": "0",
      "type": "integer",
      "evaltype": "boolean",
      "storageType": "boolean"
