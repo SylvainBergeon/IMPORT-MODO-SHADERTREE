@@ -52,7 +52,7 @@
       <fineThresh value="0.1" type="float" evaltype="percent" storageType="percent" />
       <first value="2" type="integer" evaltype="integer" storageType="integer" />
       <frmPasses value="1" type="integer" evaltype="integer" storageType="integer" />
-      <frmRange value="&lt;lx.object.Unknown object at 0x5e022a0f0&gt;" type="string" evaltype="+intrange" storageType="+intrange" />
+      <frmRange value="&lt;lx.object.Unknown object at 0x5aa422330&gt;" type="string" evaltype="+intrange" storageType="+intrange" />
       <globBump value="0" type="integer" evaltype="boolean" storageType="boolean" />
       <globCaus value="refraction" type="integer" evaltype="integer" storageType="integer" />
       <globEnable value="1" type="integer" evaltype="boolean" storageType="boolean" />
@@ -410,6 +410,101 @@
       <unbiased value="1" type="integer" evaltype="boolean" storageType="boolean" />
       <varThresh value="0.1" type="float" evaltype="percent" storageType="percent" />
    </channels>
+   <advancedMaterial name="Material_2" id="advancedMaterial008" type="advancedMaterial">
+      <channels>
+         <absorbAmt value="1.0" type="float" evaltype="percent" storageType="percent" />
+         <absorbCol value="(1.0, 1.0, 1.0)" type="float" evaltype="color3" storageType="color3" />
+         <aniso value="0.0" type="float" evaltype="percent" storageType="percent" />
+         <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
+         <brdfType value="gtr" type="integer" evaltype="integer" storageType="integer" />
+         <bump value="-666.0" type="float" evaltype="percent" storageType="percent" />
+         <bumpAmp value="0.019999999552965164" type="float" evaltype="distance" storageType="distance" />
+         <bumpVal value="0.0" type="float" evaltype="percent" storageType="percent" />
+         <clearBump value="1" type="integer" evaltype="boolean" storageType="boolean" />
+         <clipCol value="(0.0, 0.0, 0.0)" type="float" evaltype="color3" storageType="color3" />
+         <clipEnable value="1" type="integer" evaltype="boolean" storageType="boolean" />
+         <clipMatte value="0" type="integer" evaltype="boolean" storageType="boolean" />
+         <clipValue value="1.0" type="float" evaltype="percent" storageType="percent" />
+         <coatAmt value="0.0" type="float" evaltype="percent" storageType="percent" />
+         <coatBump value="1.0" type="float" evaltype="percent" storageType="percent" />
+         <coatRough value="0.0" type="float" evaltype="percent" storageType="percent" />
+         <dblSided value="0" type="integer" evaltype="boolean" storageType="boolean" />
+         <density value="1.0" type="float" evaltype="percent" storageType="percent" />
+         <diffAmt value="0.8" type="float" evaltype="percent" storageType="percent" />
+         <diffCol value="(0.800000011920929, 0.800000011920929, 0.800000011920929)" type="float" evaltype="color3" storageType="color3" />
+         <diffRough value="0.0" type="float" evaltype="percent" storageType="percent" />
+         <dispVal value="0.0" type="float" evaltype="percent" storageType="percent" />
+         <disperse value="0.0" type="float" evaltype="float" storageType="float" />
+         <displace value="0.10000000149011612" type="float" evaltype="distance" storageType="distance" />
+         <dissAmt value="0.0" type="float" evaltype="percent" storageType="percent" />
+         <effect value="(all)" type="string" evaltype="string" storageType="string" />
+         <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
+         <exitCol value="(0.0, 0.0, 0.0)" type="float" evaltype="color3" storageType="color3" />
+         <filter value="eval" type="eval" evaltype="texFilter" storageType="NONE" />
+         <flatness value="0.0" type="float" evaltype="percent" storageType="percent" />
+         <glColor value="(1.0, 1.0, 1.0)" type="float" evaltype="color3" storageType="color3" />
+         <glOverride value="0" type="integer" evaltype="boolean" storageType="boolean" />
+         <gldisp value="1" type="integer" evaltype="boolean" storageType="boolean" />
+         <ignSclGrp value="0" type="integer" evaltype="boolean" storageType="boolean" />
+         <importance value="1.0" type="float" evaltype="percent" storageType="percent" />
+         <invert value="0" type="integer" evaltype="boolean" storageType="boolean" />
+         <isVectorMap value="0" type="integer" evaltype="boolean" storageType="boolean" />
+         <lpeLabel value="" type="string" evaltype="string" storageType="string" />
+         <lumiCol value="(1.0, 1.0, 1.0)" type="float" evaltype="color3" storageType="color3" />
+         <luminousAmt value="0.0" type="float" evaltype="percent" storageType="percent" />
+         <luminousCol value="(1.0, 1.0, 1.0)" type="float" evaltype="color3" storageType="color3" />
+         <metallic value="0.0" type="float" evaltype="percent" storageType="percent" />
+         <normalMethod value="fast" type="integer" evaltype="integer" storageType="integer" />
+         <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
+         <perRayFres value="0" type="integer" evaltype="boolean" storageType="boolean" />
+         <radInter value="0" type="integer" evaltype="boolean" storageType="boolean" />
+         <radiance value="0.0" type="float" evaltype="light" storageType="light" />
+         <redShift value="0.0" type="float" evaltype="percent" storageType="percent" />
+         <refIndex value="1.0" type="float" evaltype="float" storageType="float" />
+         <reflAmt value="0.0" type="float" evaltype="percent" storageType="percent" />
+         <reflBlur value="1" type="integer" evaltype="boolean" storageType="boolean" />
+         <reflCol value="(1.0, 1.0, 1.0)" type="float" evaltype="color3" storageType="color3" />
+         <reflFres value="0.0" type="float" evaltype="percent" storageType="percent" />
+         <reflRays value="64" type="integer" evaltype="integer" storageType="integer" />
+         <reflSpec value="1" type="integer" evaltype="boolean" storageType="boolean" />
+         <reflType value="full" type="integer" evaltype="integer" storageType="integer" />
+         <render value="1" type="integer" evaltype="boolean" storageType="boolean" />
+         <rndAngle value="0.6981317007977318" type="float" evaltype="angle" storageType="angle" />
+         <rndSame value="0" type="integer" evaltype="boolean" storageType="boolean" />
+         <rndWidth value="0.0" type="float" evaltype="distance" storageType="distance" />
+         <rough value="0.4000000059604645" type="float" evaltype="percent" storageType="percent" />
+         <sameSurf value="0" type="integer" evaltype="boolean" storageType="boolean" />
+         <scatterAmt value="1.0" type="float" evaltype="percent" storageType="percent" />
+         <scatterCol value="(1.0, 1.0, 1.0)" type="float" evaltype="color3" storageType="color3" />
+         <sheen value="0.0" type="float" evaltype="percent" storageType="percent" />
+         <sheenTint value="0.0" type="float" evaltype="percent" storageType="percent" />
+         <smAngle value="0.6981316804885864" type="float" evaltype="angle" storageType="angle" />
+         <smooth value="1.0" type="float" evaltype="percent" storageType="percent" />
+         <smoothCrease value="+agh" type="integer" evaltype="integer" storageType="integer" />
+         <smoothWeight value="0" type="integer" evaltype="integer" storageType="integer" />
+         <specAmt value="0.03999999910593033" type="float" evaltype="percent" storageType="percent" />
+         <specCol value="(1.0, 1.0, 1.0)" type="float" evaltype="color3" storageType="color3" />
+         <specFres value="1.0" type="float" evaltype="percent" storageType="percent" />
+         <specRefIdx value="0" type="integer" evaltype="boolean" storageType="boolean" />
+         <specTint value="0.0" type="float" evaltype="percent" storageType="percent" />
+         <stenVal value="0.0" type="float" evaltype="percent" storageType="percent" />
+         <subsAmt value="0.0" type="float" evaltype="percent" storageType="percent" />
+         <subsCol value="(0.8, 0.8, 0.8)" type="float" evaltype="color3" storageType="color3" />
+         <subsDepth value="1.0" type="float" evaltype="distance" storageType="distance" />
+         <subsDist value="0.005" type="float" evaltype="distance" storageType="distance" />
+         <subsPhase value="0.5" type="float" evaltype="percent" storageType="percent" />
+         <subsSmps value="64" type="integer" evaltype="integer" storageType="integer" />
+         <subtract value="0" type="integer" evaltype="boolean" storageType="boolean" />
+         <tranAmt value="0.0" type="float" evaltype="percent" storageType="percent" />
+         <tranCol value="(1.0, 1.0, 1.0)" type="float" evaltype="color3" storageType="color3" />
+         <tranDist value="0.0" type="float" evaltype="distance" storageType="distance" />
+         <tranRays value="64" type="integer" evaltype="integer" storageType="integer" />
+         <tranRough value="0.0" type="float" evaltype="percent" storageType="percent" />
+         <useBoolMtl value="0" type="integer" evaltype="boolean" storageType="boolean" />
+         <useRefIdx value="0" type="integer" evaltype="boolean" storageType="boolean" />
+         <uvMap value="" type="string" evaltype="string" storageType="string" />
+      </channels>
+   </advancedMaterial>
    <mask name="Exterior" id="mask736" type="mask">
       <channels>
          <addLayer value="1" type="integer" evaltype="boolean" storageType="boolean" />
@@ -1060,9 +1155,9 @@
          <gradient name="Gradient" id="gradient001" type="gradient">
             <channels>
                <blend value="screen" type="integer" evaltype="integer" storageType="integer" />
-               <color value="(&lt;lx.object.Unknown object at 0x5e022ab50&gt;, &lt;lx.object.Unknown object at 0x5e022ab10&gt;, &lt;lx.object.Unknown object at 0x5e022ab70&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+               <color value="(&lt;lx.object.Unknown object at 0x5aa423670&gt;, &lt;lx.object.Unknown object at 0x5aa4236f0&gt;, &lt;lx.object.Unknown object at 0x5aa4235b0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                <effect value="specColor" type="string" evaltype="string" storageType="string" />
-               <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
+               <enable value="0" type="integer" evaltype="boolean" storageType="boolean" />
                <filter value="eval" type="eval" evaltype="texFilter" storageType="NONE" />
                <gldisp value="1" type="integer" evaltype="boolean" storageType="boolean" />
                <ignSclGrp value="0" type="integer" evaltype="boolean" storageType="boolean" />
