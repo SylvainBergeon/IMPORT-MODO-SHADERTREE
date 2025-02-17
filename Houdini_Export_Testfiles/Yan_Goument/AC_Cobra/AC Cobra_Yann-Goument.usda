@@ -1,0 +1,1751 @@
+#usda 1.0
+
+def Scope "shadertree"
+{
+    def Scope "Exterior"
+    {
+        def Material "cobra_rubberBlack"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Exterior/cobra_rubberBlack/M_cobra_rubberBlack.outputs:surface>
+
+            def Shader "M_cobra_rubberBlack"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.1
+                color3f inputs:base_color = (0.015873017, 0.015873017, 0.015873017)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.64126986, 0.64126986, 0.64126986)
+                float inputs:specular_IOR = 1
+                float inputs:specular_roughness = 0.25
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_undercarriage"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Exterior/cobra_undercarriage/M_cobra_undercarriage.outputs:surface>
+
+            def Shader "M_cobra_undercarriage"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.1
+                color3f inputs:base_color = (0.012698413, 0.012698413, 0.012698413)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.23174603, 0.23174603, 0.23174603)
+                float inputs:specular_IOR = 1.418977
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_plate"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Exterior/cobra_plate/M_cobra_plate.outputs:surface>
+
+            def Shader "M_cobra_plate"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1.0000001, 1.0000001, 1.0000001)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.05
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_paintBlack"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Exterior/cobra_paintBlack/M_cobra_paintBlack.outputs:surface>
+
+            def Shader "M_cobra_paintBlack"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (0, 0, 0)
+                float inputs:coat = 0.5
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.41269842, 0.41269842, 0.41269842)
+                float inputs:specular_IOR = 1.788783
+                float inputs:specular_roughness = 0.3
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_paintBody"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Exterior/cobra_paintBody/M_cobra_paintBody.outputs:surface>
+
+            def Shader "M_cobra_paintBody"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0.42857143, 0.42857143, 0.42857143)
+                float inputs:coat = 1
+                float inputs:coat_roughness = 0.08
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0, 0.10097898, 0.4857143)
+                float inputs:specular_IOR = 13.927721
+                float inputs:specular_roughness = 0.495
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_metalExhaust"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Exterior/cobra_metalExhaust/M_cobra_paintBlack_3.outputs:surface>
+
+            def Shader "M_cobra_metalExhaust"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.33650795, 0.33650795, 0.33650795)
+                float inputs:specular_IOR = 37.970055
+                float inputs:specular_roughness = 0.2
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+
+            def Shader "M_cobra_paintBlack_3"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.0031746032, 0.0031746032, 0.0031746032)
+                float inputs:coat = 0.5
+                float inputs:coat_roughness = 0.1
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.41269842, 0.41269842, 0.41269842)
+                float inputs:specular_IOR = 1.788783
+                float inputs:specular_roughness = 0.3
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_metalChrome"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Exterior/cobra_metalChrome/M_cobra_paintBlack_2.outputs:surface>
+
+            def Shader "M_cobra_metalChrome"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.45714286, 0.45714286, 0.45714286)
+                float inputs:specular_IOR = 399998
+                float inputs:specular_roughness = 0.085
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+
+            def Shader "M_cobra_paintBlack_2"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.2
+                color3f inputs:base_color = (0.025396826, 0.025396826, 0.025396826)
+                float inputs:coat = 0.4
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.041269843, 0.041269843, 0.041269843)
+                float inputs:specular_IOR = 1.7195115
+                float inputs:specular_roughness = 0.2
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_logoPaintWhite"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Exterior/cobra_logoPaintWhite/M_cobra_LogoPaintWhite.outputs:surface>
+
+            def Shader "M_cobra_LogoPaintWhite"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (1.0000001, 1.0000001, 1.0000001)
+                float inputs:coat = 0.7
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1.0000001, 1.0000001, 1.0000001)
+                float inputs:specular_IOR = 1.788783
+                float inputs:specular_roughness = 0.2
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_LogoPaintRed"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Exterior/cobra_LogoPaintRed/M_cobra_LogoPaintRed.outputs:surface>
+
+            def Shader "M_cobra_LogoPaintRed"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (0.5460318, 0, 0.0012677329)
+                float inputs:coat = 0.5
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1.0000001, 0.24026445, 0.2857674)
+                float inputs:specular_IOR = 1.788783
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_logoChrome"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Exterior/cobra_logoChrome/M_cobra_LogoChrome.outputs:surface>
+
+            def Shader "M_cobra_LogoChrome"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.42857143, 0.42857143, 0.42857143)
+                float inputs:specular_IOR = 399998
+                float inputs:specular_roughness = 0.1
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_logoPaintBlue"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Exterior/cobra_logoPaintBlue/M_cobra_paintBody_3.outputs:surface>
+
+            def Shader "M_cobra_paintBody_3"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0.6038275, 0.6038275, 0.6038275)
+                float inputs:coat = 1
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.078865826, 0.26190564, 0.84444445)
+                float inputs:specular_IOR = 10.810435
+                float inputs:specular_roughness = 0.495
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_RimMetal"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Exterior/cobra_RimMetal/M_cobra_RimMetal.outputs:surface>
+
+            def Shader "M_cobra_RimMetal"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0.00952381, 0.00952381, 0.00952381)
+                float inputs:coat = 0.7
+                float inputs:coat_roughness = 0.17
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.23492064, 0.23492064, 0.23492064)
+                float inputs:specular_IOR = 77.97196
+                float inputs:specular_roughness = 0.02
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_tire"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Exterior/cobra_tire/M_cobra_tire.outputs:surface>
+
+            def Shader "M_cobra_tire"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.010022826, 0.010022826, 0.010022826)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0.1
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.22857143, 0.22857143, 0.22857143)
+                float inputs:specular_IOR = 1.9249438
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_tire_Letters"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Exterior/cobra_tire_Letters/M_cobra_tire_2.outputs:surface>
+
+            def Shader "M_cobra_tire_2"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.5
+                color3f inputs:base_color = (0.7047619, 0.7047619, 0.7047619)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0.1
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.51111114, 0.51111114, 0.51111114)
+                float inputs:specular_IOR = 1.9249438
+                float inputs:specular_roughness = 0.3
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_BrakeDisk"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Exterior/cobra_BrakeDisk/M_cobra_BrakeDisk.outputs:surface>
+
+            def Shader "M_cobra_BrakeDisk"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0.044444446, 0.044444446, 0.044444446)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.07619048, 0.07619048, 0.07619048)
+                float inputs:specular_IOR = 11.244086
+                float inputs:specular_roughness = 0.2
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_glass"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Exterior/cobra_glass/M_cobra_glass.outputs:surface>
+
+            def Shader "M_cobra_glass"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.83415055, 1.0000001, 0.8356148)
+                float inputs:specular_IOR = 1.222221
+                float inputs:specular_roughness = 0.01
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 1
+                color3f inputs:transmission_color = (0.91140735, 1.0000001, 1.0000001)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_RimCap"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Exterior/cobra_RimCap/M_cobra_RimMetal_2.outputs:surface>
+
+            def Shader "M_cobra_RimMetal_2"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0.00952381, 0.00952381, 0.00952381)
+                float inputs:coat = 0.7
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.2761905, 0.2761905, 0.2761905)
+                float inputs:specular_IOR = 77.97196
+                float inputs:specular_roughness = 0.02
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Scope "rearLights"
+        {
+            def Material "cobra_rearLightsGlassOrange"
+            {
+                token outputs:mtlx:surface.connect = </shadertree/Exterior/rearLights/cobra_rearLightsGlassOrange/M_cobra_rearLightsGlassOrange.outputs:surface>
+
+                def Shader "M_cobra_rearLightsGlassOrange"
+                {
+                    uniform token info:id = "ND_standard_surface_surfaceshader"
+                    float inputs:base = 0
+                    color3f inputs:base_color = (0.6, 0.6, 0.6)
+                    float inputs:coat = 0
+                    float inputs:coat_roughness = 0
+                    float inputs:emission = 0
+                    color3f inputs:emission_color = (1, 1, 1)
+                    float inputs:opacity = 1
+                    float inputs:specular = 1
+                    float inputs:specular_anisotropy = 0
+                    color3f inputs:specular_color = (1.0000001, 1.0000001, 1.0000001)
+                    float inputs:specular_IOR = 1.788783
+                    float inputs:specular_roughness = 0.01
+                    float inputs:subsurface = 0
+                    color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                    float inputs:subsurface_radius = 1
+                    float inputs:subsurface_scale = 0.005
+                    float inputs:transmission = 1
+                    color3f inputs:transmission_color = (1.0000001, 1.0000001, 1.0000001)
+                    float inputs:transmission_depth = 0
+                    float inputs:transmission_dispersion = 0
+                    float inputs:transmission_extra_roughness = 0
+                    float inputs:transmission_scatter = 1
+                    token outputs:surface
+                }
+            }
+
+            def Material "cobra_rearLightsGlassRed"
+            {
+                token outputs:mtlx:surface.connect = </shadertree/Exterior/rearLights/cobra_rearLightsGlassRed/M_cobra_rearLightsGlassOrange_2.outputs:surface>
+
+                def Shader "M_cobra_rearLightsGlassOrange_2"
+                {
+                    uniform token info:id = "ND_standard_surface_surfaceshader"
+                    float inputs:base = 0
+                    color3f inputs:base_color = (0.6, 0.6, 0.6)
+                    float inputs:coat = 0
+                    float inputs:coat_roughness = 0
+                    float inputs:emission = 0
+                    color3f inputs:emission_color = (1, 1, 1)
+                    float inputs:opacity = 1
+                    float inputs:specular = 1
+                    float inputs:specular_anisotropy = 0
+                    color3f inputs:specular_color = (1.0000001, 0.009152473, 0)
+                    float inputs:specular_IOR = 1.4999969
+                    float inputs:specular_roughness = 0.01
+                    float inputs:subsurface = 0
+                    color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                    float inputs:subsurface_radius = 1
+                    float inputs:subsurface_scale = 0.005
+                    float inputs:transmission = 1
+                    color3f inputs:transmission_color = (0.6920635, 0, 0)
+                    float inputs:transmission_depth = 0
+                    float inputs:transmission_dispersion = 0
+                    float inputs:transmission_extra_roughness = 0
+                    float inputs:transmission_scatter = 1
+                    token outputs:surface
+                }
+            }
+
+            def Material "cobra_rearLightsBulbGlassRed"
+            {
+                token outputs:mtlx:surface.connect = </shadertree/Exterior/rearLights/cobra_rearLightsBulbGlassRed/M_cobra_LightsBulbGlassRed.outputs:surface>
+
+                def Shader "M_cobra_LightsBulbGlassRed"
+                {
+                    uniform token info:id = "ND_standard_surface_surfaceshader"
+                    float inputs:base = 0
+                    color3f inputs:base_color = (0.6, 0.6, 0.6)
+                    float inputs:coat = 0
+                    float inputs:coat_roughness = 0
+                    float inputs:emission = 0
+                    color3f inputs:emission_color = (1, 1, 1)
+                    float inputs:opacity = 1
+                    float inputs:specular = 1
+                    float inputs:specular_anisotropy = 0
+                    color3f inputs:specular_color = (1, 1, 1)
+                    float inputs:specular_IOR = 1.4999969
+                    float inputs:specular_roughness = 0.4
+                    float inputs:subsurface = 0
+                    color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                    float inputs:subsurface_radius = 1
+                    float inputs:subsurface_scale = 0.005
+                    float inputs:transmission = 1
+                    color3f inputs:transmission_color = (1, 1, 1)
+                    float inputs:transmission_depth = 0
+                    float inputs:transmission_dispersion = 0
+                    float inputs:transmission_extra_roughness = 0
+                    float inputs:transmission_scatter = 1
+                    token outputs:surface
+                }
+            }
+
+            def Material "cobra_LightsRearReflective"
+            {
+                token outputs:mtlx:surface.connect = </shadertree/Exterior/rearLights/cobra_LightsRearReflective/M_cobra_LightsRearReflective.outputs:surface>
+
+                def Shader "M_cobra_LightsRearReflective"
+                {
+                    uniform token info:id = "ND_standard_surface_surfaceshader"
+                    float inputs:base = 0
+                    color3f inputs:base_color = (0.6, 0.6, 0.6)
+                    float inputs:coat = 0
+                    float inputs:coat_roughness = 0
+                    float inputs:emission = 0
+                    color3f inputs:emission_color = (1, 1, 1)
+                    float inputs:opacity = 1
+                    float inputs:specular = 1
+                    float inputs:specular_anisotropy = 0
+                    color3f inputs:specular_color = (0.48253968, 0.48253968, 0.48253968)
+                    float inputs:specular_IOR = 77.97196
+                    float inputs:specular_roughness = 0.02
+                    float inputs:subsurface = 0
+                    color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                    float inputs:subsurface_radius = 1
+                    float inputs:subsurface_scale = 0.005
+                    float inputs:transmission = 0
+                    color3f inputs:transmission_color = (1, 1, 1)
+                    float inputs:transmission_depth = 0
+                    float inputs:transmission_dispersion = 0
+                    float inputs:transmission_extra_roughness = 0
+                    float inputs:transmission_scatter = 1
+                    token outputs:surface
+                }
+            }
+        }
+
+        def Scope "frontLights"
+        {
+            def Material "cobra_LightsBulbMetal"
+            {
+                token outputs:mtlx:surface.connect = </shadertree/Exterior/frontLights/cobra_LightsBulbMetal/M_cobra_LightsBulbMetal.outputs:surface>
+
+                def Shader "M_cobra_LightsBulbMetal"
+                {
+                    uniform token info:id = "ND_standard_surface_surfaceshader"
+                    float inputs:base = 0.8
+                    color3f inputs:base_color = (0.6, 0.6, 0.6)
+                    float inputs:coat = 0
+                    float inputs:coat_roughness = 0
+                    float inputs:emission = 0
+                    color3f inputs:emission_color = (1, 1, 1)
+                    float inputs:opacity = 1
+                    float inputs:specular = 1
+                    float inputs:specular_anisotropy = 0
+                    color3f inputs:specular_color = (1, 1, 1)
+                    float inputs:specular_IOR = 1.4999969
+                    float inputs:specular_roughness = 0.4
+                    float inputs:subsurface = 0
+                    color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                    float inputs:subsurface_radius = 1
+                    float inputs:subsurface_scale = 0.005
+                    float inputs:transmission = 0
+                    color3f inputs:transmission_color = (1, 1, 1)
+                    float inputs:transmission_depth = 0
+                    float inputs:transmission_dispersion = 0
+                    float inputs:transmission_extra_roughness = 0
+                    float inputs:transmission_scatter = 1
+                    token outputs:surface
+                }
+            }
+
+            def Material "cobra_LightsBulbGlass"
+            {
+                token outputs:mtlx:surface.connect = </shadertree/Exterior/frontLights/cobra_LightsBulbGlass/M_cobra_rearLightsBulbGlass.outputs:surface>
+
+                def Shader "M_cobra_rearLightsBulbGlass"
+                {
+                    uniform token info:id = "ND_standard_surface_surfaceshader"
+                    float inputs:base = 0
+                    color3f inputs:base_color = (0.6, 0.6, 0.6)
+                    float inputs:coat = 0
+                    float inputs:coat_roughness = 0
+                    float inputs:emission = 0
+                    color3f inputs:emission_color = (1, 1, 1)
+                    float inputs:opacity = 1
+                    float inputs:specular = 1
+                    float inputs:specular_anisotropy = 0
+                    color3f inputs:specular_color = (1.0000001, 1.0000001, 1.0000001)
+                    float inputs:specular_IOR = 1.4999969
+                    float inputs:specular_roughness = 0.01
+                    float inputs:subsurface = 0
+                    color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                    float inputs:subsurface_radius = 1
+                    float inputs:subsurface_scale = 0.005
+                    float inputs:transmission = 1
+                    color3f inputs:transmission_color = (1, 1, 1)
+                    float inputs:transmission_depth = 0
+                    float inputs:transmission_dispersion = 0
+                    float inputs:transmission_extra_roughness = 0
+                    float inputs:transmission_scatter = 1
+                    token outputs:surface
+                }
+            }
+
+            def Material "cobra_frontLightsGlass"
+            {
+                token outputs:mtlx:surface.connect = </shadertree/Exterior/frontLights/cobra_frontLightsGlass/Material.outputs:surface>
+
+                def Shader "M_cobra_frontLightsGlass"
+                {
+                    uniform token info:id = "ND_standard_surface_surfaceshader"
+                    float inputs:base = 1.99
+                    color3f inputs:base_color = (0.6, 0.6, 0.6)
+                    float inputs:coat = 0
+                    float inputs:coat_roughness = 0
+                    float inputs:emission = 0
+                    color3f inputs:emission_color = (1, 1, 1)
+                    float inputs:opacity = 1
+                    float inputs:specular = 1
+                    float inputs:specular_anisotropy = 0
+                    color3f inputs:specular_color = (1.0000001, 1.0000001, 1.0000001)
+                    float inputs:specular_IOR = 1
+                    float inputs:specular_roughness = 0.01
+                    float inputs:subsurface = 0
+                    color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                    float inputs:subsurface_radius = 1
+                    float inputs:subsurface_scale = 0.005
+                    float inputs:transmission = 1
+                    color3f inputs:transmission_color = (1, 1, 1)
+                    float inputs:transmission_depth = 0
+                    float inputs:transmission_dispersion = 0
+                    float inputs:transmission_extra_roughness = 0
+                    float inputs:transmission_scatter = 1
+                    token outputs:surface
+                }
+
+                def Shader "Material"
+                {
+                    uniform token info:id = "ND_standard_surface_surfaceshader"
+                    float inputs:base = 0
+                    color3f inputs:base_color = (0, 0, 0)
+                    float inputs:coat = 0
+                    float inputs:coat_roughness = 0
+                    float inputs:emission = 0
+                    color3f inputs:emission_color = (1, 1, 1)
+                    float inputs:opacity = 1
+                    float inputs:specular = 1
+                    float inputs:specular_anisotropy = 0
+                    color3f inputs:specular_color = (1, 1, 1)
+                    float inputs:specular_IOR = 1.4999969
+                    float inputs:specular_roughness = 0
+                    float inputs:subsurface = 0
+                    color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                    float inputs:subsurface_radius = 1
+                    float inputs:subsurface_scale = 0.005
+                    float inputs:transmission = 0.99
+                    color3f inputs:transmission_color = (1, 1, 1)
+                    float inputs:transmission_depth = 0
+                    float inputs:transmission_dispersion = 0
+                    float inputs:transmission_extra_roughness = 0
+                    float inputs:transmission_scatter = 1
+                    token outputs:surface
+                }
+            }
+
+            def Material "cobra_frontLightsSmallGlass"
+            {
+                token outputs:mtlx:surface.connect = </shadertree/Exterior/frontLights/cobra_frontLightsSmallGlass/M_cobra_rearLightsGlassOrange_3.outputs:surface>
+
+                def Shader "M_cobra_rearLightsGlassOrange_3"
+                {
+                    uniform token info:id = "ND_standard_surface_surfaceshader"
+                    float inputs:base = 0
+                    color3f inputs:base_color = (0.6, 0.6, 0.6)
+                    float inputs:coat = 0
+                    float inputs:coat_roughness = 0
+                    float inputs:emission = 0
+                    color3f inputs:emission_color = (1, 1, 1)
+                    float inputs:opacity = 1
+                    float inputs:specular = 1
+                    float inputs:specular_anisotropy = 0
+                    color3f inputs:specular_color = (1.0000001, 1.0000001, 1.0000001)
+                    float inputs:specular_IOR = 1.3294294
+                    float inputs:specular_roughness = 0.01
+                    float inputs:subsurface = 0
+                    color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                    float inputs:subsurface_radius = 1
+                    float inputs:subsurface_scale = 0.005
+                    float inputs:transmission = 1
+                    color3f inputs:transmission_color = (1.0000001, 1.0000001, 1.0000001)
+                    float inputs:transmission_depth = 0
+                    float inputs:transmission_dispersion = 0
+                    float inputs:transmission_extra_roughness = 0
+                    float inputs:transmission_scatter = 1
+                    token outputs:surface
+                }
+            }
+
+            def Material "cobra_Lightsreflective"
+            {
+                token outputs:mtlx:surface.connect = </shadertree/Exterior/frontLights/cobra_Lightsreflective/M_cobra_Lightsreflective.outputs:surface>
+
+                def Shader "M_cobra_Lightsreflective"
+                {
+                    uniform token info:id = "ND_standard_surface_surfaceshader"
+                    float inputs:base = 0
+                    color3f inputs:base_color = (0.6, 0.6, 0.6)
+                    float inputs:coat = 0
+                    float inputs:coat_roughness = 0
+                    float inputs:emission = 0
+                    color3f inputs:emission_color = (1, 1, 1)
+                    float inputs:opacity = 1
+                    float inputs:specular = 1
+                    float inputs:specular_anisotropy = 0
+                    color3f inputs:specular_color = (0.53650796, 0.53650796, 0.53650796)
+                    float inputs:specular_IOR = 77.97196
+                    float inputs:specular_roughness = 0.02
+                    float inputs:subsurface = 0
+                    color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                    float inputs:subsurface_radius = 1
+                    float inputs:subsurface_scale = 0.005
+                    float inputs:transmission = 0
+                    color3f inputs:transmission_color = (1, 1, 1)
+                    float inputs:transmission_depth = 0
+                    float inputs:transmission_dispersion = 0
+                    float inputs:transmission_extra_roughness = 0
+                    float inputs:transmission_scatter = 1
+                    token outputs:surface
+                }
+            }
+        }
+    }
+
+    def Scope "Interior"
+    {
+        def Material "cobra_int_carpet"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_carpet/M_cobra_int_chrome_2.outputs:surface>
+
+            def Shader "M_cobra_int_chrome_2"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.1904762, 0.1904762, 0.1904762)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1.0000001, 1.0000001, 1.0000001)
+                float inputs:specular_IOR = 1.3294294
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_chrome"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_chrome/M_cobra_int_chrome.outputs:surface>
+
+            def Shader "M_cobra_int_chrome"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0.00952381, 0.00952381, 0.00952381)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.7650794, 0.7650794, 0.7650794)
+                float inputs:specular_IOR = 399998
+                float inputs:specular_roughness = 0.2
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_wood"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_wood/M_cobra_int_wood.outputs:surface>
+
+            def Shader "M_cobra_int_wood"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.1936508, 0.1936508, 0.1936508)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.26349208, 0.26349208, 0.26349208)
+                float inputs:specular_IOR = 1.9249438
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_leather"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_leather/M_cobra_int_leather.outputs:surface>
+
+            def Shader "M_cobra_int_leather"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.057142857, 0.057142857, 0.057142857)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.12063492, 0.12063492, 0.12063492)
+                float inputs:specular_IOR = 1.9249438
+                float inputs:specular_roughness = 0.3
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_gearLeverInner"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_gearLeverInner/M_cobra_int_gearLeverInner.outputs:surface>
+
+            def Shader "M_cobra_int_gearLeverInner"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.2
+                color3f inputs:base_color = (0.041269843, 0.041269843, 0.041269843)
+                float inputs:coat = 0.3
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.2920635, 0.2920635, 0.2920635)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_gearLeverCap"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_gearLeverCap/M_cobra_int_gearLeverCap.outputs:surface>
+
+            def Shader "M_cobra_int_gearLeverCap"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1.0000001, 1.0000001, 1.0000001)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 1
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_plasticBlack"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_plasticBlack/M_cobra_int_plasticBlack.outputs:surface>
+
+            def Shader "M_cobra_int_plasticBlack"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.2
+                color3f inputs:base_color = (0.028571429, 0.028571429, 0.028571429)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.37142858, 0.37142858, 0.37142858)
+                float inputs:specular_IOR = 1.9249438
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_PaintBlack"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_PaintBlack/M_cobra_int_PaintBlack.outputs:surface>
+
+            def Shader "M_cobra_int_PaintBlack"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.028571429, 0.028571429, 0.028571429)
+                float inputs:coat = 1
+                float inputs:coat_roughness = 0.02
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.46984127, 0.46984127, 0.46984127)
+                float inputs:specular_IOR = 1.788783
+                float inputs:specular_roughness = 0.3
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_pedalMetal"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_pedalMetal/M_cobra_int_pedalMetal.outputs:surface>
+
+            def Shader "M_cobra_int_pedalMetal"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1.0000001, 1.0000001, 1.0000001)
+                float inputs:specular_IOR = 7.8728313
+                float inputs:specular_roughness = 0.14
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_mirror"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_mirror/M_cobra_int_mirror.outputs:surface>
+
+            def Shader "M_cobra_int_mirror"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.2825397, 0.2825397, 0.2825397)
+                float inputs:specular_IOR = 399998
+                float inputs:specular_roughness = 0
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_dashBoard"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_dashBoard/M_cobra_int_dashBoard.outputs:surface>
+
+            def Shader "M_cobra_int_dashBoard"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1.0000001, 1.0000001, 1.0000001)
+                float inputs:specular_IOR = 37.970055
+                float inputs:specular_roughness = 0.22
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_GlassGreen_Left"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_GlassGreen_Left/M_cobra_int_GlassGreen.outputs:surface>
+
+            def Shader "M_cobra_int_GlassGreen"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1.0000001, 1.0000001, 1.0000001)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 1
+                color3f inputs:transmission_color = (0, 0.1904762, 0.022658575)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_GlassGreen_Right"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_GlassGreen_Right/M_cobra_int_GlassGreen_2.outputs:surface>
+
+            def Shader "M_cobra_int_GlassGreen_2"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1.0000001, 1.0000001, 1.0000001)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 1
+                color3f inputs:transmission_color = (0, 0.1904762, 0.022658575)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_glassRed"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_glassRed/M_cobra_int_glassRed.outputs:surface>
+
+            def Shader "M_cobra_int_glassRed"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1.0000001, 1.0000001, 1.0000001)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.02
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 1
+                color3f inputs:transmission_color = (0.4508, 0, 0.004518)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_leatherStitches"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_leatherStitches/M_cobra_int_leatherStitches.outputs:surface>
+
+            def Shader "M_cobra_int_leatherStitches"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.2
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_MeterGlass"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_MeterGlass/M_cobra_int_MeterGlass.outputs:surface>
+
+            def Shader "M_cobra_int_MeterGlass"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.01
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 1
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_picto"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_picto/M_cobra_int_picto.outputs:surface>
+
+            def Shader "M_cobra_int_picto"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_pictoGear"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_pictoGear/M_cobra_int_pictoGear.outputs:surface>
+
+            def Shader "M_cobra_int_pictoGear"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_pictoMeter"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_pictoMeter/M_cobra_int_pictoMeter.outputs:surface>
+
+            def Shader "M_cobra_int_pictoMeter"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (1.0000001, 1.0000001, 1.0000001)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.3294294
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_MeterNeddles"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_MeterNeddles/M_cobra_int_pictoMeter_2.outputs:surface>
+
+            def Shader "M_cobra_int_pictoMeter_2"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (1.0000001, 1.0000001, 1.0000001)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.3294294
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_steeringWheelCenterInner"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_steeringWheelCenterInner/M_cobra_int_steeringWheelCenterInner.outputs:surface>
+
+            def Shader "M_cobra_int_steeringWheelCenterInner"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.2
+                color3f inputs:base_color = (0.028571429, 0.028571429, 0.028571429)
+                float inputs:coat = 0.4
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.13015874, 0.13015874, 0.13015874)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_steeringWheelCap"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_steeringWheelCap/M_cobra_int_steeringWheelCap.outputs:surface>
+
+            def Shader "M_cobra_int_steeringWheelCap"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.222221
+                float inputs:specular_roughness = 0.01
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 1
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "cobra_int_steeringWheelCenterLogo"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/Interior/cobra_int_steeringWheelCenterLogo/M_cobra_int_steeringWheelCenterLogo.outputs:surface>
+
+            def Shader "M_cobra_int_steeringWheelCenterLogo"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0.028571429, 0.028571429, 0.028571429)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.92698413, 0.92698413, 0.92698413)
+                float inputs:specular_IOR = 157.93144
+                float inputs:specular_roughness = 0.1
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+    }
+
+    def Material "ground"
+    {
+        token outputs:mtlx:surface.connect = </shadertree/ground/M_ground.outputs:surface>
+
+        def Shader "M_ground"
+        {
+            uniform token info:id = "ND_standard_surface_surfaceshader"
+            float inputs:base = 0.8
+            color3f inputs:base_color = (0.6, 0.6, 0.6)
+            float inputs:coat = 0
+            float inputs:coat_roughness = 0
+            float inputs:emission = 0
+            color3f inputs:emission_color = (1, 1, 1)
+            float inputs:opacity = 1
+            float inputs:specular = 1
+            float inputs:specular_anisotropy = 0
+            color3f inputs:specular_color = (1, 1, 1)
+            float inputs:specular_IOR = 1
+            float inputs:specular_roughness = 0.4
+            float inputs:subsurface = 0
+            color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+            float inputs:subsurface_radius = 1
+            float inputs:subsurface_scale = 0.005
+            float inputs:transmission = 0
+            color3f inputs:transmission_color = (1, 1, 1)
+            float inputs:transmission_depth = 0
+            float inputs:transmission_dispersion = 0
+            float inputs:transmission_extra_roughness = 0
+            float inputs:transmission_scatter = 1
+            token outputs:surface
+        }
+    }
+}
+
