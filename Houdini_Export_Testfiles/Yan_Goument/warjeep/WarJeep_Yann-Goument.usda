@@ -1,0 +1,1755 @@
+#usda 1.0
+
+def Scope "shadertree"
+{
+    def Scope "interior_Mat"
+    {
+        def Material "int_plasticRed"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_plasticRed/Material_22.outputs:surface>
+
+            def Shader "Material_22"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (1, 0, 0)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_plasticScreenBlack"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_plasticScreenBlack/Material_66.outputs:surface>
+
+            def Shader "Material_66"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (0, 0, 0)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_ledWhite"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_ledWhite/Material_33.outputs:surface>
+
+            def Shader "Material_33"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (1, 1, 1)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 1
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1
+                float inputs:specular_roughness = 0
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_ledScreenMap"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_ledScreenMap/Material_60.outputs:surface>
+
+            def Shader "Material_60"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (1, 1, 1)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 1
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_ledSteeringWheelBlue"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_ledSteeringWheelBlue/Material_61.outputs:surface>
+
+            def Shader "Material_61"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0, 0, 0)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 1
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1
+                float inputs:specular_roughness = 0
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_ledKeyboardGreyDark"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_ledKeyboardGreyDark/Material_57.outputs:surface>
+
+            def Shader "Material_57"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0, 0, 0)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 1
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_ledColor_ToggleSwitch"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_ledColor_ToggleSwitch/Material_53.outputs:surface>
+
+            def Shader "Material_53"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 1
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_ledColor_ToggleSwitchSimple"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_ledColor_ToggleSwitchSimple/Material_25.outputs:surface>
+
+            def Shader "Material_25"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 1
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_ledOff_ToggleSwitch"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_ledOff_ToggleSwitch/Material_19.outputs:surface>
+
+            def Shader "Material_19"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_leather"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_leather/M_int_leather.outputs:surface>
+
+            def Shader "M_int_leather"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.4
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.44761905, 0.44761905, 0.44761905)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.205
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_paintBlack"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_paintBlack/M_int_paintBlack.outputs:surface>
+
+            def Shader "M_int_paintBlack"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (0.0069954237, 0.0069954237, 0.0069954237)
+                float inputs:coat = 0.98
+                float inputs:coat_roughness = 0.02
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 2.6180193
+                float inputs:specular_roughness = 0.3
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_plasticBlack"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_plasticBlack/M_int_plasticBlack.outputs:surface>
+
+            def Shader "M_int_plasticBlack"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.4
+                color3f inputs:base_color = (0.08571429, 0.08571429, 0.08571429)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.46666667, 0.46666667, 0.46666667)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.2
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_securityBelt"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_securityBelt/M_int_securityBelt.outputs:surface>
+
+            def Shader "M_int_securityBelt"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.021219026, 0.021219026, 0.021219026)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_carbonFiber"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_carbonFiber/M_int_carbonFiber.outputs:surface>
+
+            def Shader "M_int_carbonFiber"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.6
+                color3f inputs:base_color = (0.13650794, 0.13650794, 0.13650794)
+                float inputs:coat = 0.7
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.9249438
+                float inputs:specular_roughness = 0.2
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_screenTopLittle"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_screenTopLittle/M_int_screenTopLittle.outputs:surface>
+
+            def Shader "M_int_screenTopLittle"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.021219026, 0.021219026, 0.021219026)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_mirror"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_mirror/M_int_mirror.outputs:surface>
+
+            def Shader "M_int_mirror"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.021219026, 0.021219026, 0.021219026)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_carpet"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_carpet/M_int_carpet.outputs:surface>
+
+            def Shader "M_int_carpet"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.7
+                color3f inputs:base_color = (0.50158733, 0.50158733, 0.50158733)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.222221
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_rubber"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_rubber/M_int_rubber.outputs:surface>
+
+            def Shader "M_int_rubber"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.7
+                color3f inputs:base_color = (0.114285715, 0.114285715, 0.114285715)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.3015873, 0.3015873, 0.3015873)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_metalAluminium"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_metalAluminium/M_int_metalAluminium.outputs:surface>
+
+            def Shader "M_int_metalAluminium"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.7
+                color3f inputs:base_color = (0.6761905, 0.6761905, 0.6761905)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 37.970055
+                float inputs:specular_roughness = 0.3
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_metalChrome"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_metalChrome/M_int_metalChrome.outputs:surface>
+
+            def Shader "M_int_metalChrome"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0, 0, 0)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 399998
+                float inputs:specular_roughness = 0.01
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_glassClear"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_glassClear/M_int_glassClear.outputs:surface>
+
+            def Shader "M_int_glassClear"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0, 0, 0)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.788783
+                float inputs:specular_roughness = 0.01
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0.99
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_black"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_black/M_int_black.outputs:surface>
+
+            def Shader "M_int_black"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (0.0069954237, 0.0069954237, 0.0069954237)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_screenConsoleLittle"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_screenConsoleLittle/M_int_screenConsoleLittle.outputs:surface>
+
+            def Shader "M_int_screenConsoleLittle"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.021219026, 0.021219026, 0.021219026)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_curve"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_curve/M_int_curve.outputs:surface>
+
+            def Shader "M_int_curve"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.021219026, 0.021219026, 0.021219026)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_boolean"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_boolean/M_int_boolean.outputs:surface>
+
+            def Shader "M_int_boolean"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.021219026, 0.021219026, 0.021219026)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_screenTerrain"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_screenTerrain/M_int_screenTerrain.outputs:surface>
+
+            def Shader "M_int_screenTerrain"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0, 1.0000001, 0)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 1
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "int_dashBoard"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/interior_Mat/int_dashBoard/M_int_dashBoard.outputs:surface>
+
+            def Shader "M_int_dashBoard"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.4
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.37142858, 0.37142858, 0.37142858)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+    }
+
+    def Scope "exterior_Mat"
+    {
+        def Material "ext_tires"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_tires/M_tires.outputs:surface>
+
+            def Shader "M_tires"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (0.03560133, 0.03560133, 0.03560133)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.45714286, 0.45714286, 0.45714286)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_rims"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_rims/M_rims.outputs:surface>
+
+            def Shader "M_rims"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.36724657, 0.36724657, 0.36724657)
+                float inputs:coat = 0.98
+                float inputs:coat_roughness = 0.02
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.6209158, 0.6209158, 0.6209159)
+                float inputs:specular_IOR = 1.788783
+                float inputs:specular_roughness = 0.25
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_chain"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_chain/M_chain.outputs:surface>
+
+            def Shader "M_chain"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.010329838, 0.010329838, 0.010329838)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_brakeDisc"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_brakeDisc/M_brakeDisc.outputs:surface>
+
+            def Shader "M_brakeDisc"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.021219026, 0.021219026, 0.021219026)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_brakePads"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_brakePads/M_brakePads.outputs:surface>
+
+            def Shader "M_brakePads"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.021219026, 0.021219026, 0.021219026)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_metalAluminium"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_metalAluminium/M_metalAluminium.outputs:surface>
+
+            def Shader "M_metalAluminium"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.021219026, 0.021219026, 0.021219026)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_suspensionSticker"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_suspensionSticker/M_suspensionSticker.outputs:surface>
+
+            def Shader "M_suspensionSticker"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (1.0000001, 1.0000001, 1.0000001)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_suspensionMain"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_suspensionMain/M_suspensionMain.outputs:surface>
+
+            def Shader "M_suspensionMain"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.0012141081, 0.0012141081, 0.0012141081)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_rearLightGlass"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_rearLightGlass/M_rearLightGlass.outputs:surface>
+
+            def Shader "M_rearLightGlass"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.010329838, 0.010329838, 0.010329838)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "plasticBlack"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/plasticBlack/Material_7.outputs:surface>
+
+            def Shader "Material_7"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.1
+                color3f inputs:base_color = (0.021219026, 0.021219026, 0.021219026)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.2031746, 0.2031746, 0.2031746)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.2
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_paintCaliper"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_paintCaliper/M_paintCaliper.outputs:surface>
+
+            def Shader "M_paintCaliper"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (0.028571429, 0.028571429, 0.028571429)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_paintBlack"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_paintBlack/M_paintBlack.outputs:surface>
+
+            def Shader "M_paintBlack"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.010329838, 0.010329838, 0.010329838)
+                float inputs:coat = 0.4
+                float inputs:coat_roughness = 0.01
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.30476192, 0.30476192, 0.30476192)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_paintBody"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_paintBody/M_paintBody.outputs:surface>
+
+            def Shader "M_paintBody"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.36507937, 0.36507937, 0.36507937)
+                float inputs:coat = 0.98
+                float inputs:coat_roughness = 0.02
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.61269844, 0.61269844, 0.61269844)
+                float inputs:specular_IOR = 1.788783
+                float inputs:specular_roughness = 0.25
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_rubber"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_rubber/M_rubber.outputs:surface>
+
+            def Shader "M_rubber"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.010329838, 0.010329838, 0.010329838)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.44761905, 0.44761905, 0.44761905)
+                float inputs:specular_IOR = 1.9249438
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_cableSplines"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_cableSplines/M_cableSplines.outputs:surface>
+
+            def Shader "M_cableSplines"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.1
+                color3f inputs:base_color = (0.61904764, 0.61904764, 0.61904764)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (0.44761905, 0.44761905, 0.44761905)
+                float inputs:specular_IOR = 5.0756483
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_netStiches"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_netStiches/M_netStiches.outputs:surface>
+
+            def Shader "M_netStiches"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.5271152, 0.5271152, 0.5271152)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_net"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_net/M_net.outputs:surface>
+
+            def Shader "M_net"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.021219026, 0.021219026, 0.021219026)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_metalSteel"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_metalSteel/M_metalSteel.outputs:surface>
+
+            def Shader "M_metalSteel"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.3
+                color3f inputs:base_color = (0.021219026, 0.021219026, 0.021219026)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_metalChrome"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_metalChrome/M_metalChrome.outputs:surface>
+
+            def Shader "M_metalChrome"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0.021219026, 0.021219026, 0.021219026)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 399998
+                float inputs:specular_roughness = 0.02
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_ledRed"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_ledRed/Material_30.outputs:surface>
+
+            def Shader "Material_30"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0, 0, 0)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 1
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_ledBlue"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_ledBlue/Material_35.outputs:surface>
+
+            def Shader "Material_35"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0, 0, 0)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 1
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1
+                float inputs:specular_roughness = 0
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_glassWindows"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_glassWindows/Material_21.outputs:surface>
+
+            def Shader "Material_21"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0, 0, 0)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.3294294
+                float inputs:specular_roughness = 0.005
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0.85
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_glassClear"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_glassClear/Material_9.outputs:surface>
+
+            def Shader "Material_9"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0, 0, 0)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.5760106
+                float inputs:specular_roughness = 0.0002
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0.85
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+
+        def Material "ext_black"
+        {
+            token outputs:mtlx:surface.connect = </shadertree/exterior_Mat/ext_black/Material.outputs:surface>
+
+            def Shader "M_black"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0
+                color3f inputs:base_color = (0, 0, 0)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1
+                float inputs:specular_roughness = 0
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+
+            def Shader "Material"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base = 0.8
+                color3f inputs:base_color = (0.6, 0.6, 0.6)
+                float inputs:coat = 0
+                float inputs:coat_roughness = 0
+                float inputs:emission = 0
+                color3f inputs:emission_color = (1, 1, 1)
+                float inputs:opacity = 1
+                float inputs:specular = 1
+                float inputs:specular_anisotropy = 0
+                color3f inputs:specular_color = (1, 1, 1)
+                float inputs:specular_IOR = 1.4999969
+                float inputs:specular_roughness = 0.4
+                float inputs:subsurface = 0
+                color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+                float inputs:subsurface_radius = 1
+                float inputs:subsurface_scale = 0.005
+                float inputs:transmission = 0
+                color3f inputs:transmission_color = (1, 1, 1)
+                float inputs:transmission_depth = 0
+                float inputs:transmission_dispersion = 0
+                float inputs:transmission_extra_roughness = 0
+                float inputs:transmission_scatter = 1
+                token outputs:surface
+            }
+        }
+    }
+
+    def Material "ground"
+    {
+        token outputs:mtlx:surface.connect = </shadertree/ground/Material_69.outputs:surface>
+
+        def Shader "Material_69"
+        {
+            uniform token info:id = "ND_standard_surface_surfaceshader"
+            float inputs:base = 0.8
+            color3f inputs:base_color = (0.6000001, 0.60382736, 0.6000001)
+            float inputs:coat = 0
+            float inputs:coat_roughness = 0
+            float inputs:emission = 0
+            color3f inputs:emission_color = (1, 1, 1)
+            float inputs:opacity = 1
+            float inputs:specular = 1
+            float inputs:specular_anisotropy = 0
+            color3f inputs:specular_color = (1, 1, 1)
+            float inputs:specular_IOR = 1
+            float inputs:specular_roughness = 0.4
+            float inputs:subsurface = 0
+            color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
+            float inputs:subsurface_radius = 1
+            float inputs:subsurface_scale = 0.005
+            float inputs:transmission = 0
+            color3f inputs:transmission_color = (1, 1, 1)
+            float inputs:transmission_depth = 0
+            float inputs:transmission_dispersion = 0
+            float inputs:transmission_extra_roughness = 0
+            float inputs:transmission_scatter = 1
+            token outputs:surface
+        }
+    }
+}
+
