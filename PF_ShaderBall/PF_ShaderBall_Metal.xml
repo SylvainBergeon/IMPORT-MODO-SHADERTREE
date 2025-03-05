@@ -52,7 +52,7 @@
       <fineThresh value="0.1" type="float" evaltype="percent" storageType="percent" />
       <first value="1" type="integer" evaltype="integer" storageType="integer" />
       <frmPasses value="1" type="integer" evaltype="integer" storageType="integer" />
-      <frmRange value="&lt;lx.object.Unknown object at 0x409a8e090&gt;" type="string" evaltype="+intrange" storageType="+intrange" />
+      <frmRange value="&lt;lx.object.Unknown object at 0x447defc50&gt;" type="string" evaltype="+intrange" storageType="+intrange" />
       <globBump value="0" type="integer" evaltype="boolean" storageType="boolean" />
       <globCaus value="refraction" type="integer" evaltype="integer" storageType="integer" />
       <globEnable value="1" type="integer" evaltype="boolean" storageType="boolean" />
@@ -505,7 +505,7 @@
          <uvMap value="" type="string" evaltype="string" storageType="string" />
       </channels>
    </advancedMaterial>
-   <mask name="Floor_Material" id="mask2290" type="mask">
+   <mask name="Floor__Material_" id="mask2290" type="mask">
       <channels>
          <addLayer value="1" type="integer" evaltype="boolean" storageType="boolean" />
          <binFilter value="eval" type="eval" evaltype="texFilter" storageType="NONE" />
@@ -628,8 +628,8 @@
             <uvMap value="" type="string" evaltype="string" storageType="string" />
          </channels>
       </advancedMaterial>
-      <imageMap name="graph_paper_Image" id="imageMap515" type="imageMap">
-         <txtrLocator name="graph_paper_Image_Texture" id="txtrLocator516" type="txtrLocator">
+      <imageMap name="graph_paper__Image_" id="imageMap515" type="imageMap">
+         <txtrLocator name="graph_paper__Image___Texture_" id="txtrLocator516" type="txtrLocator">
             <channels>
                <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -727,13 +727,13 @@
             <channels>
                <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-               <colorRange value="(&lt;lx.object.Unknown object at 0x447f2dfb0&gt;, &lt;lx.object.Unknown object at 0x447f2e4d0&gt;, &lt;lx.object.Unknown object at 0x447f2f150&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+               <colorRange value="(&lt;lx.object.Unknown object at 0x434f9b050&gt;, &lt;lx.object.Unknown object at 0x434f9bc30&gt;, &lt;lx.object.Unknown object at 0x434f9bcb0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                <colorspace value="(default)" type="string" evaltype="string" storageType="string" />
                <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                <filename value="/Library/Application Support/Luxology/Content/Assets/Pixel_Fondue_Shaderball_Scene/graph paper.png" type="string" evaltype="filepath" storageType="filepath" />
                <format value="PNG" type="string" evaltype="string" storageType="string" />
                <fps value="1.0" type="float" evaltype="float" storageType="float" />
-               <imageStack value="&lt;lx.object.Unknown object at 0x447f2f110&gt;" type="string" evaltype="evalstack" storageType="image" />
+               <imageStack value="&lt;lx.object.Unknown object at 0x434f998f0&gt;" type="string" evaltype="evalstack" storageType="image" />
                <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -777,7 +777,7 @@
          </channels>
       </imageMap>
    </mask>
-   <mask name="Cast_Iron_Burner_Material" id="mask203" type="mask">
+   <mask name="Cast_Iron_Burner__Material_" id="mask203" type="mask">
       <channels>
          <addLayer value="1" type="integer" evaltype="boolean" storageType="boolean" />
          <binFilter value="eval" type="eval" evaltype="texFilter" storageType="NONE" />
@@ -901,7 +901,7 @@
          </channels>
       </advancedMaterial>
    </mask>
-   <mask name="Pegs_Material" id="mask206" type="mask">
+   <mask name="Pegs__Material_" id="mask206" type="mask">
       <channels>
          <addLayer value="1" type="integer" evaltype="boolean" storageType="boolean" />
          <binFilter value="eval" type="eval" evaltype="texFilter" storageType="NONE" />
@@ -929,7 +929,7 @@
          <submask value="0" type="integer" evaltype="boolean" storageType="boolean" />
          <surfType value="all" type="integer" evaltype="integer" storageType="integer" />
       </channels>
-      <advancedMaterial name="Material_7" id="advancedMaterial001" type="advancedMaterial">
+      <advancedMaterial name="Material__7_" id="advancedMaterial001" type="advancedMaterial">
          <channels>
             <absorbAmt value="1.0" type="float" evaltype="percent" storageType="percent" />
             <absorbCol value="(1.0, 1.0, 1.0)" type="float" evaltype="color3" storageType="color3" />
@@ -1025,7 +1025,7 @@
          </channels>
       </advancedMaterial>
    </mask>
-   <mask name="Ball_Holder_Pole_Material" id="mask402" type="mask">
+   <mask name="Ball_Holder_Pole__Material_" id="mask402" type="mask">
       <channels>
          <addLayer value="1" type="integer" evaltype="boolean" storageType="boolean" />
          <binFilter value="eval" type="eval" evaltype="texFilter" storageType="NONE" />
@@ -1053,7 +1053,7 @@
          <submask value="0" type="integer" evaltype="boolean" storageType="boolean" />
          <surfType value="all" type="integer" evaltype="integer" storageType="integer" />
       </channels>
-      <advancedMaterial name="Material_8" id="advancedMaterial002" type="advancedMaterial">
+      <advancedMaterial name="Material__8_" id="advancedMaterial002" type="advancedMaterial">
          <channels>
             <absorbAmt value="1.0" type="float" evaltype="percent" storageType="percent" />
             <absorbCol value="(1.0, 1.0, 1.0)" type="float" evaltype="color3" storageType="color3" />
@@ -1177,7 +1177,7 @@
          <submask value="0" type="integer" evaltype="boolean" storageType="boolean" />
          <surfType value="all" type="integer" evaltype="integer" storageType="integer" />
       </channels>
-      <advancedMaterial name="Material_2" id="advancedMaterial206" type="advancedMaterial">
+      <advancedMaterial name="Material__2_" id="advancedMaterial206" type="advancedMaterial">
          <channels>
             <absorbAmt value="1.0" type="float" evaltype="percent" storageType="percent" />
             <absorbCol value="(1.0, 1.0, 1.0)" type="float" evaltype="color3" storageType="color3" />
@@ -1301,7 +1301,7 @@
          <submask value="0" type="integer" evaltype="boolean" storageType="boolean" />
          <surfType value="all" type="integer" evaltype="integer" storageType="integer" />
       </channels>
-      <advancedMaterial name="Material_6" id="advancedMaterial003" type="advancedMaterial">
+      <advancedMaterial name="Material__6_" id="advancedMaterial003" type="advancedMaterial">
          <channels>
             <absorbAmt value="1.0" type="float" evaltype="percent" storageType="percent" />
             <absorbCol value="(1.0, 1.0, 1.0)" type="float" evaltype="color3" storageType="color3" />
@@ -1397,7 +1397,7 @@
          </channels>
       </advancedMaterial>
    </mask>
-   <mask name="Pixel_Fondue_Material" id="mask019" type="mask">
+   <mask name="Pixel_Fondue__Material_" id="mask019" type="mask">
       <channels>
          <addLayer value="1" type="integer" evaltype="boolean" storageType="boolean" />
          <binFilter value="eval" type="eval" evaltype="texFilter" storageType="NONE" />
@@ -1425,7 +1425,7 @@
          <submask value="0" type="integer" evaltype="boolean" storageType="boolean" />
          <surfType value="all" type="integer" evaltype="integer" storageType="integer" />
       </channels>
-      <advancedMaterial name="Material_4" id="advancedMaterial208" type="advancedMaterial">
+      <advancedMaterial name="Material__4_" id="advancedMaterial208" type="advancedMaterial">
          <channels>
             <absorbAmt value="1.0" type="float" evaltype="percent" storageType="percent" />
             <absorbCol value="(1.0, 1.0, 1.0)" type="float" evaltype="color3" storageType="color3" />
@@ -1520,8 +1520,8 @@
             <uvMap value="" type="string" evaltype="string" storageType="string" />
          </channels>
       </advancedMaterial>
-      <imageMap name="Pixel_Panda_for_Avator_with_transparent_background_Image" id="imageMap475" type="imageMap">
-         <txtrLocator name="Pixel_Panda_for_Avator_with_transparent_background_Image_Texture" id="txtrLocator476" type="txtrLocator">
+      <imageMap name="Pixel_Panda_for_Avator_with_transparent_background__Image_" id="imageMap475" type="imageMap">
+         <txtrLocator name="Pixel_Panda_for_Avator_with_transparent_background__Image___Texture_" id="txtrLocator476" type="txtrLocator">
             <channels>
                <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -1619,13 +1619,13 @@
             <channels>
                <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-               <colorRange value="(&lt;lx.object.Unknown object at 0x447d8f850&gt;, &lt;lx.object.Unknown object at 0x447d8f870&gt;, &lt;lx.object.Unknown object at 0x447d8fef0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+               <colorRange value="(&lt;lx.object.Unknown object at 0x4511a5490&gt;, &lt;lx.object.Unknown object at 0x4511a4410&gt;, &lt;lx.object.Unknown object at 0x4511a74d0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                <colorspace value="(default)" type="string" evaltype="string" storageType="string" />
                <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                <filename value="/Library/Application Support/Luxology/Content/Assets/Pixel_Fondue_Shaderball_Scene/Pixel Panda for Avator with transparent background.png" type="string" evaltype="filepath" storageType="filepath" />
                <format value="PNG" type="string" evaltype="string" storageType="string" />
                <fps value="1.0" type="float" evaltype="float" storageType="float" />
-               <imageStack value="&lt;lx.object.Unknown object at 0x447d8d0f0&gt;" type="string" evaltype="evalstack" storageType="image" />
+               <imageStack value="&lt;lx.object.Unknown object at 0x4511a5570&gt;" type="string" evaltype="evalstack" storageType="image" />
                <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -1669,7 +1669,7 @@
          </channels>
       </imageMap>
    </mask>
-   <mask name="Flame_Material" id="mask035" type="mask">
+   <mask name="Flame__Material_" id="mask035" type="mask">
       <channels>
          <addLayer value="1" type="integer" evaltype="boolean" storageType="boolean" />
          <binFilter value="eval" type="eval" evaltype="texFilter" storageType="NONE" />
@@ -1792,8 +1792,8 @@
             <uvMap value="" type="string" evaltype="string" storageType="string" />
          </channels>
       </advancedMaterial>
-      <imageMap name="Candle_Flame_Image" id="imageMap004" type="imageMap">
-         <txtrLocator name="Candle_Flame_Image_Texture" id="txtrLocator005" type="txtrLocator">
+      <imageMap name="Candle_Flame__Image_" id="imageMap004" type="imageMap">
+         <txtrLocator name="Candle_Flame__Image___Texture_" id="txtrLocator005" type="txtrLocator">
             <channels>
                <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -1891,13 +1891,13 @@
             <channels>
                <alphaMode value="0" type="integer" evaltype="boolean" storageType="boolean" />
                <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-               <colorRange value="(&lt;lx.object.Unknown object at 0x434bc72d0&gt;, &lt;lx.object.Unknown object at 0x434bc7370&gt;, &lt;lx.object.Unknown object at 0x434bc7490&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+               <colorRange value="(&lt;lx.object.Unknown object at 0x400e88230&gt;, &lt;lx.object.Unknown object at 0x400e8a4f0&gt;, &lt;lx.object.Unknown object at 0x400e88250&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                <colorspace value="(default)" type="string" evaltype="string" storageType="string" />
                <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                <filename value="/Library/Application Support/Luxology/Content/Assets/Pixel_Fondue_Shaderball_Scene/Candle Flame.png" type="string" evaltype="filepath" storageType="filepath" />
                <format value="PNG" type="string" evaltype="string" storageType="string" />
                <fps value="1.0" type="float" evaltype="float" storageType="float" />
-               <imageStack value="&lt;lx.object.Unknown object at 0x434bc7c30&gt;" type="string" evaltype="evalstack" storageType="image" />
+               <imageStack value="&lt;lx.object.Unknown object at 0x400e89bf0&gt;" type="string" evaltype="evalstack" storageType="image" />
                <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -1940,25 +1940,25 @@
             <textureValue value="1.0" type="float" evaltype="percent" storageType="percent" />
          </channels>
       </imageMap>
-      <imageMap name="Candle_Flame_Image_2" id="imageMap010" type="imageMap">
+      <imageMap name="Candle_Flame__Image___2_" id="imageMap010" type="imageMap">
          <videoStill name="Candle_Flame" id="Candle Flame:videoStill001" type="videoStill">
             <channels>
                <alphaMode value="0" type="integer" evaltype="boolean" storageType="boolean" />
                <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-               <colorRange value="(&lt;lx.object.Unknown object at 0x434bc52d0&gt;, &lt;lx.object.Unknown object at 0x434bc56d0&gt;, &lt;lx.object.Unknown object at 0x434bc4f10&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+               <colorRange value="(&lt;lx.object.Unknown object at 0x400e8bcd0&gt;, &lt;lx.object.Unknown object at 0x400e8ba10&gt;, &lt;lx.object.Unknown object at 0x400e8b970&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                <colorspace value="(default)" type="string" evaltype="string" storageType="string" />
                <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                <filename value="/Library/Application Support/Luxology/Content/Assets/Pixel_Fondue_Shaderball_Scene/Candle Flame.png" type="string" evaltype="filepath" storageType="filepath" />
                <format value="PNG" type="string" evaltype="string" storageType="string" />
                <fps value="1.0" type="float" evaltype="float" storageType="float" />
-               <imageStack value="&lt;lx.object.Unknown object at 0x434bc7d90&gt;" type="string" evaltype="evalstack" storageType="image" />
+               <imageStack value="&lt;lx.object.Unknown object at 0x400e8bbf0&gt;" type="string" evaltype="evalstack" storageType="image" />
                <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                <playback value="0.0" type="float" evaltype="time" storageType="time" />
                <udim value="1001" type="integer" evaltype="integer" storageType="integer" />
             </channels>
          </videoStill>
-         <txtrLocator name="Candle_Flame_Image_2_Texture" id="txtrLocator015" type="txtrLocator">
+         <txtrLocator name="Candle_Flame__Image___2___Texture_" id="txtrLocator015" type="txtrLocator">
             <channels>
                <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -2089,7 +2089,7 @@
          </channels>
       </imageMap>
    </mask>
-   <mask name="Shaderball_Material" id="mask042" type="mask">
+   <mask name="Shaderball__Material_" id="mask042" type="mask">
       <channels>
          <addLayer value="1" type="integer" evaltype="boolean" storageType="boolean" />
          <binFilter value="eval" type="eval" evaltype="texFilter" storageType="NONE" />
@@ -2145,7 +2145,7 @@
             <submask value="0" type="integer" evaltype="boolean" storageType="boolean" />
             <surfType value="all" type="integer" evaltype="integer" storageType="integer" />
          </channels>
-         <advancedMaterial name="Material_5" id="advancedMaterial2292" type="advancedMaterial">
+         <advancedMaterial name="Material__5_" id="advancedMaterial2292" type="advancedMaterial">
             <channels>
                <absorbAmt value="1.0" type="float" evaltype="percent" storageType="percent" />
                <absorbCol value="(1.0, 1.0, 1.0)" type="float" evaltype="color3" storageType="color3" />
@@ -2240,8 +2240,8 @@
                <uvMap value="" type="string" evaltype="string" storageType="string" />
             </channels>
          </advancedMaterial>
-         <imageMap name="se1xef0c_4K_Specular_Image" id="imageMap001" type="imageMap">
-            <txtrLocator name="se1xef0c_4K_Specular_Image_Texture" id="txtrLocator002" type="txtrLocator">
+         <imageMap name="se1xef0c_4K_Specular__Image_" id="imageMap001" type="imageMap">
+            <txtrLocator name="se1xef0c_4K_Specular__Image___Texture_" id="txtrLocator002" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -2339,13 +2339,13 @@
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x4345165b0&gt;, &lt;lx.object.Unknown object at 0x4345161f0&gt;, &lt;lx.object.Unknown object at 0x434516690&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x40ca86690&gt;, &lt;lx.object.Unknown object at 0x40ca86670&gt;, &lt;lx.object.Unknown object at 0x40ca86610&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="(default)" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/se1xef0c_4K_Specular.jpg" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="JPG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x434517a10&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x40ca84110&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -2388,8 +2388,8 @@
                <textureValue value="1.0" type="float" evaltype="percent" storageType="percent" />
             </channels>
          </imageMap>
-         <imageMap name="se1xef0c_4K_Normal_Image" id="imageMap007" type="imageMap">
-            <txtrLocator name="se1xef0c_4K_Normal_Image_Texture" id="txtrLocator008" type="txtrLocator">
+         <imageMap name="se1xef0c_4K_Normal__Image_" id="imageMap007" type="imageMap">
+            <txtrLocator name="se1xef0c_4K_Normal__Image___Texture_" id="txtrLocator008" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -2487,13 +2487,13 @@
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x448039e10&gt;, &lt;lx.object.Unknown object at 0x4480397f0&gt;, &lt;lx.object.Unknown object at 0x448039730&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x400287750&gt;, &lt;lx.object.Unknown object at 0x4002876f0&gt;, &lt;lx.object.Unknown object at 0x400287a50&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="(none)" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/se1xef0c_4K_Normal.jpg" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="JPG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x4480399d0&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x400287670&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -2536,8 +2536,8 @@
                <textureValue value="1.0" type="float" evaltype="percent" storageType="percent" />
             </channels>
          </imageMap>
-         <imageMap name="se1xef0c_4K_Roughness_Image" id="imageMap013" type="imageMap">
-            <txtrLocator name="se1xef0c_4K_Roughness_Image_Texture" id="txtrLocator014" type="txtrLocator">
+         <imageMap name="se1xef0c_4K_Roughness__Image_" id="imageMap013" type="imageMap">
+            <txtrLocator name="se1xef0c_4K_Roughness__Image___Texture_" id="txtrLocator014" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -2635,13 +2635,13 @@
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x44821b110&gt;, &lt;lx.object.Unknown object at 0x448219f90&gt;, &lt;lx.object.Unknown object at 0x44821b070&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x40c043010&gt;, &lt;lx.object.Unknown object at 0x40c042fd0&gt;, &lt;lx.object.Unknown object at 0x40c043050&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="(none)" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/se1xef0c_4K_Roughness.jpg" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="JPG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x44821bd70&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x40c042bb0&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -2713,7 +2713,7 @@
             <submask value="0" type="integer" evaltype="boolean" storageType="boolean" />
             <surfType value="all" type="integer" evaltype="integer" storageType="integer" />
          </channels>
-         <advancedMaterial name="Material_3" id="advancedMaterial021" type="advancedMaterial">
+         <advancedMaterial name="Material__3_" id="advancedMaterial021" type="advancedMaterial">
             <channels>
                <absorbAmt value="1.0" type="float" evaltype="percent" storageType="percent" />
                <absorbCol value="(1.0, 1.0, 1.0)" type="float" evaltype="color3" storageType="color3" />
@@ -2808,8 +2808,8 @@
                <uvMap value="" type="string" evaltype="string" storageType="string" />
             </channels>
          </advancedMaterial>
-         <imageMap name="se1xef0c_4K_Albedo_Image" id="imageMap022" type="imageMap">
-            <txtrLocator name="se1xef0c_4K_Albedo_Image_Texture" id="txtrLocator024" type="txtrLocator">
+         <imageMap name="se1xef0c_4K_Albedo__Image_" id="imageMap022" type="imageMap">
+            <txtrLocator name="se1xef0c_4K_Albedo__Image___Texture_" id="txtrLocator024" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -2907,13 +2907,13 @@
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x44825b750&gt;, &lt;lx.object.Unknown object at 0x44825b5f0&gt;, &lt;lx.object.Unknown object at 0x44825b730&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x40c0994d0&gt;, &lt;lx.object.Unknown object at 0x40c099bb0&gt;, &lt;lx.object.Unknown object at 0x40c098750&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="(default)" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/se1xef0c_4K_Albedo.jpg" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="JPG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x44825b330&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x40c09b2b0&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -2956,8 +2956,8 @@
                <textureValue value="1.0" type="float" evaltype="percent" storageType="percent" />
             </channels>
          </imageMap>
-         <imageMap name="se1xef0c_4K_Metalness_Image" id="imageMap028" type="imageMap">
-            <txtrLocator name="mixed_Texture" id="txtrLocator029" type="txtrLocator">
+         <imageMap name="se1xef0c_4K_Metalness__Image_" id="imageMap028" type="imageMap">
+            <txtrLocator name="_mixed___Texture_" id="txtrLocator029" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -3055,13 +3055,13 @@
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x4482b6e50&gt;, &lt;lx.object.Unknown object at 0x4482b6e90&gt;, &lt;lx.object.Unknown object at 0x4482b6af0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x40c946910&gt;, &lt;lx.object.Unknown object at 0x40c945850&gt;, &lt;lx.object.Unknown object at 0x40c9446f0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="nuke-default:linear" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/se1xef0c_4K_Metalness.jpg" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="JPG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x4482b7ef0&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x40c945410&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -3104,8 +3104,8 @@
                <textureValue value="1.0" type="float" evaltype="percent" storageType="percent" />
             </channels>
          </imageMap>
-         <imageMap name="se1xef0c_4K_Metalness_Image_2" id="imageMap002" type="imageMap">
-            <txtrLocator name="mixed_Texture" id="txtrLocator029" type="txtrLocator">
+         <imageMap name="se1xef0c_4K_Metalness__Image___2_" id="imageMap002" type="imageMap">
+            <txtrLocator name="_mixed___Texture_" id="txtrLocator029" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -3203,13 +3203,13 @@
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x44a991910&gt;, &lt;lx.object.Unknown object at 0x44a993c70&gt;, &lt;lx.object.Unknown object at 0x44a993870&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x40c9a4b50&gt;, &lt;lx.object.Unknown object at 0x40c9a60f0&gt;, &lt;lx.object.Unknown object at 0x40c9a4590&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="nuke-default:linear" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/se1xef0c_4K_Metalness.jpg" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="JPG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x44a94ca10&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x40c905c10&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -3252,25 +3252,25 @@
                <textureValue value="1.0" type="float" evaltype="percent" storageType="percent" />
             </channels>
          </imageMap>
-         <imageMap name="se1xef0c_4K_Metalness_Image_3" id="imageMap003" type="imageMap">
+         <imageMap name="se1xef0c_4K_Metalness__Image___3_" id="imageMap003" type="imageMap">
             <videoStill name="se1xef0c_4K_Metalness" id="se1xef0c_4K_Metalness:videoStill001" type="videoStill">
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x44a991890&gt;, &lt;lx.object.Unknown object at 0x44a990d50&gt;, &lt;lx.object.Unknown object at 0x44a9917d0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x40c9a53b0&gt;, &lt;lx.object.Unknown object at 0x40c9a4530&gt;, &lt;lx.object.Unknown object at 0x40c9a7470&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="nuke-default:linear" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/se1xef0c_4K_Metalness.jpg" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="JPG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x44a991d90&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x40c9a5910&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
                   <udim value="1001" type="integer" evaltype="integer" storageType="integer" />
                </channels>
             </videoStill>
-            <txtrLocator name="mixed_Texture" id="txtrLocator029" type="txtrLocator">
+            <txtrLocator name="_mixed___Texture_" id="txtrLocator029" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -3400,25 +3400,25 @@
                <textureValue value="1.0" type="float" evaltype="percent" storageType="percent" />
             </channels>
          </imageMap>
-         <imageMap name="se1xef0c_4K_Metalness_Image_4" id="imageMap008" type="imageMap">
+         <imageMap name="se1xef0c_4K_Metalness__Image___4_" id="imageMap008" type="imageMap">
             <videoStill name="se1xef0c_4K_Metalness" id="se1xef0c_4K_Metalness:videoStill001" type="videoStill">
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x44ab681d0&gt;, &lt;lx.object.Unknown object at 0x44ab681b0&gt;, &lt;lx.object.Unknown object at 0x44ab68110&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x40d214cb0&gt;, &lt;lx.object.Unknown object at 0x40d214d30&gt;, &lt;lx.object.Unknown object at 0x40d214ed0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="nuke-default:linear" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/se1xef0c_4K_Metalness.jpg" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="JPG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x44ab687b0&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x40d214b90&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
                   <udim value="1001" type="integer" evaltype="integer" storageType="integer" />
                </channels>
             </videoStill>
-            <txtrLocator name="mixed_Texture" id="txtrLocator029" type="txtrLocator">
+            <txtrLocator name="_mixed___Texture_" id="txtrLocator029" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -3548,25 +3548,25 @@
                <textureValue value="1.0" type="float" evaltype="percent" storageType="percent" />
             </channels>
          </imageMap>
-         <imageMap name="se1xef0c_4K_Metalness_Image_5" id="imageMap014" type="imageMap">
+         <imageMap name="se1xef0c_4K_Metalness__Image___5_" id="imageMap014" type="imageMap">
             <videoStill name="se1xef0c_4K_Metalness" id="se1xef0c_4K_Metalness:videoStill001" type="videoStill">
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x44ab6b830&gt;, &lt;lx.object.Unknown object at 0x44ab6b850&gt;, &lt;lx.object.Unknown object at 0x44ab6b810&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x445e689f0&gt;, &lt;lx.object.Unknown object at 0x445e68a10&gt;, &lt;lx.object.Unknown object at 0x445e689d0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="nuke-default:linear" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/se1xef0c_4K_Metalness.jpg" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="JPG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x44ab6b690&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x445e68870&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
                   <udim value="1001" type="integer" evaltype="integer" storageType="integer" />
                </channels>
             </videoStill>
-            <txtrLocator name="mixed_Texture" id="txtrLocator029" type="txtrLocator">
+            <txtrLocator name="_mixed___Texture_" id="txtrLocator029" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -3696,8 +3696,8 @@
                <textureValue value="1.0" type="float" evaltype="percent" storageType="percent" />
             </channels>
          </imageMap>
-         <imageMap name="se1xef0c_4K_Normal_Image_2" id="imageMap033" type="imageMap">
-            <txtrLocator name="se1xef0c_4K_Normal_Image_2_Texture" id="txtrLocator034" type="txtrLocator">
+         <imageMap name="se1xef0c_4K_Normal__Image___2_" id="imageMap033" type="imageMap">
+            <txtrLocator name="se1xef0c_4K_Normal__Image___2___Texture_" id="txtrLocator034" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -3795,13 +3795,13 @@
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x40b38ba10&gt;, &lt;lx.object.Unknown object at 0x40b38b9f0&gt;, &lt;lx.object.Unknown object at 0x40b38ba30&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x445e6bd70&gt;, &lt;lx.object.Unknown object at 0x445e6bd50&gt;, &lt;lx.object.Unknown object at 0x445e6bd90&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="(none)" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/se1xef0c_4K_Normal.jpg" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="JPG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x40b38bb90&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x445e6bf10&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -3844,8 +3844,8 @@
                <textureValue value="1.0" type="float" evaltype="percent" storageType="percent" />
             </channels>
          </imageMap>
-         <imageMap name="se1xef0c_4K_Roughness_Image_2" id="imageMap038" type="imageMap">
-            <txtrLocator name="se1xef0c_4K_Roughness_Image_2_Texture" id="txtrLocator039" type="txtrLocator">
+         <imageMap name="se1xef0c_4K_Roughness__Image___2_" id="imageMap038" type="imageMap">
+            <txtrLocator name="se1xef0c_4K_Roughness__Image___2___Texture_" id="txtrLocator039" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -3943,13 +3943,13 @@
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x40b3c5930&gt;, &lt;lx.object.Unknown object at 0x40b3c5910&gt;, &lt;lx.object.Unknown object at 0x40b3c5950&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x445ea67d0&gt;, &lt;lx.object.Unknown object at 0x445ea67b0&gt;, &lt;lx.object.Unknown object at 0x445ea67f0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="(none)" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/se1xef0c_4K_Roughness.jpg" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="JPG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x40b3c5ab0&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x445ea6950&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -4021,7 +4021,7 @@
             <submask value="0" type="integer" evaltype="boolean" storageType="boolean" />
             <surfType value="all" type="integer" evaltype="integer" storageType="integer" />
          </channels>
-         <advancedMaterial name="Material_9" id="advancedMaterial058" type="advancedMaterial">
+         <advancedMaterial name="Material__9_" id="advancedMaterial058" type="advancedMaterial">
             <channels>
                <absorbAmt value="1.0" type="float" evaltype="percent" storageType="percent" />
                <absorbCol value="(1.0, 1.0, 1.0)" type="float" evaltype="color3" storageType="color3" />
@@ -4116,8 +4116,8 @@
                <uvMap value="" type="string" evaltype="string" storageType="string" />
             </channels>
          </advancedMaterial>
-         <imageMap name="schvfgwp_4K_Specular_Color_Image" id="imageMap043" type="imageMap">
-            <txtrLocator name="schvfgwp_4K_Specular_Color_Image_Texture" id="txtrLocator044" type="txtrLocator">
+         <imageMap name="schvfgwp_4K_Specular_Color__Image_" id="imageMap043" type="imageMap">
+            <txtrLocator name="schvfgwp_4K_Specular_Color__Image___Texture_" id="txtrLocator044" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -4215,13 +4215,13 @@
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x40b3c7cf0&gt;, &lt;lx.object.Unknown object at 0x40b3c7cd0&gt;, &lt;lx.object.Unknown object at 0x40b3c7d10&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x445ea7cd0&gt;, &lt;lx.object.Unknown object at 0x445ea7c90&gt;, &lt;lx.object.Unknown object at 0x445ea7cf0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="(default)" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/schvfgwp_4K_Specular Color.png" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="PNG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x40b3c7e70&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x445ea7f10&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -4264,8 +4264,8 @@
                <textureValue value="1.0" type="float" evaltype="percent" storageType="percent" />
             </channels>
          </imageMap>
-         <imageMap name="schvfgwp_4K_Normal_Image" id="imageMap048" type="imageMap">
-            <txtrLocator name="schvfgwp_4K_Normal_Image_Texture" id="txtrLocator049" type="txtrLocator">
+         <imageMap name="schvfgwp_4K_Normal__Image_" id="imageMap048" type="imageMap">
+            <txtrLocator name="schvfgwp_4K_Normal__Image___Texture_" id="txtrLocator049" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -4363,13 +4363,13 @@
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x44af21bf0&gt;, &lt;lx.object.Unknown object at 0x44af21bd0&gt;, &lt;lx.object.Unknown object at 0x44af21c10&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x452f16ab0&gt;, &lt;lx.object.Unknown object at 0x452f16a90&gt;, &lt;lx.object.Unknown object at 0x452f16ad0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="(none)" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/schvfgwp_4K_Normal.jpg" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="JPG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x44af21d70&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x452f16c30&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -4412,8 +4412,8 @@
                <textureValue value="1.0" type="float" evaltype="percent" storageType="percent" />
             </channels>
          </imageMap>
-         <imageMap name="schvfgwp_4K_Roughness_Image" id="imageMap053" type="imageMap">
-            <txtrLocator name="schvfgwp_4K_Roughness_Image_Texture" id="txtrLocator054" type="txtrLocator">
+         <imageMap name="schvfgwp_4K_Roughness__Image_" id="imageMap053" type="imageMap">
+            <txtrLocator name="schvfgwp_4K_Roughness__Image___Texture_" id="txtrLocator054" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -4511,13 +4511,13 @@
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x44af239b0&gt;, &lt;lx.object.Unknown object at 0x44af23990&gt;, &lt;lx.object.Unknown object at 0x44af239d0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x452f17d70&gt;, &lt;lx.object.Unknown object at 0x452f17d50&gt;, &lt;lx.object.Unknown object at 0x452f17db0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="(none)" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/schvfgwp_4K_Roughness.png" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="PNG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x44af23b30&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x452f17f10&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -4589,7 +4589,7 @@
             <submask value="0" type="integer" evaltype="boolean" storageType="boolean" />
             <surfType value="all" type="integer" evaltype="integer" storageType="integer" />
          </channels>
-         <advancedMaterial name="Material_10" id="advancedMaterial080" type="advancedMaterial">
+         <advancedMaterial name="Material__10_" id="advancedMaterial080" type="advancedMaterial">
             <channels>
                <absorbAmt value="1.0" type="float" evaltype="percent" storageType="percent" />
                <absorbCol value="(1.0, 1.0, 1.0)" type="float" evaltype="color3" storageType="color3" />
@@ -4684,8 +4684,8 @@
                <uvMap value="" type="string" evaltype="string" storageType="string" />
             </channels>
          </advancedMaterial>
-         <imageMap name="schvfgwp_4K_Roughness_Image_2" id="imageMap060" type="imageMap">
-            <txtrLocator name="schvfgwp_4K_Roughness_Image_2_Texture" id="txtrLocator061" type="txtrLocator">
+         <imageMap name="schvfgwp_4K_Roughness__Image___2_" id="imageMap060" type="imageMap">
+            <txtrLocator name="schvfgwp_4K_Roughness__Image___2___Texture_" id="txtrLocator061" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -4783,13 +4783,13 @@
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x44af81eb0&gt;, &lt;lx.object.Unknown object at 0x44af81e90&gt;, &lt;lx.object.Unknown object at 0x44af81ed0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x452f5ad90&gt;, &lt;lx.object.Unknown object at 0x452f5ad70&gt;, &lt;lx.object.Unknown object at 0x452f5adb0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="(none)" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/schvfgwp_4K_Roughness.png" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="PNG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x44af82030&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x452f5af10&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -4832,8 +4832,8 @@
                <textureValue value="1.0" type="float" evaltype="percent" storageType="percent" />
             </channels>
          </imageMap>
-         <imageMap name="schvfgwp_4K_Normal_Image_2" id="imageMap065" type="imageMap">
-            <txtrLocator name="schvfgwp_4K_Normal_Image_2_Texture" id="txtrLocator066" type="txtrLocator">
+         <imageMap name="schvfgwp_4K_Normal__Image___2_" id="imageMap065" type="imageMap">
+            <txtrLocator name="schvfgwp_4K_Normal__Image___2___Texture_" id="txtrLocator066" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -4931,13 +4931,13 @@
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x44af83c90&gt;, &lt;lx.object.Unknown object at 0x44af83c70&gt;, &lt;lx.object.Unknown object at 0x44af83cb0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x452f5bdd0&gt;, &lt;lx.object.Unknown object at 0x452f5bcb0&gt;, &lt;lx.object.Unknown object at 0x452f5bd30&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="(none)" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/schvfgwp_4K_Normal.jpg" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="JPG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x44af83e10&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x452f5bf10&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -4980,8 +4980,8 @@
                <textureValue value="1.0" type="float" evaltype="percent" storageType="percent" />
             </channels>
          </imageMap>
-         <imageMap name="schvfgwp_4K_Metalness_Image" id="imageMap070" type="imageMap">
-            <txtrLocator name="schvfgwp_4K_Metalness_Image_Texture" id="txtrLocator071" type="txtrLocator">
+         <imageMap name="schvfgwp_4K_Metalness__Image_" id="imageMap070" type="imageMap">
+            <txtrLocator name="schvfgwp_4K_Metalness__Image___Texture_" id="txtrLocator071" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -5079,13 +5079,13 @@
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x44afc1bb0&gt;, &lt;lx.object.Unknown object at 0x44afc1b90&gt;, &lt;lx.object.Unknown object at 0x44afc1bd0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x452fb2a50&gt;, &lt;lx.object.Unknown object at 0x452fb2a30&gt;, &lt;lx.object.Unknown object at 0x452fb2a70&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="(none)" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/schvfgwp_4K_Metalness.jpg" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="JPG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x44afc1d30&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x452fb2bd0&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -5128,8 +5128,8 @@
                <textureValue value="1.0" type="float" evaltype="percent" storageType="percent" />
             </channels>
          </imageMap>
-         <imageMap name="schvfgwp_4K_Albedo_Image" id="imageMap075" type="imageMap">
-            <txtrLocator name="schvfgwp_4K_Albedo_Image_Texture" id="txtrLocator076" type="txtrLocator">
+         <imageMap name="schvfgwp_4K_Albedo__Image_" id="imageMap075" type="imageMap">
+            <txtrLocator name="schvfgwp_4K_Albedo__Image___Texture_" id="txtrLocator076" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -5227,13 +5227,13 @@
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x44afc3950&gt;, &lt;lx.object.Unknown object at 0x44afc3930&gt;, &lt;lx.object.Unknown object at 0x44afc3970&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x452fb3d90&gt;, &lt;lx.object.Unknown object at 0x452fb3d70&gt;, &lt;lx.object.Unknown object at 0x452fb3db0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="(default)" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/schvfgwp_4K_Albedo.jpg" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="JPG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x44afc3ad0&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x452fb3f10&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
@@ -5305,7 +5305,7 @@
             <submask value="0" type="integer" evaltype="boolean" storageType="boolean" />
             <surfType value="all" type="integer" evaltype="integer" storageType="integer" />
          </channels>
-         <advancedMaterial name="Material_11" id="advancedMaterial091" type="advancedMaterial">
+         <advancedMaterial name="Material__11_" id="advancedMaterial091" type="advancedMaterial">
             <channels>
                <absorbAmt value="1.0" type="float" evaltype="percent" storageType="percent" />
                <absorbCol value="(1.0, 1.0, 1.0)" type="float" evaltype="color3" storageType="color3" />
@@ -5400,25 +5400,25 @@
                <uvMap value="Texture" type="string" evaltype="string" storageType="string" />
             </channels>
          </advancedMaterial>
-         <imageMap name="se1xef0c_4K_Specular_Image_2" id="imageMap092" type="imageMap">
+         <imageMap name="se1xef0c_4K_Specular__Image___2_" id="imageMap092" type="imageMap">
             <videoStill name="se1xef0c_4K_Specular" id="se1xef0c_4K_Specular:videoStill001" type="videoStill">
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x44afc3d30&gt;, &lt;lx.object.Unknown object at 0x44afc3d10&gt;, &lt;lx.object.Unknown object at 0x44afc3d50&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x452ff5570&gt;, &lt;lx.object.Unknown object at 0x452ff5550&gt;, &lt;lx.object.Unknown object at 0x452ff5590&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="(default)" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/se1xef0c_4K_Specular.jpg" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="JPG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x44afc3eb0&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x452ff56f0&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
                   <udim value="1001" type="integer" evaltype="integer" storageType="integer" />
                </channels>
             </videoStill>
-            <txtrLocator name="se1xef0c_4K_Specular_Image_2_Texture" id="txtrLocator107" type="txtrLocator">
+            <txtrLocator name="se1xef0c_4K_Specular__Image___2___Texture_" id="txtrLocator107" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -5548,25 +5548,25 @@
                <textureValue value="1.0" type="float" evaltype="percent" storageType="percent" />
             </channels>
          </imageMap>
-         <imageMap name="se1xef0c_4K_Normal_Image_3" id="imageMap093" type="imageMap">
+         <imageMap name="se1xef0c_4K_Normal__Image___3_" id="imageMap093" type="imageMap">
             <videoStill name="se1xef0c_4K_Normal" id="se1xef0c_4K_Normal:videoStill001" type="videoStill">
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x44b021990&gt;, &lt;lx.object.Unknown object at 0x44b0219b0&gt;, &lt;lx.object.Unknown object at 0x44b021970&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x452ff6870&gt;, &lt;lx.object.Unknown object at 0x452ff6890&gt;, &lt;lx.object.Unknown object at 0x452ff6850&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="(none)" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/se1xef0c_4K_Normal.jpg" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="JPG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x44b021810&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x452ff66f0&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
                   <udim value="1001" type="integer" evaltype="integer" storageType="integer" />
                </channels>
             </videoStill>
-            <txtrLocator name="se1xef0c_4K_Normal_Image_3_Texture" id="txtrLocator111" type="txtrLocator">
+            <txtrLocator name="se1xef0c_4K_Normal__Image___3___Texture_" id="txtrLocator111" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -5696,25 +5696,25 @@
                <textureValue value="1.0" type="float" evaltype="percent" storageType="percent" />
             </channels>
          </imageMap>
-         <imageMap name="se1xef0c_4K_Roughness_Image_3" id="imageMap094" type="imageMap">
+         <imageMap name="se1xef0c_4K_Roughness__Image___3_" id="imageMap094" type="imageMap">
             <videoStill name="se1xef0c_4K_Roughness" id="se1xef0c_4K_Roughness:videoStill001" type="videoStill">
                <channels>
                   <alphaMode value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-                  <colorRange value="(&lt;lx.object.Unknown object at 0x44b023770&gt;, &lt;lx.object.Unknown object at 0x44b023790&gt;, &lt;lx.object.Unknown object at 0x44b023750&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+                  <colorRange value="(&lt;lx.object.Unknown object at 0x45548c8d0&gt;, &lt;lx.object.Unknown object at 0x45548c8f0&gt;, &lt;lx.object.Unknown object at 0x45548c8b0&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                   <colorspace value="(none)" type="string" evaltype="string" storageType="string" />
                   <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                   <filename value="/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/se1xef0c_4K_Roughness.jpg" type="string" evaltype="filepath" storageType="filepath" />
                   <format value="JPG" type="string" evaltype="string" storageType="string" />
                   <fps value="1.0" type="float" evaltype="float" storageType="float" />
-                  <imageStack value="&lt;lx.object.Unknown object at 0x44b0235f0&gt;" type="string" evaltype="evalstack" storageType="image" />
+                  <imageStack value="&lt;lx.object.Unknown object at 0x452ff77b0&gt;" type="string" evaltype="evalstack" storageType="image" />
                   <interlace value="0" type="integer" evaltype="integer" storageType="integer" />
                   <opacity value="1.0" type="float" evaltype="percent" storageType="percent" />
                   <playback value="0.0" type="float" evaltype="time" storageType="time" />
                   <udim value="1001" type="integer" evaltype="integer" storageType="integer" />
                </channels>
             </videoStill>
-            <txtrLocator name="se1xef0c_4K_Roughness_Image_3_Texture" id="txtrLocator115" type="txtrLocator">
+            <txtrLocator name="se1xef0c_4K_Roughness__Image___3___Texture_" id="txtrLocator115" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -5845,7 +5845,7 @@
             </channels>
          </imageMap>
          <noise name="Noise" id="noise119" type="noise">
-            <txtrLocator name="Noise_Texture" id="txtrLocator120" type="txtrLocator">
+            <txtrLocator name="Noise__Texture_" id="txtrLocator120" type="txtrLocator">
                <channels>
                   <bias value="0.5" type="float" evaltype="percent" storageType="percent" />
                   <center value="default" type="integer" evaltype="integer" storageType="integer" />
@@ -5975,7 +5975,7 @@
          <gradient name="Gradient" id="gradient124" type="gradient">
             <channels>
                <blend value="normal" type="integer" evaltype="integer" storageType="integer" />
-               <color value="(&lt;lx.object.Unknown object at 0x44b063570&gt;, &lt;lx.object.Unknown object at 0x44b063530&gt;, &lt;lx.object.Unknown object at 0x44b063590&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
+               <color value="(&lt;lx.object.Unknown object at 0x45548fb70&gt;, &lt;lx.object.Unknown object at 0x45548fb30&gt;, &lt;lx.object.Unknown object at 0x45548fb90&gt;)" type="gradient" evaltype="gradstack" storageType="NONE" />
                <effect value="anisoDir" type="string" evaltype="string" storageType="string" />
                <enable value="1" type="integer" evaltype="boolean" storageType="boolean" />
                <filter value="eval" type="eval" evaltype="texFilter" storageType="NONE" />

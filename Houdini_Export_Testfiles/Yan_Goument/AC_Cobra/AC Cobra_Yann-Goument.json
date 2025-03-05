@@ -310,7 +310,7 @@
    "storageType": "integer"
   },
   "frmRange": {
-   "value": "<lx.object.Unknown object at 0x5a937fd70>",
+   "value": "<lx.object.Unknown object at 0x3e9832710>",
    "type": "string",
    "evaltype": "+intrange",
    "storageType": "+intrange"
@@ -6589,7 +6589,7 @@
       "storageType": "percent"
      },
      "specCol": {
-      "value": "(0.0, 0.10097897797822952, 0.48571428656578064)",
+      "value": "(0.017820997163653374, 0.1139240488409996, 0.03181787207722664)",
       "type": "float",
       "evaltype": "color3",
       "storageType": "color3"
@@ -6710,6 +6710,211 @@
      }
     }
    },
+   " (2) (Image)": {
+    "name": " (2) (Image)",
+    "id": "imageMap009",
+    "type": "imageMap",
+    "channels": {
+     "aa": {
+      "value": "1",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "aaVal": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "alpha": {
+      "value": "use",
+      "type": "integer",
+      "evaltype": "integer",
+      "storageType": "integer"
+     },
+     "blend": {
+      "value": "multiply",
+      "type": "integer",
+      "evaltype": "integer",
+      "storageType": "integer"
+     },
+     "blueInv": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "brightness": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "clamp": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "contrast": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "effect": {
+      "value": "rough",
+      "type": "string",
+      "evaltype": "string",
+      "storageType": "string"
+     },
+     "enable": {
+      "value": "1",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "filter": {
+      "value": "eval",
+      "type": "eval",
+      "evaltype": "texFilter",
+      "storageType": "NONE"
+     },
+     "gamma": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "float",
+      "storageType": "float"
+     },
+     "gldisp": {
+      "value": "1",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "greenInv": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "ignSclGrp": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "invert": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "max": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "min": {
+      "value": "0.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "minSpot": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "float",
+      "storageType": "float"
+     },
+     "opacity": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "pixBlend": {
+      "value": "bilinear",
+      "type": "integer",
+      "evaltype": "integer",
+      "storageType": "integer"
+     },
+     "rawTextureAlpha": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "rawTextureColor": {
+      "value": "(0.0, 0.0, 0.0)",
+      "type": "float",
+      "evaltype": "color3",
+      "storageType": "color3"
+     },
+     "rawTextureValue": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "redInv": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "render": {
+      "value": "1",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "rgba": {
+      "value": "use",
+      "type": "integer",
+      "evaltype": "integer",
+      "storageType": "integer"
+     },
+     "sourceHigh": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "float",
+      "storageType": "float"
+     },
+     "sourceLow": {
+      "value": "0.0",
+      "type": "float",
+      "evaltype": "float",
+      "storageType": "float"
+     },
+     "swizzling": {
+      "value": "0",
+      "type": "integer",
+      "evaltype": "boolean",
+      "storageType": "boolean"
+     },
+     "textureAlpha": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     },
+     "textureColor": {
+      "value": "(0.0, 0.0, 0.0)",
+      "type": "float",
+      "evaltype": "color3",
+      "storageType": "color3"
+     },
+     "textureValue": {
+      "value": "1.0",
+      "type": "float",
+      "evaltype": "percent",
+      "storageType": "percent"
+     }
+    }
+   },
    "Gradient": {
     "name": "Gradient",
     "id": "gradient001",
@@ -6722,7 +6927,7 @@
       "storageType": "integer"
      },
      "color": {
-      "value": "(<lx.object.Unknown object at 0x4039329b0>, <lx.object.Unknown object at 0x403930d10>, <lx.object.Unknown object at 0x403933f90>)",
+      "value": "(<lx.object.Unknown object at 0x4746c3910>, <lx.object.Unknown object at 0x4746c0af0>, <lx.object.Unknown object at 0x4746c3810>)",
       "type": "gradient",
       "evaltype": "gradstack",
       "storageType": "NONE"

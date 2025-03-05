@@ -152,9 +152,10 @@ def Scope "shadertree"
                 float inputs:opacity = 1
                 float inputs:specular = 1
                 float inputs:specular_anisotropy = 0
-                color3f inputs:specular_color = (0, 0.10097898, 0.4857143)
+                color3f inputs:specular_color = (0.017820997, 0.11392405, 0.031817872)
                 float inputs:specular_IOR = 13.927721
                 float inputs:specular_roughness = 0.495
+                float inputs:specular_roughness.connect = </shadertree/Exterior/cobra_paintBody/_2_Image_adjust.outputs:out>
                 float inputs:subsurface = 0
                 color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
                 float inputs:subsurface_radius = 1
@@ -166,6 +167,69 @@ def Scope "shadertree"
                 float inputs:transmission_extra_roughness = 0
                 float inputs:transmission_scatter = 1
                 token outputs:surface
+            }
+
+            def Shader "_2_Image_texture_reader"
+            {
+                uniform token info:id = "ND_texcoord_vector2"
+                int inputs:index = 0
+                texCoord2f outputs:out
+            }
+
+            def Shader "_2_Image_texture_transform"
+            {
+                uniform token info:id = "UsdTransform2d"
+                texCoord2f inputs:in.connect = </shadertree/Exterior/cobra_paintBody/_2_Image_texture_reader.outputs:out>
+                float inputs:rotation = 0
+                float2 inputs:scale = (5, 5)
+                float2 inputs:translation = (0, 0)
+                texCoord2f outputs:result
+            }
+
+            def Shader "_2_Image_imageFile"
+            {
+                uniform token info:id = "ND_image_float"
+                asset inputs:file = @/Library/Application Support/Luxology/Content/Assets/Images/Metal/Metal_Scratched_03.png@
+                float2 inputs:texcoord.connect = </shadertree/Exterior/cobra_paintBody/_2_Image_texture_transform.outputs:result>
+                string inputs:wrapS = "periodic"
+                string inputs:wrapT = "periodic"
+                float outputs:out
+            }
+
+            def NodeGraph "_2_Image_adjust"
+            {
+                float inputs:brightness = 0
+                float inputs:contrast = 1
+                int inputs:invert = 0
+                float inputs:outHigh = 1
+                float inputs:outLow = 0
+                float inputs:texture.connect = </shadertree/Exterior/cobra_paintBody/_2_Image_imageFile.outputs:out>
+                float outputs:out.connect = </shadertree/Exterior/cobra_paintBody/_2_Image_adjust/brightness.outputs:out>
+
+                def Shader "valueRange"
+                {
+                    uniform token info:id = "ND_remap_float"
+                    float inputs:in.connect = </shadertree/Exterior/cobra_paintBody/_2_Image_adjust.inputs:texture>
+                    float inputs:outhigh.connect = </shadertree/Exterior/cobra_paintBody/_2_Image_adjust.inputs:outHigh>
+                    float inputs:outlow.connect = </shadertree/Exterior/cobra_paintBody/_2_Image_adjust.inputs:outLow>
+                    float outputs:out
+                }
+
+                def Shader "contrast"
+                {
+                    uniform token info:id = "ND_contrast"
+                    float inputs:amount.connect = </shadertree/Exterior/cobra_paintBody/_2_Image_adjust.inputs:contrast>
+                    float inputs:in.connect = </shadertree/Exterior/cobra_paintBody/_2_Image_adjust/valueRange.outputs:out>
+                    float outputs:out
+                }
+
+                def Shader "brightness"
+                {
+                    uniform token info:id = "ND_add"
+                    float inputs:in1.connect = </shadertree/Exterior/cobra_paintBody/_2_Image_adjust/contrast.outputs:out>
+                    float inputs:in2.connect = </shadertree/Exterior/cobra_paintBody/_2_Image_adjust.inputs:brightness>
+                    float outputs:out
+                }
             }
         }
 

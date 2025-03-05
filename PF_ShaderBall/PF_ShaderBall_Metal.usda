@@ -11,7 +11,7 @@ def Scope "shadertree"
             uniform token info:id = "ND_standard_surface_surfaceshader"
             float inputs:base = 0.8
             color3f inputs:base_color = (0.6, 0.6, 0.6)
-            color3f inputs:base_color.connect = </shadertree/Floor/graph_paper_Image_adjust.outputs:out>
+            color3f inputs:base_color.connect = </shadertree/Floor/graph_paper__Image__adjust.outputs:out>
             float inputs:coat = 0
             float inputs:coat_roughness = 0
             float inputs:emission = 0
@@ -35,65 +35,65 @@ def Scope "shadertree"
             token outputs:surface
         }
 
-        def Shader "graph_paper_Image_texture_reader"
+        def Shader "graph_paper__Image__texture_reader"
         {
             uniform token info:id = "ND_texcoord_vector2"
             int inputs:index = 0
             texCoord2f outputs:out
         }
 
-        def Shader "graph_paper_Image_texture_transform"
+        def Shader "graph_paper__Image__texture_transform"
         {
             uniform token info:id = "UsdTransform2d"
-            texCoord2f inputs:in.connect = </shadertree/Floor/graph_paper_Image_texture_reader.outputs:out>
+            texCoord2f inputs:in.connect = </shadertree/Floor/graph_paper__Image__texture_reader.outputs:out>
             float inputs:rotation = 0
             float2 inputs:scale = (4, 4)
             float2 inputs:translation = (0, 0)
             texCoord2f outputs:result
         }
 
-        def Shader "graph_paper_Image_imageFile"
+        def Shader "graph_paper__Image__imageFile"
         {
             uniform token info:id = "ND_image_color3"
             asset inputs:file = @/Library/Application Support/Luxology/Content/Assets/Pixel_Fondue_Shaderball_Scene/graph paper.png@
-            float2 inputs:texcoord.connect = </shadertree/Floor/graph_paper_Image_texture_transform.outputs:result>
+            float2 inputs:texcoord.connect = </shadertree/Floor/graph_paper__Image__texture_transform.outputs:result>
             string inputs:wrapS = "periodic"
             string inputs:wrapT = "periodic"
             color3f outputs:out
         }
 
-        def NodeGraph "graph_paper_Image_adjust"
+        def NodeGraph "graph_paper__Image__adjust"
         {
             color3f inputs:brightness = (0, 0, 0)
             color3f inputs:contrast = (1, 1, 1)
             int inputs:invert = 0
             color3f inputs:outHigh = (1, 1, 1)
             color3f inputs:outLow = (0, 0, 0)
-            color3f inputs:texture.connect = </shadertree/Floor/graph_paper_Image_imageFile.outputs:out>
-            color3f outputs:out.connect = </shadertree/Floor/graph_paper_Image_adjust/brightness.outputs:out>
+            color3f inputs:texture.connect = </shadertree/Floor/graph_paper__Image__imageFile.outputs:out>
+            color3f outputs:out.connect = </shadertree/Floor/graph_paper__Image__adjust/brightness.outputs:out>
 
             def Shader "valueRange"
             {
                 uniform token info:id = "ND_remap_color3"
-                color3f inputs:in.connect = </shadertree/Floor/graph_paper_Image_adjust.inputs:texture>
-                color3f inputs:outhigh.connect = </shadertree/Floor/graph_paper_Image_adjust.inputs:outHigh>
-                color3f inputs:outlow.connect = </shadertree/Floor/graph_paper_Image_adjust.inputs:outLow>
+                color3f inputs:in.connect = </shadertree/Floor/graph_paper__Image__adjust.inputs:texture>
+                color3f inputs:outhigh.connect = </shadertree/Floor/graph_paper__Image__adjust.inputs:outHigh>
+                color3f inputs:outlow.connect = </shadertree/Floor/graph_paper__Image__adjust.inputs:outLow>
                 color3f outputs:out
             }
 
             def Shader "contrast"
             {
                 uniform token info:id = "ND_contrast_color3"
-                color3f inputs:amount.connect = </shadertree/Floor/graph_paper_Image_adjust.inputs:contrast>
-                color3f inputs:in.connect = </shadertree/Floor/graph_paper_Image_adjust/valueRange.outputs:out>
+                color3f inputs:amount.connect = </shadertree/Floor/graph_paper__Image__adjust.inputs:contrast>
+                color3f inputs:in.connect = </shadertree/Floor/graph_paper__Image__adjust/valueRange.outputs:out>
                 color3f outputs:out
             }
 
             def Shader "brightness"
             {
                 uniform token info:id = "ND_add_color3"
-                color3f inputs:in1.connect = </shadertree/Floor/graph_paper_Image_adjust/contrast.outputs:out>
-                color3f inputs:in2.connect = </shadertree/Floor/graph_paper_Image_adjust.inputs:brightness>
+                color3f inputs:in1.connect = </shadertree/Floor/graph_paper__Image__adjust/contrast.outputs:out>
+                color3f inputs:in2.connect = </shadertree/Floor/graph_paper__Image__adjust.inputs:brightness>
                 color3f outputs:out
             }
         }
@@ -134,9 +134,9 @@ def Scope "shadertree"
 
     def Material "Pegs"
     {
-        token outputs:mtlx:surface.connect = </shadertree/Pegs/Material_7.outputs:surface>
+        token outputs:mtlx:surface.connect = </shadertree/Pegs/Material__7_.outputs:surface>
 
-        def Shader "Material_7"
+        def Shader "Material__7_"
         {
             uniform token info:id = "ND_standard_surface_surfaceshader"
             float inputs:base = 0.8
@@ -167,9 +167,9 @@ def Scope "shadertree"
 
     def Material "Ball_Holder_Pole"
     {
-        token outputs:mtlx:surface.connect = </shadertree/Ball_Holder_Pole/Material_8.outputs:surface>
+        token outputs:mtlx:surface.connect = </shadertree/Ball_Holder_Pole/Material__8_.outputs:surface>
 
-        def Shader "Material_8"
+        def Shader "Material__8_"
         {
             uniform token info:id = "ND_standard_surface_surfaceshader"
             float inputs:base = 0.8
@@ -200,9 +200,9 @@ def Scope "shadertree"
 
     def Material "Stainless_Steel_Burner"
     {
-        token outputs:mtlx:surface.connect = </shadertree/Stainless_Steel_Burner/Material_2.outputs:surface>
+        token outputs:mtlx:surface.connect = </shadertree/Stainless_Steel_Burner/Material__2_.outputs:surface>
 
-        def Shader "Material_2"
+        def Shader "Material__2_"
         {
             uniform token info:id = "ND_standard_surface_surfaceshader"
             float inputs:base = 0
@@ -233,14 +233,14 @@ def Scope "shadertree"
 
     def Material "Pixel_Fondue"
     {
-        token outputs:mtlx:surface.connect = </shadertree/Pixel_Fondue/Material_4.outputs:surface>
+        token outputs:mtlx:surface.connect = </shadertree/Pixel_Fondue/Material__4_.outputs:surface>
 
-        def Shader "Material_4"
+        def Shader "Material__4_"
         {
             uniform token info:id = "ND_standard_surface_surfaceshader"
             float inputs:base = 1
             color3f inputs:base_color = (0, 0, 0)
-            color3f inputs:base_color.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background_Image_adjust.outputs:out>
+            color3f inputs:base_color.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background__Image__adjust.outputs:out>
             float inputs:coat = 0
             float inputs:coat_roughness = 0
             float inputs:emission = 0
@@ -264,65 +264,65 @@ def Scope "shadertree"
             token outputs:surface
         }
 
-        def Shader "Pixel_Panda_for_Avator_with_transparent_background_Image_texture_reader"
+        def Shader "Pixel_Panda_for_Avator_with_transparent_background__Image__texture_reader"
         {
             uniform token info:id = "ND_texcoord_vector2"
             int inputs:index = 0
             texCoord2f outputs:out
         }
 
-        def Shader "Pixel_Panda_for_Avator_with_transparent_background_Image_texture_transform"
+        def Shader "Pixel_Panda_for_Avator_with_transparent_background__Image__texture_transform"
         {
             uniform token info:id = "UsdTransform2d"
-            texCoord2f inputs:in.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background_Image_texture_reader.outputs:out>
+            texCoord2f inputs:in.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background__Image__texture_reader.outputs:out>
             float inputs:rotation = 0
             float2 inputs:scale = (1, 1)
             float2 inputs:translation = (0, 0)
             texCoord2f outputs:result
         }
 
-        def Shader "Pixel_Panda_for_Avator_with_transparent_background_Image_imageFile"
+        def Shader "Pixel_Panda_for_Avator_with_transparent_background__Image__imageFile"
         {
             uniform token info:id = "ND_image_color3"
             asset inputs:file = @/Library/Application Support/Luxology/Content/Assets/Pixel_Fondue_Shaderball_Scene/Pixel Panda for Avator with transparent background.png@
-            float2 inputs:texcoord.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background_Image_texture_transform.outputs:result>
+            float2 inputs:texcoord.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background__Image__texture_transform.outputs:result>
             string inputs:wrapS = "clamp"
             string inputs:wrapT = "clamp"
             color3f outputs:out
         }
 
-        def NodeGraph "Pixel_Panda_for_Avator_with_transparent_background_Image_adjust"
+        def NodeGraph "Pixel_Panda_for_Avator_with_transparent_background__Image__adjust"
         {
             color3f inputs:brightness = (0, 0, 0)
             color3f inputs:contrast = (1, 1, 1)
             int inputs:invert = 0
             color3f inputs:outHigh = (1, 1, 1)
             color3f inputs:outLow = (0, 0, 0)
-            color3f inputs:texture.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background_Image_imageFile.outputs:out>
-            color3f outputs:out.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background_Image_adjust/brightness.outputs:out>
+            color3f inputs:texture.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background__Image__imageFile.outputs:out>
+            color3f outputs:out.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background__Image__adjust/brightness.outputs:out>
 
             def Shader "valueRange"
             {
                 uniform token info:id = "ND_remap_color3"
-                color3f inputs:in.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background_Image_adjust.inputs:texture>
-                color3f inputs:outhigh.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background_Image_adjust.inputs:outHigh>
-                color3f inputs:outlow.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background_Image_adjust.inputs:outLow>
+                color3f inputs:in.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background__Image__adjust.inputs:texture>
+                color3f inputs:outhigh.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background__Image__adjust.inputs:outHigh>
+                color3f inputs:outlow.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background__Image__adjust.inputs:outLow>
                 color3f outputs:out
             }
 
             def Shader "contrast"
             {
                 uniform token info:id = "ND_contrast_color3"
-                color3f inputs:amount.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background_Image_adjust.inputs:contrast>
-                color3f inputs:in.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background_Image_adjust/valueRange.outputs:out>
+                color3f inputs:amount.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background__Image__adjust.inputs:contrast>
+                color3f inputs:in.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background__Image__adjust/valueRange.outputs:out>
                 color3f outputs:out
             }
 
             def Shader "brightness"
             {
                 uniform token info:id = "ND_add_color3"
-                color3f inputs:in1.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background_Image_adjust/contrast.outputs:out>
-                color3f inputs:in2.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background_Image_adjust.inputs:brightness>
+                color3f inputs:in1.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background__Image__adjust/contrast.outputs:out>
+                color3f inputs:in2.connect = </shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background__Image__adjust.inputs:brightness>
                 color3f outputs:out
             }
         }
@@ -341,7 +341,7 @@ def Scope "shadertree"
             float inputs:coat_roughness = 0
             float inputs:emission = 1
             color3f inputs:emission_color = (1, 1, 1)
-            color3f inputs:emission_color.connect = </shadertree/Flame/Candle_Flame_Image_adjust.outputs:out>
+            color3f inputs:emission_color.connect = </shadertree/Flame/Candle_Flame__Image__adjust.outputs:out>
             float inputs:opacity = 1
             float inputs:specular = 1
             float inputs:specular_anisotropy = 0
@@ -353,7 +353,7 @@ def Scope "shadertree"
             float inputs:subsurface_radius = 1
             float inputs:subsurface_scale = 0.005
             float inputs:transmission = 1
-            float inputs:transmission.connect = </shadertree/Flame/Candle_Flame_Image_2_adjust.outputs:out>
+            float inputs:transmission.connect = </shadertree/Flame/Candle_Flame__Image___2__adjust.outputs:out>
             color3f inputs:transmission_color = (1, 1, 1)
             float inputs:transmission_depth = 0
             float inputs:transmission_dispersion = 0
@@ -362,135 +362,135 @@ def Scope "shadertree"
             token outputs:surface
         }
 
-        def Shader "Candle_Flame_Image_texture_reader"
+        def Shader "Candle_Flame__Image__texture_reader"
         {
             uniform token info:id = "ND_texcoord_vector2"
             int inputs:index = 0
             texCoord2f outputs:out
         }
 
-        def Shader "Candle_Flame_Image_texture_transform"
+        def Shader "Candle_Flame__Image__texture_transform"
         {
             uniform token info:id = "UsdTransform2d"
-            texCoord2f inputs:in.connect = </shadertree/Flame/Candle_Flame_Image_texture_reader.outputs:out>
+            texCoord2f inputs:in.connect = </shadertree/Flame/Candle_Flame__Image__texture_reader.outputs:out>
             float inputs:rotation = 0
             float2 inputs:scale = (1, 1)
             float2 inputs:translation = (0, 0)
             texCoord2f outputs:result
         }
 
-        def Shader "Candle_Flame_Image_imageFile"
+        def Shader "Candle_Flame__Image__imageFile"
         {
             uniform token info:id = "ND_image_color3"
             asset inputs:file = @/Library/Application Support/Luxology/Content/Assets/Pixel_Fondue_Shaderball_Scene/Candle Flame.png@
-            float2 inputs:texcoord.connect = </shadertree/Flame/Candle_Flame_Image_texture_transform.outputs:result>
+            float2 inputs:texcoord.connect = </shadertree/Flame/Candle_Flame__Image__texture_transform.outputs:result>
             string inputs:wrapS = "periodic"
             string inputs:wrapT = "periodic"
             color3f outputs:out
         }
 
-        def NodeGraph "Candle_Flame_Image_adjust"
+        def NodeGraph "Candle_Flame__Image__adjust"
         {
             color3f inputs:brightness = (0, 0, 0)
             color3f inputs:contrast = (1, 1, 1)
             int inputs:invert = 0
             color3f inputs:outHigh = (1, 1, 1)
             color3f inputs:outLow = (0, 0, 0)
-            color3f inputs:texture.connect = </shadertree/Flame/Candle_Flame_Image_imageFile.outputs:out>
-            color3f outputs:out.connect = </shadertree/Flame/Candle_Flame_Image_adjust/brightness.outputs:out>
+            color3f inputs:texture.connect = </shadertree/Flame/Candle_Flame__Image__imageFile.outputs:out>
+            color3f outputs:out.connect = </shadertree/Flame/Candle_Flame__Image__adjust/brightness.outputs:out>
 
             def Shader "valueRange"
             {
                 uniform token info:id = "ND_remap_color3"
-                color3f inputs:in.connect = </shadertree/Flame/Candle_Flame_Image_adjust.inputs:texture>
-                color3f inputs:outhigh.connect = </shadertree/Flame/Candle_Flame_Image_adjust.inputs:outHigh>
-                color3f inputs:outlow.connect = </shadertree/Flame/Candle_Flame_Image_adjust.inputs:outLow>
+                color3f inputs:in.connect = </shadertree/Flame/Candle_Flame__Image__adjust.inputs:texture>
+                color3f inputs:outhigh.connect = </shadertree/Flame/Candle_Flame__Image__adjust.inputs:outHigh>
+                color3f inputs:outlow.connect = </shadertree/Flame/Candle_Flame__Image__adjust.inputs:outLow>
                 color3f outputs:out
             }
 
             def Shader "contrast"
             {
                 uniform token info:id = "ND_contrast_color3"
-                color3f inputs:amount.connect = </shadertree/Flame/Candle_Flame_Image_adjust.inputs:contrast>
-                color3f inputs:in.connect = </shadertree/Flame/Candle_Flame_Image_adjust/valueRange.outputs:out>
+                color3f inputs:amount.connect = </shadertree/Flame/Candle_Flame__Image__adjust.inputs:contrast>
+                color3f inputs:in.connect = </shadertree/Flame/Candle_Flame__Image__adjust/valueRange.outputs:out>
                 color3f outputs:out
             }
 
             def Shader "brightness"
             {
                 uniform token info:id = "ND_add_color3"
-                color3f inputs:in1.connect = </shadertree/Flame/Candle_Flame_Image_adjust/contrast.outputs:out>
-                color3f inputs:in2.connect = </shadertree/Flame/Candle_Flame_Image_adjust.inputs:brightness>
+                color3f inputs:in1.connect = </shadertree/Flame/Candle_Flame__Image__adjust/contrast.outputs:out>
+                color3f inputs:in2.connect = </shadertree/Flame/Candle_Flame__Image__adjust.inputs:brightness>
                 color3f outputs:out
             }
         }
 
-        def Shader "Candle_Flame_Image_2_texture_reader"
+        def Shader "Candle_Flame__Image___2__texture_reader"
         {
             uniform token info:id = "ND_texcoord_vector2"
             int inputs:index = 0
             texCoord2f outputs:out
         }
 
-        def Shader "Candle_Flame_Image_2_texture_transform"
+        def Shader "Candle_Flame__Image___2__texture_transform"
         {
             uniform token info:id = "UsdTransform2d"
-            texCoord2f inputs:in.connect = </shadertree/Flame/Candle_Flame_Image_2_texture_reader.outputs:out>
+            texCoord2f inputs:in.connect = </shadertree/Flame/Candle_Flame__Image___2__texture_reader.outputs:out>
             float inputs:rotation = 0
             float2 inputs:scale = (1, 1)
             float2 inputs:translation = (0, 0)
             texCoord2f outputs:result
         }
 
-        def Shader "Candle_Flame_Image_2_imageFile"
+        def Shader "Candle_Flame__Image___2__imageFile"
         {
             uniform token info:id = "ND_image_float"
             asset inputs:file = @/Library/Application Support/Luxology/Content/Assets/Pixel_Fondue_Shaderball_Scene/Candle Flame.png@
-            float2 inputs:texcoord.connect = </shadertree/Flame/Candle_Flame_Image_2_texture_transform.outputs:result>
+            float2 inputs:texcoord.connect = </shadertree/Flame/Candle_Flame__Image___2__texture_transform.outputs:result>
             string inputs:wrapS = "periodic"
             string inputs:wrapT = "periodic"
             float outputs:out
         }
 
-        def NodeGraph "Candle_Flame_Image_2_adjust"
+        def NodeGraph "Candle_Flame__Image___2__adjust"
         {
             float inputs:brightness = 0
             float inputs:contrast = 1
             int inputs:invert = 1
             float inputs:outHigh = 1
             float inputs:outLow = 0
-            float inputs:texture.connect = </shadertree/Flame/Candle_Flame_Image_2_imageFile.outputs:out>
-            float outputs:out.connect = </shadertree/Flame/Candle_Flame_Image_2_adjust/invert.outputs:out>
+            float inputs:texture.connect = </shadertree/Flame/Candle_Flame__Image___2__imageFile.outputs:out>
+            float outputs:out.connect = </shadertree/Flame/Candle_Flame__Image___2__adjust/invert.outputs:out>
 
             def Shader "valueRange"
             {
                 uniform token info:id = "ND_remap_float"
-                float inputs:in.connect = </shadertree/Flame/Candle_Flame_Image_2_adjust.inputs:texture>
-                float inputs:outhigh.connect = </shadertree/Flame/Candle_Flame_Image_2_adjust.inputs:outHigh>
-                float inputs:outlow.connect = </shadertree/Flame/Candle_Flame_Image_2_adjust.inputs:outLow>
+                float inputs:in.connect = </shadertree/Flame/Candle_Flame__Image___2__adjust.inputs:texture>
+                float inputs:outhigh.connect = </shadertree/Flame/Candle_Flame__Image___2__adjust.inputs:outHigh>
+                float inputs:outlow.connect = </shadertree/Flame/Candle_Flame__Image___2__adjust.inputs:outLow>
                 float outputs:out
             }
 
             def Shader "contrast"
             {
                 uniform token info:id = "ND_contrast"
-                float inputs:amount.connect = </shadertree/Flame/Candle_Flame_Image_2_adjust.inputs:contrast>
-                float inputs:in.connect = </shadertree/Flame/Candle_Flame_Image_2_adjust/valueRange.outputs:out>
+                float inputs:amount.connect = </shadertree/Flame/Candle_Flame__Image___2__adjust.inputs:contrast>
+                float inputs:in.connect = </shadertree/Flame/Candle_Flame__Image___2__adjust/valueRange.outputs:out>
                 float outputs:out
             }
 
             def Shader "brightness"
             {
                 uniform token info:id = "ND_add"
-                float inputs:in1.connect = </shadertree/Flame/Candle_Flame_Image_2_adjust/contrast.outputs:out>
-                float inputs:in2.connect = </shadertree/Flame/Candle_Flame_Image_2_adjust.inputs:brightness>
+                float inputs:in1.connect = </shadertree/Flame/Candle_Flame__Image___2__adjust/contrast.outputs:out>
+                float inputs:in2.connect = </shadertree/Flame/Candle_Flame__Image___2__adjust.inputs:brightness>
                 float outputs:out
             }
 
             def Shader "invert"
             {
                 uniform token info:id = "ND_invert_float"
-                float inputs:in.connect = </shadertree/Flame/Candle_Flame_Image_2_adjust/brightness.outputs:out>
+                float inputs:in.connect = </shadertree/Flame/Candle_Flame__Image___2__adjust/brightness.outputs:out>
                 float outputs:out
             }
         }
@@ -498,13 +498,13 @@ def Scope "shadertree"
 
     def Material "Shaderball"
     {
-        token outputs:mtlx:surface.connect = </shadertree/Shaderball/Material_11.outputs:surface>
+        token outputs:mtlx:surface.connect = </shadertree/Shaderball/Material__11_.outputs:surface>
 
         def Scope "PBR_Aniso"
         {
         }
 
-        def Shader "Material_11"
+        def Shader "Material__11_"
         {
             uniform token info:id = "ND_standard_surface_surfaceshader"
             float inputs:base = 1
@@ -513,13 +513,13 @@ def Scope "shadertree"
             float inputs:coat_roughness = 0
             float inputs:emission = 0
             color3f inputs:emission_color = (1, 1, 1)
-            vector3f inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Normal_Image_3_adjust.outputs:out>
-            vector3f inputs:normal.connect = </shadertree/Shaderball/se1xef0c_4K_Normal_Image_3_normalmap.outputs:out>
+            vector3f inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Normal__Image___3__adjust.outputs:out>
+            vector3f inputs:normal.connect = </shadertree/Shaderball/se1xef0c_4K_Normal__Image___3__normalmap.outputs:out>
             float inputs:opacity = 1
             float inputs:specular = 1
             float inputs:specular_anisotropy = 1
             color3f inputs:specular_color = (1, 0.8011317, 0.51728654)
-            color3f inputs:specular_color.connect = </shadertree/Shaderball/se1xef0c_4K_Specular_Image_2_adjust.outputs:out>
+            color3f inputs:specular_color.connect = </shadertree/Shaderball/se1xef0c_4K_Specular__Image___2__adjust.outputs:out>
             float inputs:specular_IOR = 399998
             float inputs:specular_roughness = 0.15
             float inputs:specular_roughness.connect = </shadertree/Shaderball/Noise.outputs:out>
@@ -536,248 +536,248 @@ def Scope "shadertree"
             token outputs:surface
         }
 
-        def Shader "se1xef0c_4K_Specular_Image_2_texture_reader"
+        def Shader "se1xef0c_4K_Specular__Image___2__texture_reader"
         {
             uniform token info:id = "ND_texcoord_vector2"
             int inputs:index = 0
             texCoord2f outputs:out
         }
 
-        def Shader "se1xef0c_4K_Specular_Image_2_texture_transform"
+        def Shader "se1xef0c_4K_Specular__Image___2__texture_transform"
         {
             uniform token info:id = "UsdTransform2d"
-            texCoord2f inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Specular_Image_2_texture_reader.outputs:out>
+            texCoord2f inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Specular__Image___2__texture_reader.outputs:out>
             float inputs:rotation = 0
             float2 inputs:scale = (1, 1)
             float2 inputs:translation = (0, 0)
             texCoord2f outputs:result
         }
 
-        def Shader "se1xef0c_4K_Specular_Image_2_imageFile"
+        def Shader "se1xef0c_4K_Specular__Image___2__imageFile"
         {
             uniform token info:id = "ND_image_color3"
             asset inputs:file = @/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/se1xef0c_4K_Specular.jpg@
-            float2 inputs:texcoord.connect = </shadertree/Shaderball/se1xef0c_4K_Specular_Image_2_texture_transform.outputs:result>
+            float2 inputs:texcoord.connect = </shadertree/Shaderball/se1xef0c_4K_Specular__Image___2__texture_transform.outputs:result>
             string inputs:wrapS = "periodic"
             string inputs:wrapT = "periodic"
             color3f outputs:out
         }
 
-        def NodeGraph "se1xef0c_4K_Specular_Image_2_adjust"
+        def NodeGraph "se1xef0c_4K_Specular__Image___2__adjust"
         {
             color3f inputs:brightness = (0, 0, 0)
             color3f inputs:contrast = (1, 1, 1)
             int inputs:invert = 0
             color3f inputs:outHigh = (1, 1, 1)
             color3f inputs:outLow = (0, 0, 0)
-            color3f inputs:texture.connect = </shadertree/Shaderball/se1xef0c_4K_Specular_Image_2_imageFile.outputs:out>
-            color3f outputs:out.connect = </shadertree/Shaderball/se1xef0c_4K_Specular_Image_2_adjust/brightness.outputs:out>
+            color3f inputs:texture.connect = </shadertree/Shaderball/se1xef0c_4K_Specular__Image___2__imageFile.outputs:out>
+            color3f outputs:out.connect = </shadertree/Shaderball/se1xef0c_4K_Specular__Image___2__adjust/brightness.outputs:out>
 
             def Shader "valueRange"
             {
                 uniform token info:id = "ND_remap_color3"
-                color3f inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Specular_Image_2_adjust.inputs:texture>
-                color3f inputs:outhigh.connect = </shadertree/Shaderball/se1xef0c_4K_Specular_Image_2_adjust.inputs:outHigh>
-                color3f inputs:outlow.connect = </shadertree/Shaderball/se1xef0c_4K_Specular_Image_2_adjust.inputs:outLow>
+                color3f inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Specular__Image___2__adjust.inputs:texture>
+                color3f inputs:outhigh.connect = </shadertree/Shaderball/se1xef0c_4K_Specular__Image___2__adjust.inputs:outHigh>
+                color3f inputs:outlow.connect = </shadertree/Shaderball/se1xef0c_4K_Specular__Image___2__adjust.inputs:outLow>
                 color3f outputs:out
             }
 
             def Shader "contrast"
             {
                 uniform token info:id = "ND_contrast_color3"
-                color3f inputs:amount.connect = </shadertree/Shaderball/se1xef0c_4K_Specular_Image_2_adjust.inputs:contrast>
-                color3f inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Specular_Image_2_adjust/valueRange.outputs:out>
+                color3f inputs:amount.connect = </shadertree/Shaderball/se1xef0c_4K_Specular__Image___2__adjust.inputs:contrast>
+                color3f inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Specular__Image___2__adjust/valueRange.outputs:out>
                 color3f outputs:out
             }
 
             def Shader "brightness"
             {
                 uniform token info:id = "ND_add_color3"
-                color3f inputs:in1.connect = </shadertree/Shaderball/se1xef0c_4K_Specular_Image_2_adjust/contrast.outputs:out>
-                color3f inputs:in2.connect = </shadertree/Shaderball/se1xef0c_4K_Specular_Image_2_adjust.inputs:brightness>
+                color3f inputs:in1.connect = </shadertree/Shaderball/se1xef0c_4K_Specular__Image___2__adjust/contrast.outputs:out>
+                color3f inputs:in2.connect = </shadertree/Shaderball/se1xef0c_4K_Specular__Image___2__adjust.inputs:brightness>
                 color3f outputs:out
             }
         }
 
-        def Shader "se1xef0c_4K_Normal_Image_3_texture_reader"
+        def Shader "se1xef0c_4K_Normal__Image___3__texture_reader"
         {
             uniform token info:id = "ND_texcoord_vector2"
             int inputs:index = 0
             texCoord2f outputs:out
         }
 
-        def Shader "se1xef0c_4K_Normal_Image_3_texture_transform"
+        def Shader "se1xef0c_4K_Normal__Image___3__texture_transform"
         {
             uniform token info:id = "UsdTransform2d"
-            texCoord2f inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Normal_Image_3_texture_reader.outputs:out>
+            texCoord2f inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Normal__Image___3__texture_reader.outputs:out>
             float inputs:rotation = 0
             float2 inputs:scale = (1, 1)
             float2 inputs:translation = (0, 0)
             texCoord2f outputs:result
         }
 
-        def Shader "se1xef0c_4K_Normal_Image_3_imageFile"
+        def Shader "se1xef0c_4K_Normal__Image___3__imageFile"
         {
             uniform token info:id = "ND_image_color3"
             asset inputs:file = @/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/se1xef0c_4K_Normal.jpg@
-            float2 inputs:texcoord.connect = </shadertree/Shaderball/se1xef0c_4K_Normal_Image_3_texture_transform.outputs:result>
+            float2 inputs:texcoord.connect = </shadertree/Shaderball/se1xef0c_4K_Normal__Image___3__texture_transform.outputs:result>
             string inputs:wrapS = "periodic"
             string inputs:wrapT = "periodic"
             vector3f outputs:out
         }
 
-        def NodeGraph "se1xef0c_4K_Normal_Image_3_adjust"
+        def NodeGraph "se1xef0c_4K_Normal__Image___3__adjust"
         {
             vector3f inputs:brightness = (0, 0, 0)
             vector3f inputs:contrast = (1, 1, 1)
             int inputs:invert = 0
             vector3f inputs:outHigh = (1, 1, 1)
             vector3f inputs:outLow = (0, 0, 0)
-            vector3f inputs:texture.connect = </shadertree/Shaderball/se1xef0c_4K_Normal_Image_3_imageFile.outputs:out>
-            vector3f outputs:out.connect = </shadertree/Shaderball/se1xef0c_4K_Normal_Image_3_adjust/brightness.outputs:out>
+            vector3f inputs:texture.connect = </shadertree/Shaderball/se1xef0c_4K_Normal__Image___3__imageFile.outputs:out>
+            vector3f outputs:out.connect = </shadertree/Shaderball/se1xef0c_4K_Normal__Image___3__adjust/brightness.outputs:out>
 
             def Shader "valueRange"
             {
                 uniform token info:id = "ND_remap_color3"
-                vector3f inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Normal_Image_3_adjust.inputs:texture>
-                vector3f inputs:outhigh.connect = </shadertree/Shaderball/se1xef0c_4K_Normal_Image_3_adjust.inputs:outHigh>
-                vector3f inputs:outlow.connect = </shadertree/Shaderball/se1xef0c_4K_Normal_Image_3_adjust.inputs:outLow>
+                vector3f inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Normal__Image___3__adjust.inputs:texture>
+                vector3f inputs:outhigh.connect = </shadertree/Shaderball/se1xef0c_4K_Normal__Image___3__adjust.inputs:outHigh>
+                vector3f inputs:outlow.connect = </shadertree/Shaderball/se1xef0c_4K_Normal__Image___3__adjust.inputs:outLow>
                 vector3f outputs:out
             }
 
             def Shader "contrast"
             {
                 uniform token info:id = "ND_contrast_color3"
-                vector3f inputs:amount.connect = </shadertree/Shaderball/se1xef0c_4K_Normal_Image_3_adjust.inputs:contrast>
-                vector3f inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Normal_Image_3_adjust/valueRange.outputs:out>
+                vector3f inputs:amount.connect = </shadertree/Shaderball/se1xef0c_4K_Normal__Image___3__adjust.inputs:contrast>
+                vector3f inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Normal__Image___3__adjust/valueRange.outputs:out>
                 vector3f outputs:out
             }
 
             def Shader "brightness"
             {
                 uniform token info:id = "ND_add_color3"
-                vector3f inputs:in1.connect = </shadertree/Shaderball/se1xef0c_4K_Normal_Image_3_adjust/contrast.outputs:out>
-                vector3f inputs:in2.connect = </shadertree/Shaderball/se1xef0c_4K_Normal_Image_3_adjust.inputs:brightness>
+                vector3f inputs:in1.connect = </shadertree/Shaderball/se1xef0c_4K_Normal__Image___3__adjust/contrast.outputs:out>
+                vector3f inputs:in2.connect = </shadertree/Shaderball/se1xef0c_4K_Normal__Image___3__adjust.inputs:brightness>
                 vector3f outputs:out
             }
         }
 
-        def Shader "se1xef0c_4K_Normal_Image_3_normalmap"
+        def Shader "se1xef0c_4K_Normal__Image___3__normalmap"
         {
             uniform token info:id = "ND_normalmap"
-            vector3f inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Normal_Image_3_adjust.outputs:out>
+            vector3f inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Normal__Image___3__adjust.outputs:out>
             float inputs:scale = 0
             vector3f outputs:out
         }
 
-        def Shader "se1xef0c_4K_Roughness_Image_3_texture_reader"
+        def Shader "se1xef0c_4K_Roughness__Image___3__texture_reader"
         {
             uniform token info:id = "ND_texcoord_vector2"
             int inputs:index = 0
             texCoord2f outputs:out
         }
 
-        def Shader "se1xef0c_4K_Roughness_Image_3_texture_transform"
+        def Shader "se1xef0c_4K_Roughness__Image___3__texture_transform"
         {
             uniform token info:id = "UsdTransform2d"
-            texCoord2f inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness_Image_3_texture_reader.outputs:out>
+            texCoord2f inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness__Image___3__texture_reader.outputs:out>
             float inputs:rotation = 0
             float2 inputs:scale = (1, 1)
             float2 inputs:translation = (0, 0)
             texCoord2f outputs:result
         }
 
-        def Shader "se1xef0c_4K_Roughness_Image_3_imageFile"
+        def Shader "se1xef0c_4K_Roughness__Image___3__imageFile"
         {
             uniform token info:id = "ND_image_float"
             asset inputs:file = @/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/imported_images/se1xef0c_4K_Roughness.jpg@
-            float2 inputs:texcoord.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness_Image_3_texture_transform.outputs:result>
+            float2 inputs:texcoord.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness__Image___3__texture_transform.outputs:result>
             string inputs:wrapS = "periodic"
             string inputs:wrapT = "periodic"
             float outputs:out
         }
 
-        def NodeGraph "se1xef0c_4K_Roughness_Image_3_adjust"
+        def NodeGraph "se1xef0c_4K_Roughness__Image___3__adjust"
         {
             float inputs:brightness = 0
             float inputs:contrast = 1
             int inputs:invert = 0
             float inputs:outHigh = 1
             float inputs:outLow = 0
-            float inputs:texture.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness_Image_3_imageFile.outputs:out>
-            float outputs:out.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness_Image_3_adjust/channel.outputs:outb>
+            float inputs:texture.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness__Image___3__imageFile.outputs:out>
+            float outputs:out.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness__Image___3__adjust/channel.outputs:outb>
 
             def Shader "valueRange"
             {
                 uniform token info:id = "ND_remap_float"
-                float inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness_Image_3_adjust.inputs:texture>
-                float inputs:outhigh.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness_Image_3_adjust.inputs:outHigh>
-                float inputs:outlow.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness_Image_3_adjust.inputs:outLow>
+                float inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness__Image___3__adjust.inputs:texture>
+                float inputs:outhigh.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness__Image___3__adjust.inputs:outHigh>
+                float inputs:outlow.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness__Image___3__adjust.inputs:outLow>
                 float outputs:out
             }
 
             def Shader "contrast"
             {
                 uniform token info:id = "ND_contrast"
-                float inputs:amount.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness_Image_3_adjust.inputs:contrast>
-                float inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness_Image_3_adjust/valueRange.outputs:out>
+                float inputs:amount.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness__Image___3__adjust.inputs:contrast>
+                float inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness__Image___3__adjust/valueRange.outputs:out>
                 float outputs:out
             }
 
             def Shader "brightness"
             {
                 uniform token info:id = "ND_add"
-                float inputs:in1.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness_Image_3_adjust/contrast.outputs:out>
-                float inputs:in2.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness_Image_3_adjust.inputs:brightness>
+                float inputs:in1.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness__Image___3__adjust/contrast.outputs:out>
+                float inputs:in2.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness__Image___3__adjust.inputs:brightness>
                 float outputs:out
             }
 
             def Shader "channel"
             {
                 uniform token info:id = "ND_separate4_color4"
-                color4f inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness_Image_3_adjust/brightness.outputs:out>
+                color4f inputs:in.connect = </shadertree/Shaderball/se1xef0c_4K_Roughness__Image___3__adjust/brightness.outputs:out>
                 float outputs:outb
             }
         }
 
-        def NodeGraph "Noise_Texture"
+        def NodeGraph "Noise__Texture_"
         {
             vector3f inputs:axis = (-0, 0, 0)
             vector3f inputs:position = (-5.5879354e-9, 0.04885673, 0.00095784105)
             float inputs:rotation = 0
             vector3f inputs:scale = (200.10217, 200.10217, 200.10217)
             string inputs:space = "world"
-            vector3f outputs:out.connect = </shadertree/Shaderball/Noise_Texture/translate.outputs:out>
+            vector3f outputs:out.connect = </shadertree/Shaderball/Noise__Texture_/translate.outputs:out>
 
             def Shader "set"
             {
                 uniform token info:id = "ND_position_vector3"
-                string inputs:space.connect = </shadertree/Shaderball/Noise_Texture.inputs:space>
+                string inputs:space.connect = </shadertree/Shaderball/Noise__Texture_.inputs:space>
                 vector3f outputs:out
             }
 
             def Shader "scale"
             {
                 uniform token info:id = "ND_multiply_vector3"
-                vector3f inputs:in1.connect = </shadertree/Shaderball/Noise_Texture/set.outputs:out>
-                vector3f inputs:in2.connect = </shadertree/Shaderball/Noise_Texture.inputs:scale>
+                vector3f inputs:in1.connect = </shadertree/Shaderball/Noise__Texture_/set.outputs:out>
+                vector3f inputs:in2.connect = </shadertree/Shaderball/Noise__Texture_.inputs:scale>
                 vector3f outputs:out
             }
 
             def Shader "rotation"
             {
                 uniform token info:id = "ND_rotate3d_vector3"
-                float inputs:amount.connect = </shadertree/Shaderball/Noise_Texture.inputs:rotation>
-                vector3f inputs:axis.connect = </shadertree/Shaderball/Noise_Texture.inputs:axis>
-                vector3f inputs:in.connect = </shadertree/Shaderball/Noise_Texture/scale.outputs:out>
+                float inputs:amount.connect = </shadertree/Shaderball/Noise__Texture_.inputs:rotation>
+                vector3f inputs:axis.connect = </shadertree/Shaderball/Noise__Texture_.inputs:axis>
+                vector3f inputs:in.connect = </shadertree/Shaderball/Noise__Texture_/scale.outputs:out>
                 vector3f outputs:out
             }
 
             def Shader "translate"
             {
                 uniform token info:id = "ND_add_vector3"
-                vector3f inputs:in1.connect = </shadertree/Shaderball/Noise_Texture/rotation.outputs:out>
-                vector3f inputs:in2.connect = </shadertree/Shaderball/Noise_Texture.inputs:position>
+                vector3f inputs:in1.connect = </shadertree/Shaderball/Noise__Texture_/rotation.outputs:out>
+                vector3f inputs:in2.connect = </shadertree/Shaderball/Noise__Texture_.inputs:position>
                 vector3f outputs:out
             }
         }
@@ -792,7 +792,7 @@ def Scope "shadertree"
             vector3f inputs:offset = (0, 0, 0)
             float inputs:outmax = 1
             float inputs:outmin = 0.865
-            vector3f inputs:position.connect = </shadertree/Shaderball/Noise_Texture.outputs:out>
+            vector3f inputs:position.connect = </shadertree/Shaderball/Noise__Texture_.outputs:out>
             int inputs:type = 3
             float outputs:diminish = 0.5
             float outputs:lacunarity = 2

@@ -310,7 +310,7 @@
    "storageType": "integer"
   },
   "frmRange": {
-   "value": "<lx.object.Unknown object at 0x44ab18df0>",
+   "value": "<lx.object.Unknown object at 0x40d1d74f0>",
    "type": "string",
    "evaltype": "+intrange",
    "storageType": "+intrange"
@@ -17714,7 +17714,7 @@
       "storageType": "integer"
      },
      "color": {
-      "value": "(<lx.object.Unknown object at 0x4080654f0>, <lx.object.Unknown object at 0x408065c90>, <lx.object.Unknown object at 0x408067e90>)",
+      "value": "(<lx.object.Unknown object at 0x44b27b170>, <lx.object.Unknown object at 0x44b279130>, <lx.object.Unknown object at 0x44b27b0d0>)",
       "type": "gradient",
       "evaltype": "gradstack",
       "storageType": "NONE"
