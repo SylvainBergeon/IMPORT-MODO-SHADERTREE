@@ -38,7 +38,7 @@ def Scope "shadertree"
         def Shader "graph_paper_Image_uvTexture"
         {
             uniform token info:id = "ND_image_color3"
-            asset inputs:file = @/Library/Application Support/Luxology/Content/Assets/Pixel_Fondue_Shaderball_Scene/graph paper.png@
+            asset inputs:file = @/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/PF_ShaderBall_TriPlanarProj_textures/graph paper.png@
             float2 inputs:texcoord.connect = </shadertree/Floor_texture_transform.outputs:result>
             string inputs:wrapS = "periodic"
             string inputs:wrapT = "periodic"
@@ -82,9 +82,17 @@ def Scope "shadertree"
         }
     }
 
+    def Shader "Floor_texture_reader"
+    {
+        uniform token info:id = "ND_texcoord_vector2"
+        int inputs:index = 0
+        texCoord2f outputs:out
+    }
+
     def Shader "Floor_texture_transform"
     {
         uniform token info:id = "UsdTransform2d"
+        texCoord2f inputs:in.connect = </shadertree/Floor_texture_reader.outputs:out>
         float inputs:rotation = 0
         float2 inputs:scale = (4, 4)
         float2 inputs:translation = (0.224, 0.388)
@@ -292,7 +300,7 @@ def Scope "shadertree"
         def Shader "Pixel_Panda_for_Avator_with_transparent_background_Image_uvTexture"
         {
             uniform token info:id = "ND_image_color3"
-            asset inputs:file = @/Library/Application Support/Luxology/Content/Assets/Pixel_Fondue_Shaderball_Scene/Pixel Panda for Avator with transparent background.png@
+            asset inputs:file = @/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/PF_ShaderBall_TriPlanarProj_textures/Pixel Panda for Avator with transparent background.png@
             float2 inputs:texcoord.connect = </shadertree/Pixel_Fondue_texture_transform.outputs:result>
             string inputs:wrapS = "clamp"
             string inputs:wrapT = "clamp"
@@ -336,9 +344,17 @@ def Scope "shadertree"
         }
     }
 
+    def Shader "Pixel_Fondue_texture_reader"
+    {
+        uniform token info:id = "ND_texcoord_vector2"
+        int inputs:index = 0
+        texCoord2f outputs:out
+    }
+
     def Shader "Pixel_Fondue_texture_transform"
     {
         uniform token info:id = "UsdTransform2d"
+        texCoord2f inputs:in.connect = </shadertree/Pixel_Fondue_texture_reader.outputs:out>
         float inputs:rotation = 0
         float2 inputs:scale = (1, 1)
         float2 inputs:translation = (0, 0)
@@ -369,8 +385,7 @@ def Scope "shadertree"
             color3f inputs:subsurface_color = (0.8, 0.8, 0.8)
             float inputs:subsurface_radius = 1
             float inputs:subsurface_scale = 0.005
-            float inputs:transmission = 0
-            float inputs:transmission.connect = </shadertree/Flame/Candle_Flame_Image_2_adjust.outputs:out>
+            float inputs:transmission = 1
             color3f inputs:transmission_color = (1, 1, 1)
             float inputs:transmission_depth = 0
             float inputs:transmission_dispersion = 0
@@ -382,7 +397,7 @@ def Scope "shadertree"
         def Shader "Candle_Flame_Image_uvTexture"
         {
             uniform token info:id = "ND_image_color3"
-            asset inputs:file = @/Library/Application Support/Luxology/Content/Assets/Pixel_Fondue_Shaderball_Scene/Candle Flame.png@
+            asset inputs:file = @/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/PF_ShaderBall_TriPlanarProj_textures/Candle Flame.png@
             float2 inputs:texcoord.connect = </shadertree/Flame_texture_transform.outputs:result>
             string inputs:wrapS = "periodic"
             string inputs:wrapT = "periodic"
@@ -424,64 +439,19 @@ def Scope "shadertree"
                 color3f outputs:out
             }
         }
+    }
 
-        def Shader "Candle_Flame_Image_2_uvTexture"
-        {
-            uniform token info:id = "ND_image_float"
-            asset inputs:file = @/Library/Application Support/Luxology/Content/Assets/Pixel_Fondue_Shaderball_Scene/Candle Flame.png@
-            float2 inputs:texcoord.connect = </shadertree/Flame_texture_transform.outputs:result>
-            string inputs:wrapS = "periodic"
-            string inputs:wrapT = "periodic"
-            float outputs:out
-        }
-
-        def NodeGraph "Candle_Flame_Image_2_adjust"
-        {
-            float inputs:brightness = 0
-            float inputs:contrast = 1
-            int inputs:invert = 1
-            float inputs:outHigh = 1
-            float inputs:outLow = 0
-            float inputs:texture.connect = </shadertree/Flame/Candle_Flame_Image_2_uvTexture.outputs:out>
-            float outputs:out.connect = </shadertree/Flame/Candle_Flame_Image_2_adjust/invert.outputs:out>
-
-            def Shader "valueRange"
-            {
-                uniform token info:id = "ND_remap_float"
-                float inputs:in.connect = </shadertree/Flame/Candle_Flame_Image_2_adjust.inputs:texture>
-                float inputs:outhigh.connect = </shadertree/Flame/Candle_Flame_Image_2_adjust.inputs:outHigh>
-                float inputs:outlow.connect = </shadertree/Flame/Candle_Flame_Image_2_adjust.inputs:outLow>
-                float outputs:out
-            }
-
-            def Shader "contrast"
-            {
-                uniform token info:id = "ND_contrast_float"
-                float inputs:amount.connect = </shadertree/Flame/Candle_Flame_Image_2_adjust.inputs:contrast>
-                float inputs:in.connect = </shadertree/Flame/Candle_Flame_Image_2_adjust/valueRange.outputs:out>
-                float outputs:out
-            }
-
-            def Shader "brightness"
-            {
-                uniform token info:id = "ND_add_float"
-                float inputs:in1.connect = </shadertree/Flame/Candle_Flame_Image_2_adjust/contrast.outputs:out>
-                float inputs:in2.connect = </shadertree/Flame/Candle_Flame_Image_2_adjust.inputs:brightness>
-                float outputs:out
-            }
-
-            def Shader "invert"
-            {
-                uniform token info:id = "ND_invert_float"
-                float inputs:in.connect = </shadertree/Flame/Candle_Flame_Image_2_adjust/brightness.outputs:out>
-                float outputs:out
-            }
-        }
+    def Shader "Flame_texture_reader"
+    {
+        uniform token info:id = "ND_texcoord_vector2"
+        int inputs:index = 0
+        texCoord2f outputs:out
     }
 
     def Shader "Flame_texture_transform"
     {
         uniform token info:id = "UsdTransform2d"
+        texCoord2f inputs:in.connect = </shadertree/Flame_texture_reader.outputs:out>
         float inputs:rotation = 0
         float2 inputs:scale = (1, 1)
         float2 inputs:translation = (0, 0)
@@ -521,64 +491,13 @@ def Scope "shadertree"
             token outputs:surface
         }
 
-        def NodeGraph "rainbowh_Image_Texture"
+        def Shader "rainbowh_Image_uvTexture"
         {
-            vector3f inputs:axis = (-0.1972222, -0.02094395, 0.15184365)
-            vector3f inputs:position = (0, 0, 0)
-            float inputs:rotation = 0
-            vector3f inputs:scale = (5.319149, 5.319149, 5.319149)
-            string inputs:space = "world"
-            vector3f outputs:out.connect = </shadertree/Shaderball/rainbowh_Image_Texture/translate.outputs:out>
-
-            def Shader "set"
-            {
-                uniform token info:id = "ND_position_vector3"
-                string inputs:space.connect = </shadertree/Shaderball/rainbowh_Image_Texture.inputs:space>
-                vector3f outputs:out
-            }
-
-            def Shader "scale"
-            {
-                uniform token info:id = "ND_multiply_vector3"
-                vector3f inputs:in1.connect = </shadertree/Shaderball/rainbowh_Image_Texture/set.outputs:out>
-                vector3f inputs:in2.connect = </shadertree/Shaderball/rainbowh_Image_Texture.inputs:scale>
-                vector3f outputs:out
-            }
-
-            def Shader "rotation"
-            {
-                uniform token info:id = "ND_rotate3d_vector3"
-                float inputs:amount.connect = </shadertree/Shaderball/rainbowh_Image_Texture.inputs:rotation>
-                vector3f inputs:axis.connect = </shadertree/Shaderball/rainbowh_Image_Texture.inputs:axis>
-                vector3f inputs:in.connect = </shadertree/Shaderball/rainbowh_Image_Texture/scale.outputs:out>
-                vector3f outputs:out
-            }
-
-            def Shader "translate"
-            {
-                uniform token info:id = "ND_add_vector3"
-                vector3f inputs:in1.connect = </shadertree/Shaderball/rainbowh_Image_Texture/rotation.outputs:out>
-                vector3f inputs:in2.connect = </shadertree/Shaderball/rainbowh_Image_Texture.inputs:position>
-                vector3f outputs:out
-            }
-        }
-
-        def Shader "rainbowh_Image_geoNormal"
-        {
-            uniform token info:id = "ND_normal_vector3"
-            vector3f outputs:out
-        }
-
-        def Shader "rainbowh_Image_triplanarTexture"
-        {
-            uniform token info:id = "ND_triplanarprojection_color3"
-            float inputs:blend = 1.5743672
-            asset inputs:filex = @/Library/Application Support/Luxology/Content/Assets/Pixel_Fondue_Shaderball_Scene/rainbowh.png@
-            asset inputs:filey = @/Library/Application Support/Luxology/Content/Assets/Pixel_Fondue_Shaderball_Scene/rainbowh.png@
-            asset inputs:filez = @/Library/Application Support/Luxology/Content/Assets/Pixel_Fondue_Shaderball_Scene/rainbowh.png@
-            vector3f inputs:normal.connect = </shadertree/Shaderball/rainbowh_Image_geoNormal.outputs:out>
-            float2 inputs:position.connect = </shadertree/Shaderball/rainbowh_Image_Texture.outputs:out>
-            int inputs:upaxis = 1
+            uniform token info:id = "ND_image_color3"
+            asset inputs:file = @/Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall/PF_ShaderBall_TriPlanarProj_textures/rainbowh.png@
+            float2 inputs:texcoord.connect = </shadertree/Shaderball_texture_transform.outputs:result>
+            string inputs:wrapS = "periodic"
+            string inputs:wrapT = "periodic"
             color3f outputs:out
         }
 
@@ -589,7 +508,7 @@ def Scope "shadertree"
             int inputs:invert = 0
             color3f inputs:outHigh = (1, 1, 1)
             color3f inputs:outLow = (0, 0, 0)
-            color3f inputs:texture.connect = </shadertree/Shaderball/rainbowh_Image_triplanarTexture.outputs:out>
+            color3f inputs:texture.connect = </shadertree/Shaderball/rainbowh_Image_uvTexture.outputs:out>
             color3f outputs:out.connect = </shadertree/Shaderball/rainbowh_Image_adjust/brightness.outputs:out>
 
             def Shader "valueRange"
@@ -617,6 +536,23 @@ def Scope "shadertree"
                 color3f outputs:out
             }
         }
+    }
+
+    def Shader "Shaderball_texture_reader"
+    {
+        uniform token info:id = "ND_texcoord_vector2"
+        int inputs:index = 0
+        texCoord2f outputs:out
+    }
+
+    def Shader "Shaderball_texture_transform"
+    {
+        uniform token info:id = "UsdTransform2d"
+        texCoord2f inputs:in.connect = </shadertree/Shaderball_texture_reader.outputs:out>
+        float inputs:rotation = 0
+        float2 inputs:scale = (1, 1)
+        float2 inputs:translation = (0, 0)
+        texCoord2f outputs:result
     }
 }
 
