@@ -310,7 +310,7 @@
    "storageType": "integer"
   },
   "frmRange": {
-   "value": "<lx.object.Unknown object at 0x56699de30>",
+   "value": "<lx.object.Unknown object at 0x47410fb50>",
    "type": "string",
    "evaltype": "+intrange",
    "storageType": "+intrange"
@@ -9757,7 +9757,7 @@
      "storageType": "percent"
     },
     "coatRough": {
-     "value": "0.405",
+     "value": "0.4050000011920929",
      "type": "float",
      "evaltype": "percent",
      "storageType": "percent"
@@ -9955,7 +9955,7 @@
      "storageType": "percent"
     },
     "refIndex": {
-     "value": "2.59",
+     "value": "2.5899999141693115",
      "type": "float",
      "evaltype": "float",
      "storageType": "float"
@@ -10027,7 +10027,7 @@
      "storageType": "distance"
     },
     "rough": {
-     "value": "0.155",
+     "value": "0.1550000011920929",
      "type": "float",
      "evaltype": "percent",
      "storageType": "percent"
@@ -10087,7 +10087,7 @@
      "storageType": "integer"
     },
     "specAmt": {
-     "value": "0.21",
+     "value": "0.20999999344348907",
      "type": "float",
      "evaltype": "percent",
      "storageType": "percent"
@@ -10334,7 +10334,7 @@
      "storageType": "float"
     },
     "opacity": {
-     "value": "1.0",
+     "value": "0.5",
      "type": "float",
      "evaltype": "percent",
      "storageType": "percent"
