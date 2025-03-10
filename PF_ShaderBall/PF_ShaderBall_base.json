@@ -310,7 +310,7 @@
    "storageType": "integer"
   },
   "frmRange": {
-   "value": "<lx.object.Unknown object at 0x47410fb50>",
+   "value": "<lx.object.Unknown object at 0x41b261a50>",
    "type": "string",
    "evaltype": "+intrange",
    "storageType": "+intrange"
