@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<diagnostic>
+   <Files>
+      <Set>filename = PF_ShaderBall_composite.lxo</Set>
+      <Set>project path = /Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/PF_ShaderBall</Set>
+      <Save>PF_ShaderBall_composite.usda saved succesfully !</Save>
+      <Save>Consolidation succesful !</Save>
+   </Files>
+   <copy_and_clean_files>
+      <file>Name : Base Material renamed as Base_Material</file>
+      <file>Name : Floor (Material) renamed as Floor_Material</file>
+      <file>Name : graph paper (Image) renamed as graph_paper_Image</file>
+      <file>Name : graph paper (Image) (Texture) renamed as graph_paper_Image_Texture</file>
+      <file>Name : graph paper renamed as graph_paper</file>
+      <file>Name : Cast Iron Burner (Material) renamed as Cast_Iron_Burner_Material</file>
+      <file>Name : Pegs (Material) renamed as Pegs_Material</file>
+      <file>Name : Material (7) renamed as Material_7</file>
+      <file>Name : Ball Holder Pole (Material) renamed as Ball_Holder_Pole_Material</file>
+      <file>Name : Material (8) renamed as Material_8</file>
+      <file>Name : Stainless Steel Burner renamed as Stainless_Steel_Burner</file>
+      <file>Name : Material (2) renamed as Material_2</file>
+      <file>Name : Air Bubbles renamed as Air_Bubbles</file>
+      <file>Name : Material (6) renamed as Material_6</file>
+      <file>Name : Pixel Fondue (Material) renamed as Pixel_Fondue_Material</file>
+      <file>Name : Material (4) renamed as Material_4</file>
+      <file>Name : Pixel Panda for Avator with transparent background (Image) renamed as Pixel_Panda_for_Avator_with_transparent_background_Image</file>
+      <file>Name : Pixel Panda for Avator with transparent background (Image) (Texture) renamed as Pixel_Panda_for_Avator_with_transparent_background_Image_Texture</file>
+      <file>Name : Pixel Panda for Avator with transparent background renamed as Pixel_Panda_for_Avator_with_transparent_background</file>
+      <file>Name : Flame (Material) renamed as Flame_Material</file>
+      <file>Name : Candle Flame (Image) renamed as Candle_Flame_Image</file>
+      <file>Name : Candle Flame (Image) (Texture) renamed as Candle_Flame_Image_Texture</file>
+      <file>Name : Candle Flame renamed as Candle_Flame</file>
+      <file>Name : Candle Flame (Image) (2) renamed as Candle_Flame_Image_2</file>
+      <file>Name : Candle Flame renamed as Candle_Flame</file>
+      <file>Name : Candle Flame (Image) (2) (Texture) renamed as Candle_Flame_Image_2_Texture</file>
+      <file>Name : Shaderball (Material) renamed as Shaderball_Material</file>
+      <file>Name : Material (5) renamed as Material_5</file>
+      <file>Name : rainbowh (Image) renamed as rainbowh_Image</file>
+      <file>Name : rainbowh (Image) (Texture) renamed as rainbowh_Image_Texture</file>
+      <file>Name : override_image (Texture) renamed as override_image_Texture</file>
+      <file>Name : Brushed (Image) renamed as Brushed_Image</file>
+      <file>Name : Brushed (Image) (Texture) renamed as Brushed_Image_Texture</file>
+      <file>Name : Base Shader renamed as Base_Shader</file>
+      <file>Name : Final Color Output renamed as Final_Color_Output</file>
+      <file>Name : Alpha Output renamed as Alpha_Output</file>
+      <file>Name : Cast Iron Burner renamed as Cast_Iron_Burner</file>
+      <file>Name : Ball Holder Pole renamed as Ball_Holder_Pole</file>
+      <file>Name : Stainless Steel Burner renamed as Stainless_Steel_Burner</file>
+      <file>Name : Air Bubbles renamed as Air_Bubbles</file>
+      <file>Name : Pixel Fondue renamed as Pixel_Fondue</file>
+      <file>Texture : graph paper.png removed form existing files</file>
+      <file>Texture : Pixel Panda for Avator with transparent background.png removed form existing files</file>
+      <file>Texture : Candle Flame.png removed form existing files</file>
+      <file>Texture : rainbowh.png removed form existing files</file>
+      <file>Texture : MetalDented01.png removed form existing files</file>
+   </copy_and_clean_files>
+   <usdExportShaderTree>
+      <polyRender>Processing element polyRender</polyRender>
+      <polyRender>Create SHADERTREE at /shadertree</polyRender>
+      <channels>Processing element channels</channels>
+      <advancedMaterial>Processing element advancedMaterial</advancedMaterial>
+      <mask>Processing element mask</mask>
+      <mask>Create MASK at [/shadertree/Floor]</mask>
+      <advancedMaterial>Processing element advancedMaterial</advancedMaterial>
+      <imageMap>Processing element imageMap</imageMap>
+      <imageMap>Create IMAGEMAP at /shadertree/Floor/graph_paper_Image as diffColor</imageMap>
+      <mask>Processing element mask</mask>
+      <mask>Create MASK at [/shadertree/Cast_Iron_Burner]</mask>
+      <advancedMaterial>Processing element advancedMaterial</advancedMaterial>
+      <mask>Processing element mask</mask>
+      <mask>Create MASK at [/shadertree/Pegs]</mask>
+      <advancedMaterial>Processing element advancedMaterial</advancedMaterial>
+      <mask>Processing element mask</mask>
+      <mask>Create MASK at [/shadertree/Ball_Holder_Pole]</mask>
+      <advancedMaterial>Processing element advancedMaterial</advancedMaterial>
+      <mask>Processing element mask</mask>
+      <mask>Create MASK at [/shadertree/Stainless_Steel_Burner]</mask>
+      <advancedMaterial>Processing element advancedMaterial</advancedMaterial>
+      <mask>Processing element mask</mask>
+      <mask>Create MASK at [/shadertree/Air_Bubbles]</mask>
+      <advancedMaterial>Processing element advancedMaterial</advancedMaterial>
+      <mask>Processing element mask</mask>
+      <mask>Create MASK at [/shadertree/Pixel_Fondue]</mask>
+      <advancedMaterial>Processing element advancedMaterial</advancedMaterial>
+      <imageMap>Processing element imageMap</imageMap>
+      <imageMap>Create IMAGEMAP at /shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background_Image as diffColor</imageMap>
+      <mask>Processing element mask</mask>
+      <mask>Create MASK at [/shadertree/Flame]</mask>
+      <advancedMaterial>Processing element advancedMaterial</advancedMaterial>
+      <imageMap>Processing element imageMap</imageMap>
+      <imageMap>Create IMAGEMAP at /shadertree/Flame/Candle_Flame_Image as lumiColor</imageMap>
+      <imageMap>Processing element imageMap</imageMap>
+      <imageMap>Create IMAGEMAP at /shadertree/Flame/Candle_Flame_Image_2 as tranAmount</imageMap>
+      <mask>Processing element mask</mask>
+      <mask>Create MASK at [/shadertree/Shaderball]</mask>
+      <advancedMaterial>Processing element advancedMaterial</advancedMaterial>
+      <imageMap>Processing element imageMap</imageMap>
+      <imageMap>Create IMAGEMAP at /shadertree/Shaderball/rainbowh_Image as diffColor</imageMap>
+      <imageMap>Processing element imageMap</imageMap>
+      <imageMap>Create IMAGEMAP at /shadertree/Shaderball/override_image as diffColor</imageMap>
+      <imageMap>Processing element imageMap</imageMap>
+      <defaultShader>Processing element defaultShader</defaultShader>
+      <renderOutput>Processing element renderOutput</renderOutput>
+      <renderOutput>Processing element renderOutput</renderOutput>
+   </usdExportShaderTree>
+   <createUsdShader>
+      <M_Floor>Create SHADER at : /shadertree/Floor/M_Floor</M_Floor>
+      <Material>Create SHADER at : /shadertree/Cast_Iron_Burner/Material</Material>
+      <Material_7>Create SHADER at : /shadertree/Pegs/Material_7</Material_7>
+      <Material_8>Create SHADER at : /shadertree/Ball_Holder_Pole/Material_8</Material_8>
+      <Material_2>Create SHADER at : /shadertree/Stainless_Steel_Burner/Material_2</Material_2>
+      <Material_6>Create SHADER at : /shadertree/Air_Bubbles/Material_6</Material_6>
+      <Material_4>Create SHADER at : /shadertree/Pixel_Fondue/Material_4</Material_4>
+      <M_Flame>Create SHADER at : /shadertree/Flame/M_Flame</M_Flame>
+      <Material_5>Create SHADER at : /shadertree/Shaderball/Material_5</Material_5>
+   </createUsdShader>
+   <applyOverrides>
+      <M_Floor>refIndex from 1.0 to 1.4999968680112268</M_Floor>
+      <M_Floor>specAmt from 0.03999999910593033 to 1.0</M_Floor>
+      <M_Floor>tranRough from 0.0 to 0.0</M_Floor>
+      <Material>refIndex from 1.0 to 1.4999968680112268</Material>
+      <Material>specAmt from 0.03999999910593033 to 1.0</Material>
+      <Material>tranRough from 0.0 to 0.0</Material>
+      <Material_7>refIndex from 1.0 to 1.4999968680112268</Material_7>
+      <Material_7>specAmt from 0.03999999910593033 to 1.0</Material_7>
+      <Material_7>tranRough from 0.0 to 0.0</Material_7>
+      <Material_8>refIndex from 1.0 to 1.4999968680112268</Material_8>
+      <Material_8>specAmt from 0.03999999910593033 to 1.0</Material_8>
+      <Material_8>tranRough from 0.0 to 0.0</Material_8>
+      <Material_2>refIndex from 1.0 to 13.927720757550036</Material_2>
+      <Material_2>specAmt from 0.75 to 1.0</Material_2>
+      <Material_2>tranRough from 0.0 to 0.0</Material_2>
+      <Material_6>refIndex from 1.0 to 1.0</Material_6>
+      <Material_6>specAmt from 0.0 to 1.0</Material_6>
+      <Material_6>tranRough from 0.0 to 0.0</Material_6>
+      <Material_4>refIndex from 1.0 to 1.4999968680112268</Material_4>
+      <Material_4>specAmt from 0.03999999910593033 to 1.0</Material_4>
+      <Material_4>tranRough from 0.0 to 0.0</Material_4>
+      <M_Flame>refIndex from 1.0 to 1.0</M_Flame>
+      <M_Flame>specAmt from 0.0 to 1.0</M_Flame>
+      <M_Flame>tranRough from 0.0 to 0.0</M_Flame>
+      <Material_5>refIndex from 2.5899999141693115 to 2.6917756521048273</Material_5>
+      <Material_5>specAmt from 0.20999999344348907 to 1.0</Material_5>
+      <Material_5>tranRough from 0.0 to 0.0</Material_5>
+   </applyOverrides>
+</diagnostic>

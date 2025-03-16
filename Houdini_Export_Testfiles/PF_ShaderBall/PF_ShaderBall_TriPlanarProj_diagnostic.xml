@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<diagnostic>
+   <Files>
+      <Set>filename = PF_ShaderBall_TriPlanarProj.lxo</Set>
+      <Set>project path = /Volumes/SSD-4TO-PROJETS/MODO/KITS/IMPORT MODO SHADERTREE/Houdini_Export_Testfiles/PF_ShaderBall</Set>
+      <Save>PF_ShaderBall_TriPlanarProj.usda saved succesfully !</Save>
+      <Save>Consolidation succesful !</Save>
+   </Files>
+   <Renaming>
+      <Item>[Base Material] renamed as [Base_Material]</Item>
+      <Item>[Floor (Material)] renamed as [Floor_Material]</Item>
+      <Item>[graph paper (Image)] renamed as [graph_paper_Image]</Item>
+      <Item>[graph paper (Image) (Texture)] renamed as [graph_paper_Image_Texture]</Item>
+      <Item>[graph paper] renamed as [graph_paper]</Item>
+      <Item>[Cast Iron Burner (Material)] renamed as [Cast_Iron_Burner_Material]</Item>
+      <Item>[Pegs (Material)] renamed as [Pegs_Material]</Item>
+      <Item>[Material (7)] renamed as [Material_7]</Item>
+      <Item>[Ball Holder Pole (Material)] renamed as [Ball_Holder_Pole_Material]</Item>
+      <Item>[Material (8)] renamed as [Material_8]</Item>
+      <Item>[Stainless Steel Burner] renamed as [Stainless_Steel_Burner]</Item>
+      <Item>[Material (2)] renamed as [Material_2]</Item>
+      <Item>[Air Bubbles] renamed as [Air_Bubbles]</Item>
+      <Item>[Material (6)] renamed as [Material_6]</Item>
+      <Item>[Pixel Fondue (Material)] renamed as [Pixel_Fondue_Material]</Item>
+      <Item>[Material (4)] renamed as [Material_4]</Item>
+      <Item>[Pixel Panda for Avator with transparent background (Image)] renamed as [Pixel_Panda_for_Avator_with_transparent_background_Image]</Item>
+      <Item>[Pixel Panda for Avator with transparent background (Image) (Texture)] renamed as [Pixel_Panda_for_Avator_with_transparent_background_Image_Texture]</Item>
+      <Item>[Pixel Panda for Avator with transparent background] renamed as [Pixel_Panda_for_Avator_with_transparent_background]</Item>
+      <Item>[Flame (Material)] renamed as [Flame_Material]</Item>
+      <Item>[Candle Flame (Image)] renamed as [Candle_Flame_Image]</Item>
+      <Item>[Candle Flame (Image) (Texture)] renamed as [Candle_Flame_Image_Texture]</Item>
+      <Item>[Candle Flame] renamed as [Candle_Flame]</Item>
+      <Item>[Shaderball (Material)] renamed as [Shaderball_Material]</Item>
+      <Item>[Material (5)] renamed as [Material_5]</Item>
+      <Item>[rainbowh (Image)] renamed as [rainbowh_Image]</Item>
+      <Item>[rainbowh (Image) (Texture)] renamed as [rainbowh_Image_Texture]</Item>
+      <Item>[Base Shader] renamed as [Base_Shader]</Item>
+      <Item>[Final Color Output] renamed as [Final_Color_Output]</Item>
+      <Item>[Alpha Output] renamed as [Alpha_Output]</Item>
+      <Item>[Cast Iron Burner] renamed as [Cast_Iron_Burner]</Item>
+      <Item>[Ball Holder Pole] renamed as [Ball_Holder_Pole]</Item>
+      <Item>[Stainless Steel Burner] renamed as [Stainless_Steel_Burner]</Item>
+      <Item>[Air Bubbles] renamed as [Air_Bubbles]</Item>
+      <Item>[Pixel Fondue] renamed as [Pixel_Fondue]</Item>
+   </Renaming>
+   <USD_Create>
+      <polyRender>Create SHADERTREE at /shadertree</polyRender>
+      <mask>Create MASK at [/shadertree/Floor]</mask>
+      <advancedMaterial>Create ADVANCED MATERIAL at /shadertree/Floor</advancedMaterial>
+      <imageMap>Create IMAGEMAP at [/shadertree/Floor/graph_paper_Image] as [diffColor]</imageMap>
+      <mask>Create MASK at [/shadertree/Cast_Iron_Burner]</mask>
+      <advancedMaterial>Create ADVANCED MATERIAL at /shadertree/Cast_Iron_Burner</advancedMaterial>
+      <mask>Create MASK at [/shadertree/Pegs]</mask>
+      <advancedMaterial>Create ADVANCED MATERIAL at /shadertree/Pegs</advancedMaterial>
+      <mask>Create MASK at [/shadertree/Ball_Holder_Pole]</mask>
+      <advancedMaterial>Create ADVANCED MATERIAL at /shadertree/Ball_Holder_Pole</advancedMaterial>
+      <mask>Create MASK at [/shadertree/Stainless_Steel_Burner]</mask>
+      <advancedMaterial>Create ADVANCED MATERIAL at /shadertree/Stainless_Steel_Burner</advancedMaterial>
+      <mask>Create MASK at [/shadertree/Air_Bubbles]</mask>
+      <advancedMaterial>Create ADVANCED MATERIAL at /shadertree/Air_Bubbles</advancedMaterial>
+      <mask>Create MASK at [/shadertree/Pixel_Fondue]</mask>
+      <advancedMaterial>Create ADVANCED MATERIAL at /shadertree/Pixel_Fondue</advancedMaterial>
+      <imageMap>Create IMAGEMAP at [/shadertree/Pixel_Fondue/Pixel_Panda_for_Avator_with_transparent_background_Image] as [diffColor]</imageMap>
+      <mask>Create MASK at [/shadertree/Flame]</mask>
+      <advancedMaterial>Create ADVANCED MATERIAL at /shadertree/Flame</advancedMaterial>
+      <imageMap>Create IMAGEMAP at [/shadertree/Flame/Candle_Flame_Image] as [lumiColor]</imageMap>
+      <mask>Create MASK at [/shadertree/Shaderball]</mask>
+      <advancedMaterial>Create ADVANCED MATERIAL at /shadertree/Shaderball</advancedMaterial>
+      <imageMap>Create IMAGEMAP at [/shadertree/Shaderball/rainbowh_Image] as [diffColor]</imageMap>
+   </USD_Create>
+   <createUsdShader>
+      <M_Floor>Create SHADER at : /shadertree/Floor/M_Floor</M_Floor>
+      <Material>Create SHADER at : /shadertree/Cast_Iron_Burner/Material</Material>
+      <Material_7>Create SHADER at : /shadertree/Pegs/Material_7</Material_7>
+      <Material_8>Create SHADER at : /shadertree/Ball_Holder_Pole/Material_8</Material_8>
+      <Material_2>Create SHADER at : /shadertree/Stainless_Steel_Burner/Material_2</Material_2>
+      <Material_6>Create SHADER at : /shadertree/Air_Bubbles/Material_6</Material_6>
+      <Material_4>Create SHADER at : /shadertree/Pixel_Fondue/Material_4</Material_4>
+      <M_Flame>Create SHADER at : /shadertree/Flame/M_Flame</M_Flame>
+      <Material_5>Create SHADER at : /shadertree/Shaderball/Material_5</Material_5>
+   </createUsdShader>
+   <applyOverrides>
+      <M_Floor>refIndex from 1.0 to 1.4999968680112268</M_Floor>
+      <M_Floor>specAmt from 0.03999999910593033 to 1.0</M_Floor>
+      <M_Floor>tranRough from 0.0 to 0.0</M_Floor>
+      <Material>refIndex from 1.0 to 1.4999968680112268</Material>
+      <Material>specAmt from 0.03999999910593033 to 1.0</Material>
+      <Material>tranRough from 0.0 to 0.0</Material>
+      <Material_7>refIndex from 1.0 to 1.4999968680112268</Material_7>
+      <Material_7>specAmt from 0.03999999910593033 to 1.0</Material_7>
+      <Material_7>tranRough from 0.0 to 0.0</Material_7>
+      <Material_8>refIndex from 1.0 to 1.4999968680112268</Material_8>
+      <Material_8>specAmt from 0.03999999910593033 to 1.0</Material_8>
+      <Material_8>tranRough from 0.0 to 0.0</Material_8>
+      <Material_2>refIndex from 1.0 to 13.927720757550036</Material_2>
+      <Material_2>specAmt from 0.75 to 1.0</Material_2>
+      <Material_2>tranRough from 0.0 to 0.0</Material_2>
+      <Material_6>refIndex from 1.0 to 1.0</Material_6>
+      <Material_6>specAmt from 0.0 to 1.0</Material_6>
+      <Material_6>tranRough from 0.0 to 0.0</Material_6>
+      <Material_4>refIndex from 1.0 to 1.4999968680112268</Material_4>
+      <Material_4>specAmt from 0.03999999910593033 to 1.0</Material_4>
+      <Material_4>tranRough from 0.0 to 0.0</Material_4>
+      <M_Flame>refIndex from 1.0 to 1.0</M_Flame>
+      <M_Flame>specAmt from 0.0 to 1.0</M_Flame>
+      <M_Flame>tranRough from 0.0 to 0.0</M_Flame>
+      <Material_5>refIndex from 2.5899999141693115 to 2.6917756521048273</Material_5>
+      <Material_5>specAmt from 0.20999999344348907 to 1.0</Material_5>
+      <Material_5>tranRough from 0.0 to 0.0</Material_5>
+   </applyOverrides>
+   <Unsupported>
+      <Projection_Type>[planar] in /shadertree/Shaderball/rainbowh_Image is not yet supported (switched to default UV)</Projection_Type>
+      <Item_Type>[constant] is not yet supported (ignored)</Item_Type>
+      <Blend_Mode>[hardlight] in /shadertree/Shaderball/rainbowh_Image is not yet supported (ignored)</Blend_Mode>
+      <Item_Type>[defaultShader] is not yet supported (ignored)</Item_Type>
+      <Item_Type>[renderOutput] is not yet supported (ignored)</Item_Type>
+      <Item_Type>[renderOutput] is not yet supported (ignored)</Item_Type>
+   </Unsupported>
+</diagnostic>
